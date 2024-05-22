@@ -1,0 +1,31 @@
+<div class="p-topColumn">
+    <div class="p-topColumn__inner l-inner">
+        <div class="p-topColumn__wrap">
+            <div class="p-topColumn__content">
+                <div class="p-topColumn__title">
+                    <%- include('../component/_c-title',{
+                        title:'コラム',
+                        subtitle:'COLUMN',
+                        subColor:'white',
+                        mainColor:'white',
+                        modifier:'',
+                        modifier2:'',
+                    }) %>
+                </div>
+                <p class="p-topColumn__text c-text">
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+                <div class="p-topColumn__more">
+                    <%- include('../component/_c-more') %>
+                </div>
+            </div>
+            <div class="p-topColumn__slider js-column-slider">
+                <% for ( var i = 0; i < 3; i++ ){ %>
+                <div class="p-topColumn__card">
+                    <%- include('../component/_c-card') %>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>

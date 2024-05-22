@@ -1,0 +1,42 @@
+@use 'global' as *;
+
+.p-topNews {
+    background: $bg-gray;
+    padding-top: rem(40);
+    padding-bottom: rem(60);
+
+    @include mq(md) {
+        padding-block: rem(100);
+    }
+}
+
+.p-topNews__inner {
+
+}
+
+.p-topNews__title {
+
+}
+
+.p-topNews__cards {
+    display: grid;
+    gap: rem(40);
+    margin-top: rem(40);
+
+    @include mq(md) {
+        gap: rem(30);
+    }
+}
+
+.p-topNews__card {
+
+}
+
+.p-topNews__btn {
+    text-align: center;
+    margin-top: rem(45);
+
+    @include mq(md) {
+        margin-top: rem(60);
+    }
+}

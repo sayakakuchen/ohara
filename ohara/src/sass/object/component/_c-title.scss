@@ -1,0 +1,113 @@
+@use 'global' as *;
+
+.c-title {
+    position: relative;
+}
+
+.c-title__sub {
+    position: relative;
+    width: fit-content;
+    padding-right: rem(150);
+    font-size: rem(18);
+    font-family: $en-font;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.c-title__sub::before {
+    position: absolute;
+    content: "";
+    width: rem(120);
+    height: rem(1);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.c-title__sub.--border-none {
+    text-align: center;
+
+    @include mq(md) {
+        text-align: left;
+    }
+
+    &::before {
+        display: none;
+
+        @include mq(md) {
+            display: block;
+        }
+    }
+}
+
+.c-title__sub.--column {
+    @include mq(md) {
+        position: absolute;
+        top: 0;
+        left: rem(-66);
+        transform: rotate(90deg);
+        transform-origin: left bottom;
+    }
+}
+
+.c-title__sub.--white {
+    color: $white;
+}
+
+.c-title__sub.--white::before {
+    background-color: white;
+}
+
+.c-title__sub.--green {
+    color: $green;
+}
+
+.c-title__sub.--green::before {
+    background-color: $green;
+}
+
+.c-title__main {
+    font-weight: bold;
+    font-size: rem(28);
+    line-height: calc(38/28);
+    letter-spacing: 0.08em;
+    margin-top: rem(20);
+
+    @include mq(md) {
+        font-size: rem(40);
+        line-height: calc(68/40);
+    }
+}
+
+.c-title__main.--small {
+    @include mq(md) {
+        font-size: rem(32);
+    }
+}
+
+.c-title__main.--mt-zero {
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.c-title__main.--white {
+    color: $white;
+}
+
+.c-title__main.--green {
+    color: $green;
+}
+
+.c-title__main.--big {
+    font-size: rem(40);
+}
+
+.c-title__main.--center {
+    text-align: center;
+
+    @include mq(md) {
+        text-align: left;
+    }
+}

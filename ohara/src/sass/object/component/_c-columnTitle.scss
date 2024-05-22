@@ -1,0 +1,34 @@
+@use 'global' as *;
+
+.c-columnTitle {
+    position: relative;
+    padding-top: rem(30);
+}
+
+.c-columnTitle::before {
+    position: absolute;
+    content: "";
+    width: rem(120);
+    height: rem(1);
+    background-color: $green;
+    top: 0;
+    left: 0;
+}
+
+.c-columnTitle__main {
+    font-size: rem(28);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    line-height: calc(40/28);
+}
+
+.c-columnTitle__sub {
+    color: $green;
+    text-transform: uppercase;
+    font-size: rem(12);
+    font-weight: 300;
+    font-family: $en-font;
+    letter-spacing: 0.08em;
+    line-height: calc(14/12);
+    margin-top: rem(10);
+}

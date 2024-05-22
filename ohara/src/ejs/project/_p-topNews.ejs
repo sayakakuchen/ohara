@@ -1,0 +1,27 @@
+<div class="p-topNews">
+    <div class="p-topNews__inner l-inner">
+        <div class="p-topNews__title">
+            <%- include('../component/_c-title',{
+                title:'最新情報',
+                subtitle:'NEWS',
+                subColor:'green',
+                mainColor:'black',
+                modifier:'',
+                modifier2:'',
+            }) %>
+        </div>
+        <div class="p-topNews__cards">
+            <% for ( var i = 0; i < 3; i++ ){ %>
+            <div class="p-topNews__card">
+                <%- include('../component/_c-rowCard') %>
+            </div>
+            <% } %>
+        </div>
+        <div class="p-topNews__btn">
+            <%- include('../component/_c-btn',{
+                link:'#',
+                text:'最新情報'
+            }) %>
+        </div>
+    </div>
+</div>

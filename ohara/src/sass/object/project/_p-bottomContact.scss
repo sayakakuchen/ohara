@@ -1,0 +1,65 @@
+@use 'global' as *;
+
+.p-bottomContact {
+    position: relative;
+    background: url(../images/common/contact_sp.jpg) center center / cover no-repeat;
+    
+    @include mq(md) {
+        background-image: url(../images/common/contact_pc.jpg);
+    }
+}
+
+.p-bottomContact a {
+    display: block;
+    padding-top: rem(57);
+    padding-bottom: rem(31);
+
+    @include mq(md) {
+        padding-block: rem(98);
+    }
+}
+
+.p-bottomContact::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    inset: 0;
+    background-color: #007577;
+    opacity: 0.9;
+}
+
+.p-bottomContact__inner {
+    position: relative;
+    z-index: 1;
+}
+
+.p-bottomContact__title {
+
+}
+
+.p-bottomContact__text {
+    color: $white;
+    font-size: rem(14);
+    line-height: calc(24/14);
+    margin-top: rem(20);
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.p-bottomContact__link {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(25);
+
+    @include mq(md) {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 0;
+    }
+}

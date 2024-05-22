@@ -1,0 +1,28 @@
+@use 'global' as *;
+
+.slide-arrow {
+    position: absolute;
+    width: rem(30);
+    height: rem(30);
+    bottom: rem(20);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: rem(28);
+    transition: all 0.3s;
+}
+
+.prev-arrow {
+    left: calc(50% - rem(35));
+    background:url(../images/common/arrow-prev.svg) center center / contain no-repeat;
+}
+
+.next-arrow {
+    right: calc(50% - rem(35));
+    background:url(../images/common/arrow-next.svg) center center / contain no-repeat;
+}
+
+@media (hover:hover) {
+    .slide-arrow:hover {
+        opacity: 0.8;
+    }
+}

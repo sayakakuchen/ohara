@@ -1,0 +1,29 @@
+@use 'global' as *;
+
+.c-link {
+    position: relative;
+    background-color: #419293;
+    border-radius: 50%;
+    width: rem(30);
+    height: rem(30);
+}
+
+.c-link span {
+    position: absolute;
+    background-color: $white;
+    border-radius: 50%;
+    width: rem(5);
+    height: rem(5);
+    margin: auto;
+    inset: 0;
+}
+
+.c-link.--big {
+    width: rem(80);
+    height: rem(80);
+}
+
+.c-link.--big span {
+    width: rem(10);
+    height: rem(10);
+}

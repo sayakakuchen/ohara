@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.l-topSustainability {
+    margin-top: rem(87);
+
+    @include mq(md) {
+        margin-top: rem(140);
+    }
+}

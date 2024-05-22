@@ -1,0 +1,241 @@
+@use 'global' as *;
+
+.p-mvModal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    inset: 0;
+    z-index: 10;
+    display: none;
+}
+
+.p-mvModal__close {
+    position: fixed;
+    z-index: 1;
+    width: rem(30);
+    height: rem(30);
+    right: calc(50% - rem(172));
+    top: calc(50vh - (50vh - 3.125rem) - rem(40));
+
+    @include mq(md) {
+        right: calc(50% - rem(492));
+        top: calc(50vh - rem(270) - rem(40));
+    }
+}
+
+.p-mvModal__close span:nth-child(1) {
+    position: absolute;
+    display: inline-block;
+    transform: translate(-50%,-50%) rotate(45deg);
+    background-color: $white;
+    width: rem(42);
+    height: rem(2);
+    top: 50%;
+    left: 50%;
+}
+
+.p-mvModal__close span:nth-child(2) {
+    position: absolute;
+    display: inline-block;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    background-color: $white;
+    width: rem(42);
+    height: rem(2);
+    top: 50%;
+    left: 50%;
+}
+
+.p-mvModal__contents {
+    position: absolute;
+    max-width: rem(345);
+    height: fit-content;
+    min-height: rem(500);
+    max-height: calc(100vh - rem(100));
+    width: 100%;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: $white;
+    overflow-y: scroll;
+
+    @include mq(md) {
+        min-height: fit-content;
+        max-width: rem(985);
+        max-height: rem(540);
+    }
+}
+
+.p-mvModal__content {
+    position: relative;
+    display: none;
+    height: 100%;
+    width: 100%;
+
+    @include mq(md) {
+        height: rem(540);
+    }
+}
+
+.p-mvModal__wrap {
+    @include mq(md) {
+        display: grid;
+        align-items: center;
+        grid-template-columns: rem(442) 1fr;
+        height: 100%;
+    }
+}
+
+.p-mvModal__title {
+    position: absolute;
+    top: 0;
+    left: rem(14);
+
+    @include mq(md) {
+        top: rem(25);
+        left: rem(30);
+    }
+}
+
+.p-mvModal__title span {
+    position: relative;
+    display: inline-block;
+    font-size: rem(16);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding-right: rem(68);
+    
+    @include mq(md) {
+        font-size: rem(28);
+        padding-right: rem(75);
+    }
+}
+
+.p-mvModal__title span::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: $green;
+    width: rem(60);
+    height: rem(1);
+}
+
+.p-mvModal__img {
+    height: rem(80);
+    width: fit-content;
+    margin-left: auto;
+    margin-top: rem(18);
+    margin-right: rem(20);
+
+    @include mq(md) {
+        max-width: rem(390);
+        height: 100%;
+        max-height: rem(300);
+        margin-top: 0;
+    }
+}
+
+.p-mvModal__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.p-mvModal__blocks {
+    background-color: $bg-gray;
+    padding: rem(18) rem(15);
+    margin-top: rem(4);
+
+    @include mq(md) {
+        padding: rem(30) rem(20) 0;
+        height: 100%;
+        margin-top: 0;
+    }
+}
+
+.p-mvModal__block {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: rem(100) 1fr;
+    gap: rem(10);
+
+    @include mq(md) {
+        gap: rem(20);
+    }
+}
+
+.p-mvModal__block + .p-mvModal__block {
+    margin-top: rem(20);
+}
+
+.p-mvModal__img2 {
+
+}
+
+.p-mvModal__img2 img {
+    aspect-ratio: 100/100;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-mvModal__group {
+
+}
+
+.p-mvModal__subTitle {
+    position: relative;
+    font-size: rem(16);
+    line-height: calc(28/16);
+    padding-left: rem(15);
+}
+
+.p-mvModal__subTitle::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(10);
+    height: rem(10);
+    border-radius: 50%;
+    background-color: $green;
+    left: 0;
+}
+
+.p-mvModal__lists {
+    background-color: $white;
+    padding: rem(10) rem(5);
+    list-style: disc;
+    margin-top: rem(16);
+
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: rem(0) rem(10);
+        padding: rem(10);
+        margin-top: rem(10);
+    }
+}
+
+.p-mvModal__list {
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: calc(28/14);
+    margin-left: rem(21);
+}
+
+.p-mvModal__list {
+
+}
+
+.p-mvModal__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    margin: auto;
+    background-color: $black;
+    opacity: 0.6;
+}

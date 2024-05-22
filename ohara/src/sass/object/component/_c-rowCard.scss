@@ -1,0 +1,83 @@
+@use 'global' as *;
+
+.c-rowCard {
+    display: block;
+
+    @include mq(md) {
+        display: grid;
+        align-items: flex-start;
+        gap: rem(30);
+        grid-template-columns: rem(200) 1fr;
+    }
+}
+
+.c-rowCard__img {
+    overflow: hidden;
+}
+
+.c-rowCard__img img {
+    aspect-ratio: 320/180;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+
+    @include mq(md) {
+        aspect-ratio: 220/124;
+    }
+}
+
+.c-rowCard__info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: rem(20);
+    gap: rem(10) rem(20);
+
+    @include mq(md) {
+        gap: rem(20);
+        margin: 0;
+    }
+}
+
+.c-rowCard__time {
+    font-size: rem(16);
+    font-weight: 400;
+    font-family: $en-font;
+}
+
+.c-rowCard__tags {
+
+}
+
+.c-rowCard__tag {
+
+}
+
+.c-rowCard__title {
+    font-size: rem(18);
+    font-weight: bold;
+    line-height: calc(30/18);
+
+    @include mq(md) {
+        margin-top: rem(16);
+        line-height: calc(24/16);
+        margin-top: rem(10);
+    }
+}
+
+.c-rowCard__text {
+    margin-top: rem(8);
+
+    @include mq(md) {
+        margin-top: rem(10);
+    }
+}
+
+@media (hover:hover) {
+    .c-rowCard:hover {
+        .c-rowCard__img img {
+            transform: scale(1.1);
+        }
+    }
+}

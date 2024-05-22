@@ -1,0 +1,45 @@
+<div class="p-topService">
+    <div class="p-topService__inner l-inner">
+        <div class="p-topService__head">
+            <div class="p-topService__title">
+                <%- include('../component/_c-title',{
+                    title:'事業紹介',
+                    subtitle:'SERVICE',
+                    subColor:'green',
+                    mainColor:'black',
+                    modifier:'',
+                    modifier2:'',
+                }) %>
+            </div>
+            <p class="p-topService__text c-text">
+                テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </p>
+        </div>
+        <div class="p-topService__btn">
+            <%- include('../component/_c-btn',{
+                link:'#',
+                text:'事業紹介トップ'
+            }) %>
+        </div>
+        <div class="p-topService__wrap">
+            <ul class="p-topService__links">
+                <li class="p-topService__link">
+                    <a href="#">
+                        <span>Service 01</span>繊維加工剤
+                        <div class="p-topService__circle"><%- include('../component/_c-link') %></div>
+                    </a>
+                </li>
+                <li class="p-topService__link">
+                    <a href="#">
+                        <span>Service 02</span>PCP/MOF
+                        <div class="p-topService__circle"><%- include('../component/_c-link') %></div>
+                    </a>
+                </li>
+            </ul>
+            <picture class="p-topService__img">
+                <source srcset="./images/top/service.webp" type="image/webp" />
+                <img src="./images/top/service.jpg" alt="事業紹介">
+            </picture>
+        </div>
+    </div>
+</div>

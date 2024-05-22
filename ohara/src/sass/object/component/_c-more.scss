@@ -1,0 +1,14 @@
+@use 'global' as *;
+
+.c-more {
+    color: $white;
+    display: inline-flex;
+    align-items: center;
+    font-size: rem(14);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+}
+
+.c-more__link {
+    margin-left: rem(20);
+}

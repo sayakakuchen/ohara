@@ -1,0 +1,65 @@
+@use 'global' as *;
+
+.p-subMv {
+    overflow: hidden;
+}
+
+.p-subMv__inner {
+    position: relative;
+}
+
+.p-subMv__wrap {
+
+}
+
+.p-subMv__title {
+
+    @include mq(md) {
+        position: absolute;
+        top: rem(98);
+        left: 25px;
+    }
+
+}
+
+.p-subMv__en {
+    color: $green;
+    text-align: center;
+    font-size: rem(24);
+    font-family: $en-font;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+
+    @include mq(md) {
+        text-align: left;
+        font-size: rem(24);
+    }
+}
+
+.p-subMv__ja {
+    text-align: center;
+    font-size: rem(32);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    line-height: calc(68/32);
+    margin-top: rem(29);
+
+    @include mq(md) {
+        font-size: rem(48);
+        line-height: calc(68/48);
+        margin-top: rem(10);
+    }
+}
+
+.p-subMv__img {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-top: rem(92);
+
+    @include mq(md) {
+        width: vw(1280,710);
+        margin-right: calc(50% - 50vw);
+        margin-left: auto;
+        margin-top: 0;
+    }
+}

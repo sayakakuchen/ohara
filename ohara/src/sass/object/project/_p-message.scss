@@ -1,0 +1,71 @@
+@use 'global' as *;
+
+.p-message {
+    padding-top: rem(50);
+    padding-bottom: rem(60);
+    
+    @include mq(md) {
+        padding-top: rem(140);
+        padding-bottom: rem(140);
+    }
+}
+
+.p-message__inner {
+
+}
+
+.p-message__img {
+    width: calc(100% + $padding-sp + $padding-sp);
+    margin-left: calc($padding-sp * -1);
+
+    @include mq(md) {
+        max-width: rem(940);
+        width: 100%;
+        margin-left: calc(50% - min(50vw,rem(960)));
+    }
+}
+
+.p-message__box {
+    margin-top: rem(30);
+
+    @include mq(md) {
+        position: relative;
+        z-index: 1;
+        max-width: rem(875);
+        background-color: $white;
+        margin-top: rem(-100);
+        margin-left: auto;
+        padding-top: rem(70);
+        padding-left: rem(80);
+    }
+}
+
+.p-message__title {
+
+}
+
+.p-message__text {
+    margin-top: rem(40);
+}
+
+.p-message__text p + p {
+    margin-top: 1em;
+}
+
+.p-message__name {
+    width: fit-content;
+    font-size: rem(32);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    line-height: calc(46/32);
+    margin-left: auto;
+    margin-top: rem(33);
+}
+
+.p-message__name span {
+    display: block;
+    font-size: rem(16);
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    line-height: calc(24/16);
+}
