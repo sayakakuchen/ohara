@@ -1,0 +1,62 @@
+@use 'global' as *;
+
+.p-totalsolution {
+
+}
+
+.p-totalsolution__title {
+
+}
+
+.p-totalsolution__wrap {
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: rem(500) 1fr;
+        gap: rem(100);
+        margin-top: rem(40);
+    }
+}
+
+.p-totalsolution__content {
+
+}
+
+.p-totalsolution__text {
+    margin-top: rem(30);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.p-totalsolution__example {
+    font-size: rem(12);
+    letter-spacing: 0.08em;
+    line-height: calc(24/12);
+    margin-top: rem(22);
+}
+
+.p-totalsolution__example span {
+    display: inline-block;
+    color: $green;
+    font-size: rem(12);
+    line-height: calc(17/12);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    padding: rem(3) rem(5);
+    background-color: #EDF5F5;
+    margin-bottom: rem(11);
+
+    @include mq(md) {
+        margin-bottom: 0;
+        margin-right: rem(10);
+    }
+}
+
+.p-totalsolution__img {
+    margin-top: rem(20);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}

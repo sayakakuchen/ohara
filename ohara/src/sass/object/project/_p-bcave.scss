@@ -1,0 +1,155 @@
+@use 'global' as *;
+
+ .p-bcave {
+    background-color: $bg-gray;
+    padding-top: rem(40);
+    padding-bottom: rem(30);
+
+    @include mq(md) {
+        padding-top: rem(120);
+        padding-bottom: rem(120);
+    }
+ }
+
+ .p-bcave__inner {
+
+ }
+
+ .p-bcave__title {
+
+ }
+
+ .p-bcave__text {
+    margin-top: rem(20);
+
+    @include mq(md) {
+        text-align: center;
+        margin-top: rem(60);
+    }
+ }
+
+ .p-bcave__btn {
+    text-align: center;
+    margin-top: rem(30);
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+ }
+
+ .p-bcave__subtitle {
+    margin-top: rem(124);
+
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+ }
+
+ .p-bcave__items {
+    margin-top: rem(40);
+ }
+
+ .p-bcave__item {
+    padding: rem(50) rem(10);
+    background-color: $white;
+
+    @include mq(md) {
+        display: grid;
+        gap: rem(40);
+        grid-template-columns: rem(400) 1fr;
+        padding: rem(50);
+    }
+ }
+
+ .p-bcave__item + .p-bcave__item {
+    margin-top: rem(20);
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+ }
+
+ .p-bcave__left {
+
+ }
+
+ .p-bcave__lead {
+    font-size: rem(12);
+    font-weight: 400;
+    color: $green;
+    letter-spacing: 0.08em;
+    line-height: calc(17/12);
+ }
+
+ .p-bcave__itemTitle {
+    font-weight: bold;
+    font-size: rem(24);
+    line-height: calc(35/24);
+    letter-spacing: 0.08em;
+    margin-top: rem(5);
+ }
+
+ .p-bcave__img {
+    margin-top: rem(20);
+ }
+
+ .p-bcave__right {
+    margin-top: rem(20);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+ }
+
+ .p-bcave__lists {
+   
+ }
+
+ .p-bcave__list {
+    position: relative;
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: calc(24/14);
+    letter-spacing: 0.08em;
+    padding-left: rem(20);
+ }
+
+ .p-bcave__list::before {
+    position: absolute;
+    content: "";
+    width: rem(5);
+    height: rem(5);
+    border-radius: 50%;
+    left: rem(5);
+    top: rem(10);
+    background-color: $green;
+ }
+
+ .p-bcave__info {
+    @include mq(md) {
+        margin-top: rem(20);
+    }
+ }
+
+ .p-bcave__info dt {
+    font-size: rem(14);
+    font-weight: bold;
+    color: $green;
+    letter-spacing: 0.08em;
+    line-height: calc(20/14);
+    margin-top: rem(24);
+ }
+
+ .p-bcave__info dd {
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: calc(24/14);
+    letter-spacing: 0.08em;
+    margin-top: rem(10);
+ }
+
+ .p-bcave__info dd + dt {
+    @include mq(md) {
+        margin-top: rem(10);
+    }
+ }

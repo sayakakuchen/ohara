@@ -1,0 +1,84 @@
+@use 'global' as *;
+
+.c-caseCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: rem(35) rem(15) 0;
+    box-shadow: 0 0 rem(5) rgba($color: #000000, $alpha: 0.15);
+    background-color: $white;
+
+    @include mq(md) {
+        padding: rem(40);
+    }
+}
+
+.c-caseCard__wrap {
+    display: grid;
+
+    @include mq(md) {
+        grid-template-columns: 1fr rem(240);
+        align-items: flex-start;
+        gap: rem(40);
+    }
+}
+
+.c-caseCard__content {
+    order: 1;
+    margin-top: rem(32);
+
+    @include mq(md) {
+        order: initial;
+        margin-top: 0;
+    }
+}
+
+.c-caseCard__title {
+    font-size: rem(24);
+    line-height: calc(35/24);
+    letter-spacing: 0.08em;
+    padding-left: rem(20);
+    border-left: rem(1) solid $green;
+}
+
+.c-caseCard__text {
+    margin-top: rem(20);
+}
+
+.c-caseCard__img {
+    max-width: rem(240);
+    width: 100%;
+    margin-inline: auto;
+}
+
+.c-caseCard__img img {
+    aspect-ratio: 240/180;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c-caseCard__comment {
+    flex-grow: 1;
+    padding: rem(15);
+    font-size: rem(12);
+    letter-spacing: 0.08em;
+    line-height: calc(20/12);
+    background-color: #EDF5F5;
+    width: calc(100% + rem(30));
+    margin-top: rem(20);
+    margin-left: rem(-15);
+
+    @include mq(md) {
+        width: 100%;
+        margin-left: 0;
+        padding: rem(15);
+    }
+}
+
+.c-caseCard__comment strong {
+    display: block;
+    color: $green;
+    font-size: rem(14);
+    font-weight: bold;
+    margin-bottom: rem(10);
+}

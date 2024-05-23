@@ -20,6 +20,10 @@
     }
 }
 
+.c-singleTitle__sub.--sp-left {
+    text-align: left;
+}
+
 .c-singleTitle__main {
     text-align: center;
     font-size: rem(28);
@@ -33,4 +37,8 @@
     @include mq(md) {
         text-align: left;
     }
+}
+
+.c-singleTitle__main.--sp-left {
+    text-align: left;
 }

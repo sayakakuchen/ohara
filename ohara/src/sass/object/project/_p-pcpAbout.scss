@@ -1,0 +1,83 @@
+@use 'global' as *;
+
+.p-pcpAbout {
+    padding-top: rem(130);
+    padding-bottom: rem(80);
+
+    @include mq(md) {
+        padding-top: rem(140);
+        padding-bottom: rem(140);
+    }
+}
+
+.p-pcpAbout__inner {
+
+}
+
+.p-pcpAbout__wrap {
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: rem(500) 1fr;
+        gap: rem(68);
+        padding-left: rem(62);
+    }
+}
+
+.p-pcpAbout__content {
+
+}
+
+.p-pcpAbout__title {
+
+}
+
+.p-pcpAbout__smallText {
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: calc(18/12);
+    letter-spacing: 0.08em;
+    margin-top: rem(10);
+}
+
+.p-pcpAbout__text {
+    margin-top: rem(20);
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.p-pcpAbout__img {
+    margin-top: rem(28);
+}
+
+.p-pcpAbout__movie {
+    margin-top: rem(18);
+
+    @include mq(md) {
+        max-width: rem(690);
+        width: 100%;
+        margin-inline: auto;
+        margin-top: rem(114);
+    }
+}
+
+.p-pcpAbout__movie iframe,
+.p-pcpAbout__movie button {
+    aspect-ratio: 690/390;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-pcpAbout__movie lite-youtube::before {
+    display: none;
+}
+
+.p-pcpAbout__movie lite-youtube>.lty-playbtn {
+    background: url(../images/common/playbtn.png) center center / rem(50) no-repeat;
+    filter: unset;
+
+    @include mq(md) {
+        background-size: rem(100);
+    }
+}

@@ -111,6 +111,21 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(this).find('.p-lineup__lists').slideToggle();
   });
   
+  $('.js-case-slider')
+  .on("init", function (event, slick) {
+    $(this).append('<div class="p-viewCase__num"><span class="p-viewCase__now"></span><span class="p-viewCase__all"></span></div>');
+    $(".p-viewCase__now").text(slick.currentSlide + 1); 
+    $(".p-viewCase__all").text(slick.slideCount); 
+  })
+  .slick({
+    slidesToShow:1,
+    dots:false,
+    arrows:false,
+    autoplay:true,
+  })
+  .on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+    $(".p-viewCase__now").text(nextSlide + 1);
+  });
 
 
 

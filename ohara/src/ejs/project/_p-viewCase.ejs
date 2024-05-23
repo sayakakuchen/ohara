@@ -1,0 +1,19 @@
+<div class="p-viewCase">
+    <div class="p-viewCase__inner l-inner">
+        <div class="p-viewCase__title">
+            <%- include('../component/_c-singleTitle',{
+                title:'事例を見る',
+                subtitle:'CASE',
+                modifier:'--left --sp-left',
+                modifier2:'--left --sp-left',
+            }) %>
+        </div>
+        <div class="p-viewCase__cards js-case-slider">
+            <% for ( var i = 0; i < 4; i ++ ){ %>
+            <div class="p-viewCase__card">
+                <%- include('../component/_c-caseCard') %>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</div>

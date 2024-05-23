@@ -1,0 +1,58 @@
+@use 'global' as *;
+
+.p-material {
+
+}
+
+.p-material__title {
+
+}
+
+.p-material__items {
+    margin-top: rem(40);
+
+    @include mq(md) {
+        display: grid;
+        gap: rem(30);
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.p-material__item {
+    background-color: #F8F8F8;
+    padding: rem(30);
+}
+
+.p-material__item + .p-material__item {
+    margin-top: rem(10);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.p-material__itemTitle {
+    position: relative;
+    text-align: center;
+    font-size: rem(18);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+}
+
+.p-material__itemTitle::before {
+    position: absolute;
+    content: "";
+    width: rem(40);
+    height: rem(1);
+    background-color: $green;
+    left: 50%;
+    bottom: rem(-12);
+
+    @include mq(md) {
+        bottom: rem(-10);
+    }
+}
+
+.p-material__text {
+    margin-top: rem(30);
+}

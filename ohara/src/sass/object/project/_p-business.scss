@@ -1,0 +1,31 @@
+@use 'global' as *;
+
+.p-business {
+    padding-top: rem(60);
+    padding-bottom: rem(40);
+
+    @include mq(md) {
+        padding-top: rem(140);
+        padding-bottom: rem(120);
+    }
+}
+
+.p-business__inner {
+
+}
+
+.p-business__title {
+
+}
+
+.p-business__target {
+    margin-top: rem(60);
+}
+
+.p-business__material {
+    margin-top: rem(80);
+}
+
+.p-business__totalsolution {
+    margin-top: rem(80);
+}

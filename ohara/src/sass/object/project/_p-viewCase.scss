@@ -1,0 +1,100 @@
+@use 'global' as *;
+
+.p-viewCase {
+    background-color: $bg-gray;
+    padding-top: rem(25);
+    padding-bottom: rem(50);
+    overflow: hidden;
+
+    @include mq(md) {
+        padding-top: rem(50);
+        padding-bottom: rem(90);
+    }
+}
+
+.p-viewCase__inner {
+
+}
+
+.p-viewCase__title {
+
+}
+
+.p-viewCase__cards {
+    margin-inline: auto;
+    margin-top: rem(20);
+
+    @include mq(md) {
+        max-width: rem(800);
+        margin-top: rem(42);
+    }
+}
+
+.p-viewCase__cards .slick-list {
+    
+    padding-bottom: rem(30);
+
+    @include mq(md) {
+        overflow: unset;
+    }
+}
+
+.p-viewCase__card {
+    @include mq(md) {
+        margin: 0 rem(25);
+    }
+}
+
+.p-viewCase__num  {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(70);
+    margin-inline: auto;
+
+    @include mq(md) {
+        margin-left: rem(-130);
+    }
+}
+
+.p-viewCase__num::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: rem(40);
+    height: rem(1);
+    background-color: $green;
+}
+
+.p-viewCase__now {
+    position: relative;
+    display: flex;
+    font-size: rem(14);
+    font-weight: bold;
+    font-family: $en-font2;
+    letter-spacing: 0.08em;
+}
+
+.p-viewCase__now::before {
+    display: block;
+    content: "0";
+}
+
+.p-viewCase__all {
+    position: relative;
+    display: flex;
+    font-size: rem(14);
+    font-weight: bold;
+    font-family: $en-font2;
+    letter-spacing: 0.08em;
+    opacity: 0.3;
+}
+
+.p-viewCase__all::before {
+    display: block;
+    content: "0";
+}

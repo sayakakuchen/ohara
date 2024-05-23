@@ -1,0 +1,21 @@
+@use 'global' as *;
+
+.c-subTitle {
+    position: relative;
+    font-size: rem(24);
+    font-weight: bold;
+    line-height: calc(35/24);
+    letter-spacing: 0.08em;
+    padding-bottom: rem(20);
+    border-bottom: rem(1) solid #E2E5E5;
+}
+
+.c-subTitle::before {
+    position: absolute;
+    content: "";
+    background-color: $green;
+    left: 0;
+    width: rem(80);
+    height: rem(1);
+    bottom: rem(-1);
+}
