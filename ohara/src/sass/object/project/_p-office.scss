@@ -1,0 +1,79 @@
+@use 'global' as *;
+
+.p-office {
+    padding-top: rem(130);
+    padding-bottom: rem(60);
+
+    @include mq(md) {
+        padding-top: rem(140);
+    }
+}
+
+.p-office__inner {
+
+}
+
+.p-office__title {
+
+}
+
+.p-office__items {
+    margin-top: rem(84);
+
+    @include mq(md) {
+        margin-top: rem(60);
+    }
+}
+
+.p-office__item {
+
+    @include mq(md) {
+        display: grid;
+        gap: rem(60);
+        grid-template-columns: 1fr rem(640);
+    }
+
+}
+
+.p-office__item + .p-office__item {
+    margin-top: rem(80);
+}
+
+.p-office__content {
+    
+}
+
+.p-office__subTitle {
+    font-size: rem(24);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    line-height: calc(35/24);
+    padding-left: rem(20);
+    border-left: rem(1) solid $green;
+}
+
+.p-office__address {
+    margin-top: rem(40);
+}
+
+.p-office__tel {
+    margin-top: rem(20);
+}
+
+.p-office__btn {
+    margin-top: rem(60);
+}
+
+.p-office__img {
+    margin-top: rem(20);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.p-office__img img {
+    aspect-ratio: 345/195;
+    height: 100%;
+    object-fit: cover;
+}

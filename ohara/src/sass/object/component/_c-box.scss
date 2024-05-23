@@ -1,0 +1,67 @@
+@use 'global' as *;
+
+.c-box {
+    border: rem(1) solid #E2E5E5;
+    padding: rem(40) rem(15) rem(45);
+    height: 100%;
+
+    @include mq(md) {
+        padding: rem(40);
+    }
+}
+
+.c-box__number {
+    text-align: center;
+    font-size: rem(16);
+    color: $green;
+    font-weight: bold;
+    font-family: $en-font;
+    letter-spacing: 0.04em;
+}
+
+.c-box__title {
+    text-align: center;
+    font-size: rem(22);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    line-height: calc(28/22);
+    margin-top: rem(15);
+
+    @include mq(md) {
+        line-height: calc(38/22);
+    }
+}
+
+.c-box__wrap {
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: rem(200) 1fr;
+        gap: rem(20);
+        margin-top: rem(30);
+    }
+}
+
+.c-box__img {
+    max-width: rem(200);
+    width: 100%;
+    margin-inline: auto;
+    margin-top: rem(16);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.c-box__img img {
+    aspect-ratio: 200/150;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c-box__text {
+    margin-top: rem(25);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}

@@ -26,10 +26,13 @@
 }
 
 .c-title__sub.--border-none {
-    text-align: center;
+    margin-inline: auto;
+    padding-right: 0;
 
     @include mq(md) {
         text-align: left;
+        margin-left: 0;
+        padding-right: rem(150);
     }
 
     &::before {
@@ -122,4 +125,8 @@
     @include mq(md) {
         text-align: left;
     }
+}
+
+.c-title__main.--mt-zero {
+    margin-top: 0;
 }

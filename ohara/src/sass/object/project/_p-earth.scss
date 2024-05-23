@@ -1,0 +1,49 @@
+@use 'global' as *;
+
+.p-earth {
+    position: relative;
+    background-color: $bg-green;
+    padding-top: rem(47);
+    padding-bottom: rem(50);
+
+    @include mq(md) {
+        padding: rem(80);
+    }
+}
+
+.p-earth__title {
+
+}
+
+.p-earth__link {
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: rem(77);
+
+    @include mq(md) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 0;
+        right: rem(80);
+    }
+}
+
+.p-earth__link a {
+    display: block;
+}
+
+.p-earth__img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    @include mq(md) {
+        width: rem(406);
+        left: initial;
+        right: rem(80);
+    }
+}

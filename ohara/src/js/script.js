@@ -105,6 +105,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('.p-mvModal').fadeOut();
     $('.p-mvModal__content').fadeOut();
   });
+
+  $('.js-lineup').click(function(){
+    $(this).toggleClass('is-active');
+    $(this).find('.p-lineup__lists').slideToggle();
+  });
   
 
 

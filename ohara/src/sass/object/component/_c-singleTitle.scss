@@ -1,0 +1,36 @@
+@use 'global' as *;
+
+.c-singleTitle {
+
+}
+
+.c-singleTitle__sub {
+    text-transform: uppercase;
+    color: $green;
+    text-align: center;
+    font-size: rem(18);
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    line-height: calc(22/18);
+}
+
+.c-singleTitle__sub.--left {
+    @include mq(md) {
+        text-align: left;
+    }
+}
+
+.c-singleTitle__main {
+    text-align: center;
+    font-size: rem(28);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    line-height: calc(40/28);
+    margin-top: rem(10);
+}
+
+.c-singleTitle__main.--left {
+    @include mq(md) {
+        text-align: left;
+    }
+}

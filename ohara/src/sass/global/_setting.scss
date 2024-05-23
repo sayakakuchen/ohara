@@ -27,8 +27,14 @@ $padding-sp: 0.9375rem;
   src: url(../font/Barlow-Light.ttf);
 }
 
+@font-face {
+  font-family: 'barlow2';
+  src: url(../font/Barlow-Bold.ttf);
+}
+
 $main-font: 'noto sans',sans-serif;
 $en-font: 'barlow',sans-serif;
+$en-font:'barlow2',sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {

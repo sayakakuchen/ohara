@@ -1,0 +1,23 @@
+<div class="p-earth">
+    <div class="p-earth__title">
+        <%- include('../component/_c-title',{
+            title:'サステナブルな<br class="u-mobile">取り組みを見る',
+            subtitle:'sustainability',
+            subColor:'green',
+            mainColor:'black',
+            modifier2:'--center --small',
+            modifier:'--border-none'
+        }) %>
+    </div>
+    <div class="p-earth__link">
+        <a href="#">
+            <%- include('../component/_c-link',{
+                size:'big'
+            }) %>
+        </a>
+    </div>
+    <picture class="p-earth__img">
+        <source srcset="./images/common/earth.webp" type="image/webp" />
+        <img src="./images/common/earth.png" alt="地球のイラスト">
+    </picture>
+</div>

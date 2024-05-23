@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+.p-case {
+    padding-top: rem(50);
+    padding-bottom: rem(60);
+
+    @include mq(md) {
+        padding-top: rem(70);
+        padding-bottom: rem(140);
+    }
+}
+
+.p-case__inner {
+
+}
+
+.p-case__title {
+
+}
+
+.p-case__items {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: rem(33) rem(40);
+    margin-top: rem(60);
+}
+
+.p-case__item {
+    @include mq(md) {
+        height: 100%;
+    }
+}
+
+.p-case__item + .p-case__item {
+    margin-top: rem(20);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
