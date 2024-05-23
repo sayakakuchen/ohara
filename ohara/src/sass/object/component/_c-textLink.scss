@@ -1,0 +1,29 @@
+@use 'global' as *;
+
+.c-textLink {
+    position: relative;
+    display: inline-block;
+    color: $green;
+    font-size: rem(14);
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    line-height: calc(20/14);
+    padding-right: rem(13);
+}
+
+.c-textLink::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: rem(3);
+    height: rem(6);
+    mask: url(../images/common/arrow.svg) center center / contain no-repeat;
+    background-color: $green;
+    transition: all 0.3s;
+}
+
+.c-textLink:hover::before {
+    right: rem(-5);
+}

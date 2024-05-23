@@ -1,0 +1,28 @@
+@use 'global' as *;
+
+.p-mission {
+    padding-top: rem(50);
+    padding-bottom: rem(60);
+    @include mq(md) {
+        padding-top: rem(140);
+        padding-bottom: rem(140);
+    }
+}
+
+.p-mission__inner.l-inner {
+    @include mq(md) {
+        padding-left: calc($padding-pc + rem(60));
+    }
+}
+
+.p-mission__title {
+
+}
+
+.p-mission__text {
+    margin-top: rem(44);
+}
+
+.p-mission__text p + p {
+    margin-top: 1em;
+}

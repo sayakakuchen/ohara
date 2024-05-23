@@ -51,6 +51,13 @@
     }
 }
 
+.c-title__sub.--sp-none {
+    display: none;
+    @include mq(md) {
+        display: block;
+    }
+}
+
 .c-title__sub.--white {
     color: $white;
 }
@@ -78,6 +85,11 @@
         font-size: rem(40);
         line-height: calc(68/40);
     }
+}
+
+.c-title__main.--sp-small {
+    font-size: rem(20);
+    line-height: calc(30/20);
 }
 
 .c-title__main.--small {

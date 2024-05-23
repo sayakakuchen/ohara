@@ -1,0 +1,150 @@
+@use 'global' as *;
+
+.p-history {
+    padding-top: rem(50);
+    padding-bottom: rem(60);
+    @include mq(md) {
+        padding-top: rem(140);
+        padding-bottom: rem(140);
+    }
+}
+
+.p-history__inner {
+    position: relative;
+}
+
+.p-history__info {
+    display: grid;
+
+    @include mq(md) {
+        grid-template-columns: rem(120) 1fr;
+        border-bottom: rem(1) solid #E2E5E5;
+    }
+}
+
+.p-history__info dt {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+    background-color: #EDF5F5;
+    font-size: rem(18);
+    font-weight: 300;
+    font-family: $en-font;
+    line-height: calc(22/18);
+    letter-spacing: 0.08em;
+    color: $green;
+    padding: rem(4) rem(10);
+
+    @include mq(md) {
+        font-size: rem(28);
+        padding: rem(20) rem(30);
+        border-top: rem(1) solid #E2E5E5;
+    }
+}
+
+.p-history__info dt.--none {
+    @include mq(md) {
+        border-top: none;
+    }
+}
+
+.p-history__info dt em {
+    font-style: normal;
+}
+
+.p-history__info dt.--none em {
+    @include mq(md) {
+        display: none;
+    }
+}
+
+.p-history__info dt span {
+    color: #9D9B9B;
+    font-size: rem(14);
+    font-family: $main-font;
+    font-weight: 400;
+
+    @include mq(md) {
+        display: none;
+    }
+}
+
+.p-history__info dd {
+    font-size: rem(14);
+    line-height: calc(28/14);
+    letter-spacing: 0.08em;
+    padding-block: rem(5);
+    
+    @include mq(md) {
+        display: grid;
+        align-items: center;
+        grid-template-columns: rem(60) 1fr;
+        gap: rem(20);
+        font-size: rem(16);
+        line-height: calc(28/16);
+        padding: rem(20) rem(70);
+        border-top: rem(1) solid #E2E5E5;
+    }
+}
+
+.p-history__info dt.--none +  dd {
+    @include mq(md) {
+        padding-top: 0;
+        border-top: none;
+    }
+}
+
+.p-history__info dd span {
+    display: none;
+
+    @include mq(md) {
+        display: block;
+        font-size: rem(18);
+        font-weight: bold;
+        color: #9D9B9B;
+    }
+}
+
+.p-history__img1 {
+    position: absolute;
+    width: rem(250);
+    right: 0;
+    top: rem(244);
+    display: none;
+    @include mq(md) {
+        display: block;
+    }
+}
+
+.p-history__img2 {
+    position: absolute;
+    width: rem(250);
+    right: 0;
+    top: rem(552);
+    display: none;
+    @include mq(md) {
+        display: block;
+    }
+}
+
+.p-history__img3 {
+    position: absolute;
+    width: rem(250);
+    right: 0;
+    top: rem(1030);
+    display: none;
+    @include mq(md) {
+        display: block;
+    }
+}
+
+.p-history__img4 {
+    position: absolute;
+    width: rem(250);
+    right: 0;
+    bottom: rem(430);
+    display: none;
+    @include mq(md) {
+        display: block;
+    }
+}
