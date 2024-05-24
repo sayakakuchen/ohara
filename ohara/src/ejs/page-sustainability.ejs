@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+    <body>
+        <header class="l-header">
+
+        </header>
+        <main>
+            <section class="l-subMv">
+                <%- include('./project/_p-subMv',{
+                    title:'サステナビリティ',
+                    subtitle:'sustainability',
+                    img:'sustainability'
+                }) %>
+            </section>
+            <div class="l-breadcrumb">
+                <%- include('./project/_p-breadcrumb',{
+                    page:'サステナビリティ'
+                }) %>
+            </div>
+            <section class="l-eco l-section">
+                <%- include('./project/_p-eco') %>
+            </section>
+            <section class="l-topNews">
+                <%- include('./project/_p-topNews2') %>
+            </section>
+            <section class="l-sdg">
+                <%- include('./project/_p-sdg') %>
+            </section>
+            <section class="l-bottomContact">
+                <%- include('./project/_p-bottomContact') %>
+            </section>
+        </main>
+        <footer class="l-footer">
+            <%- include('./common/_p-footer') %>
+        </footer>
+    </body>
+</html>

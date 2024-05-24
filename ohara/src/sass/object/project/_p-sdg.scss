@@ -1,0 +1,163 @@
+@use 'global' as *;
+
+.p-sdg {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+
+    @include mq(md) {
+        padding-top: rem(35);
+        padding-bottom: rem(130);
+    }
+}
+
+.p-sdg__inner {
+
+}
+
+.p-sdg__title {
+
+}
+
+.p-sdg__units {
+    margin-top: rem(28);
+}
+
+.p-sdg__unit {
+    position: relative;
+}
+
+.p-sdg__unit:nth-child(n + 2)::before {
+    @include mq(md) {
+        position: absolute;
+        content: "";
+        width: 100%;
+        background-color: #707070;
+        left: 50%;
+        transform: translateX(-50%);
+        top: rem(17);
+        height: rem(1);
+    }
+}
+
+.p-sdg__unit + .p-sdg__unit {
+    margin-top: rem(52);
+
+    @include mq(md) {
+        margin-top: rem(50);
+    }
+}
+
+.p-sdg__subtitle {
+    position: relative;
+    font-size: rem(20);
+    line-height: calc(35/20);
+    border-left: rem(1) solid $green;
+    padding-left: rem(20);
+
+    @include mq(md) {
+        width: fit-content;
+        background-color: $white;
+        padding-right: 0.5em;
+    }
+}
+
+.p-sdg__lists {
+    margin-top: rem(40);
+}
+
+.p-sdg__subtitle + .p-sdg__lists {
+    margin-top: rem(26);
+}
+
+.p-sdg__list {
+    @include mq(md) {
+        position: relative;
+    }
+}
+
+.p-sdg__list.--initial {
+    @include mq(md) {
+        position: initial;
+
+        &::before {
+            display: none;
+        }
+    }
+}
+
+.p-sdg__list::before {
+    @include mq(md) {
+        position: absolute;
+        content: "";
+        top: 50%;
+        width: 100%;
+        background-color: #707070;
+        left: 50%;
+        transform: translateX(-50%);
+        height: rem(1);
+    }
+}
+
+.p-sdg__list + .p-sdg__list {
+    margin-top: rem(26);
+
+    @include mq(md) {
+        margin-top: rem(12);
+    }
+}
+
+.p-sdg__text {
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: calc(24/14);
+    letter-spacing: 0.08em;
+
+    @include mq(md) {
+        position: relative;
+        z-index: 1;
+        width: fit-content;
+        background-color: $white;
+        line-height: calc(68/14);
+        padding-right: 0.5em;
+    }
+}
+
+.p-sdg__text.--normal {
+    @include mq(md) {
+        line-height: calc(28/14);
+    }
+}
+
+.p-sdg__goals {
+    display: grid;
+    gap: rem(10);
+    grid-template-columns: repeat(4,1fr);
+    padding-inline: rem(15);
+    margin-top: rem(10);
+
+    @include mq(md) {
+        position: absolute;
+        display: flex;
+        width: fit-content;
+        margin-left: auto;
+        margin-top: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        padding-left: rem(13);
+        padding-right: 0;
+        background-color: $white;
+    }
+}
+
+.p-sdg__goals.--initial {
+    @include mq(md) {
+        top: rem(16);
+    }
+}
+
+.p-sdg__goal {
+    @include mq(md) {
+        width: rem(68);
+    }
+}

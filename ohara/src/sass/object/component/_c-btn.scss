@@ -17,3 +17,8 @@
 .c-btn__link {
     margin-left: auto;
 }
+
+.c-btn.--small {
+    max-width: rem(123);
+    padding-inline: rem(24) rem(16);
+}

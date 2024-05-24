@@ -85,7 +85,7 @@
     margin-top: rem(20);
 
     @include mq(md) {
-        font-size: rem(40);
+        font-size: rem(32);
         line-height: calc(68/40);
     }
 }
@@ -97,7 +97,7 @@
 
 .c-title__main.--small {
     @include mq(md) {
-        font-size: rem(32);
+        font-size: rem(24);
     }
 }
 

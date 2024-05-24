@@ -58,11 +58,11 @@
     font-size: rem(18);
     font-weight: bold;
     line-height: calc(30/18);
+    margin-top: rem(10);
 
     @include mq(md) {
         margin-top: rem(16);
         line-height: calc(24/16);
-        margin-top: rem(10);
     }
 }
 
