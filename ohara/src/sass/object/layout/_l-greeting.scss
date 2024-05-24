@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.l-greeting {
+    margin-top: rem(50);
+
+    @include mq(md) {
+        margin-top: rem(120);
+    }
+}

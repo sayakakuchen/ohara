@@ -1,0 +1,77 @@
+@use 'global' as *;
+
+ .p-greeting {
+
+ }
+
+ .p-greeting__inner {
+
+ }
+
+ .p-greeting__title {
+
+ }
+
+ .p-greeting__wrap {
+    margin-top: rem(30);
+
+    @include mq(md) {
+        display: grid;
+        gap: rem(60);
+        grid-template-columns: rem(450) 1fr;
+        margin-top: rem(60);
+    }
+ }
+
+ .p-greeting__img {
+
+ }
+
+ .p-greeting__content {
+    position: relative;
+    padding-top: rem(40);
+    margin-top: rem(25);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+ }
+
+ .p-greeting__content::before {
+    position: absolute;
+    content: "";
+    width: rem(120);
+    height: rem(1);
+    background-color: $green;
+    top: 0;
+    left: 0;
+ }
+
+ .p-greeting__text {
+
+ }
+
+ .p-greeting__text p + p {
+    margin-top: 1em;
+ }
+
+ .p-greeting__name {
+    width: fit-content;
+    font-size: rem(24);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    line-height: calc(35/24);
+    margin-left: auto;
+    margin-top: rem(36);
+
+    @include mq(md) {
+        margin-top: rem(20);
+    }
+ }
+
+ .p-greeting__name span {
+    display: block;
+    font-size: rem(12);
+    font-weight: 400;
+    margin-bottom: rem(5);
+ }

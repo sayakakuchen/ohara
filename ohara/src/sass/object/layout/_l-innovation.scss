@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.l-innovation {
+    margin-top: rem(50);
+
+    @include mq(md) {
+        margin-top: rem(120);
+    }
+}

@@ -1,7 +1,25 @@
 @use 'global' as *;
 
 .p-subMv {
+    position: relative;
     overflow: hidden;
+    min-height: rem(200);
+
+    @include mq(md) {
+        min-height: rem(306);
+    }
+}
+
+.p-subMv.--border::before {
+    @include mq(md) {
+        position: absolute;
+        content: "";
+        width: rem(730);
+        height: rem(1);
+        background-color: $green;
+        right: 0;
+        top: rem(48);
+    }
 }
 
 .p-subMv__inner {
@@ -16,7 +34,7 @@
 
     @include mq(md) {
         position: absolute;
-        top: rem(98);
+        top: rem(43);
         left: 25px;
     }
 

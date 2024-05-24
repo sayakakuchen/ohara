@@ -1,0 +1,23 @@
+@use 'global' as *;
+
+.p-innovation {
+
+}
+
+.p-innovation__inner {
+
+}
+
+.p-innovation__title {
+
+}
+
+.p-innovation__img {
+    margin-top: rem(38);
+
+    @include mq(md) {
+        max-width: rem(700);
+        margin-inline: auto;
+        margin-top: rem(40);
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+    <body>
+        <header class="l-header">
+
+        </header>
+        <main>
+            <section class="l-subMv">
+                <%- include('./project/_p-subMv',{
+                    title:'研究開発',
+                    subtitle:'RESEARCH',
+                }) %>
+            </section>
+            <div class="l-breadcrumb">
+                <%- include('./project/_p-breadcrumb',{
+                    page:'研究開発'
+                }) %>
+            </div>
+            <div class="l-studySlide">
+                <%- include('./project/_p-studySlide') %>
+            </div>
+            <section class="l-greeting">
+                <%- include('./project/_p-greeting') %>
+            </section>
+            <section class="l-innovation">
+                <%- include('./project/_p-innovation') %>
+            </section>
+            <section class="l-initiatives">
+
+            </section>
+            <section class="l-bottomContact">
+                <%- include('./project/_p-bottomContact') %>
+            </section>
+        </main>
+        <footer class="l-footer">
+            <%- include('./common/_p-footer') %>
+        </footer>
+    </body>
+</html>
