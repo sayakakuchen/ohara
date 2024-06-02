@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+    <body>
+        <header class="l-header">
+
+        </header>
+        <main>
+            <section class="l-subMv">
+                <%- include('./project/_p-subMv',{
+                    title:'最新情報',
+                    subtitle:'NEWS',
+                }) %>
+            </section>
+            <div class="l-breadcrumb">
+                <div class="p-breadcrumb">
+                    <div class="p-breadcrumb__inner l-inner">
+                        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a itemprop="item" href="#">
+                                    <span itemprop="name">トップ</span>
+                                </a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <span itemprop="name">最新情報</span>
+                                <meta itemprop="position" content="2" />
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <section class="l-topNews">
+                <%- include('./project/_p-topNews3') %>
+            </section>
+            <section class="l-bottomContact">
+                <%- include('./project/_p-bottomContact') %>
+            </section>
+        </main>
+        <footer class="l-footer">
+            <%- include('./common/_p-footer') %>
+        </footer>
+    </body>
+</html>

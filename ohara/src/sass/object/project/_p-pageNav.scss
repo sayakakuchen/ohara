@@ -1,0 +1,35 @@
+@use 'global' as *;
+
+.p-pageNav {
+
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(20);
+}
+
+.page-numbers {
+    font-size: rem(18);
+    font-weight: 400;
+    color: #838383;
+}
+
+.page-numbers.current {
+    color: #007577;
+}
+
+.page-numbers.prev {
+    width: rem(6);
+    height: rem(12);
+    transform: rotate(180deg);
+    margin-right: rem(30);
+}
+
+.page-numbers.next {
+    width: rem(6);
+    height: rem(12);
+    margin-left: rem(30);
+}

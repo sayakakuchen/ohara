@@ -10,6 +10,14 @@
     }
 }
 
+.p-topNews.--white {
+    background-color: $white;
+    padding-top: 0;
+    @include mq(md) {
+        padding-top: 0;
+    }
+}
+
 .p-topNews__inner {
 
 }
@@ -39,4 +47,8 @@
     @include mq(md) {
         margin-top: rem(60);
     }
+}
+
+.p-topNews__navi {
+    margin-top: rem(80);
 }
