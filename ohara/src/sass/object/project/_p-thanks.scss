@@ -1,0 +1,31 @@
+@use 'global' as *;
+
+.p-thanks {
+    padding-block: rem(120) rem(80);
+    @include mq(md) {
+        padding-block: rem(150) rem(120);
+    }
+}
+
+.p-thanks__inner {
+
+}
+
+.p-thanks__title {
+
+}
+
+.p-thanks__text {
+    margin-top: rem(40);
+
+    @include mq(md) {
+        text-align: center;
+    }
+
+}
+
+.p-thanks__btn {
+
+    text-align: center;
+    margin-top: rem(60);
+}

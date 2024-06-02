@@ -23,21 +23,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  // ヘッダー
-  $(window).on('scroll', function () {
-    if ($('.slider1').height() < $(this).scrollTop()) {
-      $('.header').css('background', 'rgba(17,17,17,1)');
-    } else {
-      $('.header').css('background', 'rgba(17,17,17,0.5)');
-    }
-  });
-
-  //ドロワーメニュー
-  $('.navbar_toggle').on('click', function () {
-    $(this).toggleClass('open');
-    $('.menu').toggleClass('open');
-  });
-
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
     var time = 400;

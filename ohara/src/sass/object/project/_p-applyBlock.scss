@@ -1,0 +1,54 @@
+@use 'global' as *;
+
+.p-applyBlock {
+
+}
+
+.p-applyBlock__info {
+
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: rem(280) 1fr;
+        border-top: 1px solid #E2E5E5;
+    }
+}
+
+.p-applyBlock__info dt {
+    font-size: rem(16);
+    font-weight: bold;
+    line-height: calc(24/16);
+    letter-spacing: 0.08em; 
+    background-color: #EDF5F5;
+    padding: rem(4) rem(10);
+
+    @include mq(md) {
+        padding: rem(30) rem(40);
+    }
+}
+
+.p-applyBlock__info dd,
+.p-applyBlock__info dt {
+    border-bottom: 1px solid #E2E5E5;
+}
+
+.p-applyBlock__info dd {
+    padding-block: rem(10);
+    padding-inline: rem(5);
+    font-size: rem(16);
+    font-weight: 400;
+    letter-spacing: 0.08em; 
+    line-height: calc(28/16);
+    
+    @include mq(md) {
+        padding: rem(30) rem(40);
+    }
+}
+
+.p-applyblock__btn {
+    text-align: center;
+    margin-top: rem(25);
+
+    @include mq(md) {
+        margin-top: rem(50);
+    }
+}

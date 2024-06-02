@@ -1,0 +1,75 @@
+@use 'global' as *;
+
+.p-sitemap {
+    padding-block: rem(80);
+    @include mq(md) {
+        padding-block: rem(120);
+    }
+}
+
+.p-sitemap__inner {
+
+}
+
+.p-sitemap__blocks {
+    gap: rem(32);
+    display: grid;
+    @include mq(md) {
+        grid-template-columns: repeat(2,1fr);
+        gap: rem(80) rem(40);
+    }
+}
+
+.p-sitemap__block {
+
+}
+
+.p-sitemap__title {
+    font-size: rem(18);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    line-height: calc(28/18);
+    position: relative;
+    padding-bottom: rem(10);
+    border-bottom: 1px solid #E2E5E5;
+
+    @include mq(md) {
+        padding-bottom: rem(20);
+    }
+}
+
+.p-sitemap__title::before {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    background-color: $green;
+    left: 0;
+    width: rem(80);
+    height: 1px;
+}
+
+.p-sitemap__links {
+    margin-top: rem(10);
+    display: flex;
+    flex-wrap: wrap;
+    gap:rem(10) rem(20);
+
+    @include mq(md) {
+        margin-top: rem(20);
+    }
+
+}
+
+.p-sitemap__link {
+
+}
+
+.p-sitemap__link a {
+    font-size: rem(14);
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    line-height: calc(20/14);
+
+}
+
+

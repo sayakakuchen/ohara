@@ -3,13 +3,13 @@
 <%- include('./common/_head') %>
     <body>
         <header class="l-header">
-
+            <%- include('./common/_p-header') %>
         </header>
         <main>
             <section class="l-subMv">
                 <%- include('./project/_p-subMv',{
-                    title:'私たちの働き方',
-                    subtitle:'OUR WORKS',
+                    title:'応募要項',
+                    subtitle:'REQUIREMENTS',
                 }) %>
             </section>
             <div class="l-breadcrumb">
@@ -29,18 +29,15 @@
                                 <meta itemprop="position" content="2" />
                             </li>
                             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                                <span itemprop="name">私たちの働き方</span>
+                                <span itemprop="name">応募要項</span>
                                 <meta itemprop="position" content="3" />
                             </li>
                         </ol>
                     </div>
                 </div>
             </div>
-            <div class="l-jobNav">
-                <%- include('./project/_p-jobNav') %>
-            </div>
-            <section class="l-job">
-                <%- include('./project/_p-job') %>
+            <section class="l-apply">
+                <%- include('./project/_p-apply') %>
             </section>
             <section class="l-bottomContact">
                 <%- include('./project/_p-bottomContact') %>
