@@ -1,0 +1,31 @@
+@use 'global' as *;
+
+.p-interview {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+
+    @include mq(md) {
+        padding-top: rem(100);
+        padding-bottom: rem(160);
+    }
+}
+
+.p-interview__inner {
+
+}
+
+.p-interview__blocks {
+
+}
+
+.p-interview__block {
+
+}
+
+.p-interview__block + .p-interview__block {
+    margin-top: rem(110);
+
+    @include mq(md) {
+        margin-top: rem(140);
+    }
+}

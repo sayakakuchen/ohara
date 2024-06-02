@@ -1,10 +1,11 @@
 @use 'global' as *;
 
 .p-recruitCv {
-    background: url(../images/recruit/bg_recruit.jpg) center center / cover no-repeat;
-    padding-block: rem(120);
+    background: url(../images/recruit/bg_recruit_sp.jpg) center center / cover no-repeat;
+    padding-block: rem(42);
 
     @include mq(md) {
+        background: url(../images/recruit/bg_recruit.jpg) center center / cover no-repeat;
         padding-block: rem(80);
     }
 }
@@ -15,7 +16,7 @@
 
 .p-recruitCv__links {
     display: grid;
-    gap: rem(40);
+    gap: rem(20);
 
     @include mq(md) {
         grid-template-columns: repeat(2,1fr);
@@ -32,9 +33,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: rem(20);
+    gap: rem(4);
     background-color: $green;
-    padding-block: rem(40);
+    padding-block: rem(12);
 
     @include mq(md) {
         gap: rem(40);

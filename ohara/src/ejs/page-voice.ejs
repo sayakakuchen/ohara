@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+    <body>
+        <header class="l-header">
+            <%- include('./common/_p-header') %>
+        </header>
+        <main>
+            <section class="l-subMv">
+                <%- include('./project/_p-subMv',{
+                    title:'先輩の声',
+                    subtitle:'INTERVIEW',
+                }) %>
+            </section>
+            <div class="l-breadcrumb">
+                <div class="p-breadcrumb">
+                    <div class="p-breadcrumb__inner l-inner">
+                        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a itemprop="item" href="#">
+                                    <span itemprop="name">トップ</span>
+                                </a>
+                                <meta itemprop="position" content="1" />
+                            </li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <a itemprop="item" href="#">
+                                    <span itemprop="name">採用情報</span>
+                                </a>
+                                <meta itemprop="position" content="2" />
+                            </li>
+                            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                <span itemprop="name">先輩の声</span>
+                                <meta itemprop="position" content="3" />
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <section class="l-interview">
+                <%- include('./project/_p-interview') %>
+            </section>
+            <div class="l-recruitCv">
+                <%- include('./project/_p-recruitCv') %>
+            </div>
+        </main>
+        <footer class="l-footer">
+            <%- include('./common/_p-footer') %>
+        </footer>
+    </body>
+</html>
