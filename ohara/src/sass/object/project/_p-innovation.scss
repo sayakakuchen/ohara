@@ -1,7 +1,10 @@
 @use 'global' as *;
 
 .p-innovation {
-
+    padding-bottom: rem(50);
+    @include mq(md) {
+        padding-bottom: rem(120);
+    }
 }
 
 .p-innovation__inner {

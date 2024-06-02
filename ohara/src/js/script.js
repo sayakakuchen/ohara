@@ -127,6 +127,18 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".p-viewCase__now").text(nextSlide + 1);
   });
 
+  $('.js-studySlide-slider').slick({
+    variableWidth: true,
+    slidesToShow:1,
+    cssEase: "linear",
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    swipe: false, 
+    dots:false,
+    arrows:false,
+    autoplay:true,
+    speed: 10000,
+  });
 
 
 });

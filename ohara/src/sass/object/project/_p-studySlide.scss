@@ -1,7 +1,9 @@
 @use 'global' as *;
 
 .p-studySlide {
-
+    position: relative;
+    padding-block: rem(80);
+    background-color: #F8F8F8;
 }
 
 .p-studySlide__inner {
@@ -13,13 +15,48 @@
 }
 
 .p-studySlide__title {
+    position: absolute;
+    left: 0;
+    bottom: rem(124);
+    z-index: 1;
+}
 
+.p-studySlide__title.u-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.p-studySlide__title.u-desktop {
+    display: none;
+
+    @include mq(md) {
+
+    }
+}
+
+.p-studySlide__title span {
+    font-size: rem(24);
+    font-weight: bold;
+    padding: rem(12) rem(18);
+    background-color: #F8F8F8;
 }
 
 .p-studySlide__slider {
 
 }
 
-.p-studySlide__picture {
+.p-studySlide__slider .slick-list {
+    overflow: unset;
+}
 
+.p-studySlide__picture {
+    width: rem(480);
+    margin: 0 rem(25);
+}
+
+.p-studySlide__picture img {
+    aspect-ratio: 480/360;
+    height: 100%;
+    object-fit: cover;
 }
