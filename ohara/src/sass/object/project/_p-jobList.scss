@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+.p-jobList {
+    background-color: #EDF5F5;
+    padding: rem(20) rem(18) rem(35);
+    height: 100%;
+
+    @include mq(md) {
+        padding: rem(40) rem(25) rem(50);
+    }
+}
+
+.p-jobList__title {
+
+}
+
+.p-jobList__lists {
+    margin-top: rem(20);
+}
+
+.p-jobList__list {
+    position: relative;
+    font-size: rem(14);
+    line-height: calc(24/14);
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    padding-left: rem(25);
+}
+
+.p-jobList__list::before {
+    position: absolute;
+    content: "";
+    width: rem(5);
+    height: rem(5);
+    background-color: $green;
+    left: 0;
+    top: rem(10);
+    border-radius: 50%;
+}
+
+.p-jobList__list + .p-jobList__list {
+    margin-top: rem(10);
+}

@@ -1,0 +1,33 @@
+<div class="p-recruitInterview">
+    <div class="p-recruitInterview__inner l-inner">
+        <div class="p-recruitInterview__title">
+            <%- include('../component/_c-recruitTitle2',{
+                title:'INTERVIEW',
+                subtitle:'先輩の声'
+            }) %>
+        </div>
+        <div class="p-recruitInterview__cards">
+            <div class="p-recruitInterview__card">
+                <%- include('../component/_c-interviewCard',{
+                    type:'itani'
+                }) %>
+            </div>
+            <div class="p-recruitInterview__card">
+                <%- include('../component/_c-interviewCard',{
+                    type:'yamada'
+                }) %>
+            </div>
+            <div class="p-recruitInterview__card">
+                <%- include('../component/_c-interviewCard',{
+                    type:'takeuchi'
+                }) %>
+            </div>
+        </div>
+        <div class="p-recruitInterview__btn">
+            <%- include('../component/_c-btn',{
+                link:'#',
+                text:'詳しくみる'
+            }) %>
+        </div>
+    </div>
+</div>

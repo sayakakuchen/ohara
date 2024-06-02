@@ -1,0 +1,47 @@
+@use 'global' as *;
+
+.c-interviewCard {
+
+}
+
+.c-interviewCard__img {
+
+}
+
+.c-interviewCard__content {
+    margin-top: rem(20);
+}
+
+.c-interviewCard__name {
+    font-size: rem(18);
+    font-weight: bold;
+    line-height: calc(26/18);
+}
+
+.c-interviewCard__info {
+    margin-top: rem(12);
+}
+
+.c-interviewCard__info p {
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: calc(20/14);
+}
+
+.c-interviewCard__info p + p {
+    margin-top: rem(5);
+}
+
+.c-interviewCard__info p span {
+    display: inline-block;
+    color: $green;
+    font-size: rem(12);
+    font-weight: bold;
+    margin-right: rem(10);
+}
+
+.c-interviewCard__link {
+    width: rem(30);
+    margin-top: rem(5);
+    margin-left: auto;
+}

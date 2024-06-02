@@ -12,6 +12,14 @@
     font-weight: 300;
     letter-spacing: 0.08em;
     line-height: calc(22/18);
+
+    @include mq(md) {
+        
+    }
+}
+
+.c-singleTitle__sub.--white {
+    color: $white;
 }
 
 .c-singleTitle__sub.--left {
@@ -41,4 +49,8 @@
 
 .c-singleTitle__main.--sp-left {
     text-align: left;
+}
+
+.c-singleTitle__main.--white {
+    color: $white;
 }

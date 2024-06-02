@@ -1,0 +1,55 @@
+<% if ( type === "itani" ){ %>
+<a href="#" class="c-interviewCard">
+    <picture class="c-interviewCard__img">
+        <source srcset="./images/recruit/itani.webp" type="image/webp" />
+        <img src="./images/recruit/itani.jpg" alt="井谷 研">
+    </picture>
+    <div class="c-interviewCard__content">
+        <p class="c-interviewCard__name">井谷 研（イタニ　ケン）</p>
+        <div class="c-interviewCard__info">
+            <p><span>【入社年】</span>2008年入社16年目/転職</p>
+            <p><span>【所属】</span>製造部</p>
+            <p><span>【担当】</span>繊維加工剤の生産、在庫管理、発送</p>
+        </div>
+        <div class="c-interviewCard__link">
+            <%- include('../component/_c-link') %>
+        </div>
+    </div>
+</a>
+<% } else if ( type==="yamada"){ %>
+    <a href="#" class="c-interviewCard">
+        <picture class="c-interviewCard__img">
+            <source srcset="./images/recruit/yamada.webp" type="image/webp" />
+            <img src="./images/recruit/yamada.jpg" alt="山田 瑞穂">
+        </picture>
+        <div class="c-interviewCard__content">
+            <p class="c-interviewCard__name">山田 瑞穂（ヤマダ　ミズホ）</p>
+            <div class="c-interviewCard__info">
+                <p><span>【入社年】</span>2017年 入社7年目/転職</p>
+                <p><span>【所属】</span>技術開発部</p>
+                <p><span>【担当】</span>ウレタン樹脂開発補佐、品質管理、依頼試験​</p>
+            </div>
+            <div class="c-interviewCard__link">
+                <%- include('../component/_c-link') %>
+            </div>
+        </div>
+    </a>
+<% } else if (type==="takeuchi"){%>
+    <a href="#" class="c-interviewCard">
+        <picture class="c-interviewCard__img">
+            <source srcset="./images/recruit/takeuchi.webp" type="image/webp" />
+            <img src="./images/recruit/takeuchi.jpg" alt="竹内 勇人">
+        </picture>
+        <div class="c-interviewCard__content">
+            <p class="c-interviewCard__name">竹内 勇人（タケウチ　ハヤト）</p>
+            <div class="c-interviewCard__info">
+                <p><span>【入社年】</span>2021年 入社3年目/転職</p>
+                <p><span>【所属】</span>営業課</p>
+                <p><span>【担当】</span>繊維加工剤の営業ならびに新規事業開拓</p>
+            </div>
+            <div class="c-interviewCard__link">
+                <%- include('../component/_c-link') %>
+            </div>
+        </div>
+    </a>
+<% } %>

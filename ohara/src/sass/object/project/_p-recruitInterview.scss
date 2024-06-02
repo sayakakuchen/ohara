@@ -1,0 +1,52 @@
+@use 'global' as *;
+
+.p-recruitInterview {
+    padding-top: rem(70);
+    padding-bottom: rem(40);
+    overflow: hidden;
+
+    @include mq(md) {
+        padding-block: rem(120);
+    }
+}
+
+.p-recruitInterview__inner {
+
+}
+
+.p-recruitInterview__title {
+
+}
+
+.p-recruitInterview__cards {
+    position: relative;
+    display: grid;
+    gap: rem(50);
+    margin-top: rem(40);
+
+    @include mq(md) {
+        grid-template-columns: repeat(3,1fr);
+        gap: rem(30);
+    }
+}
+
+.p-recruitInterview__cards::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background-color: #EDF5F5;
+    height: rem(280);
+    top: rem(66);
+    left: 0;
+    z-index: -1;
+}
+
+.p-recruitInterview__card {
+
+}
+
+.p-recruitInterview__btn {
+    text-align: center;
+    margin-top: rem(40);
+}

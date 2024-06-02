@@ -1,0 +1,37 @@
+@use 'global' as *;
+
+.c-recruitTitle {
+    position: relative;
+    padding-bottom: rem(20);
+}
+
+.c-recruitTitle::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: rem(2);
+    width: rem(40);
+    background-color: $green;
+
+}
+
+.c-recruitTitle__en {
+    text-align: center;
+    font-size: rem(18);
+    font-family: $en-font;
+    color: $green;
+    letter-spacing: 0.12em;
+    line-height: calc(22/18);
+    text-transform: uppercase;
+}
+
+.c-recruitTitle__main {
+    text-align: center;
+    font-size: rem(32);
+    font-weight: bold;
+    line-height: calc(46/32);
+    letter-spacing: 0.08em;
+    margin-top: rem(10);
+}

@@ -1,0 +1,26 @@
+@use 'global' as *;
+
+.p-recruitIntro {
+    
+    padding-top: rem(20);
+
+    @include mq(md) {
+        padding-top: rem(110);
+    }
+
+}
+
+.p-recruitIntro__inner {
+
+}
+
+.p-recruitIntro__text {
+    font-size: rem(18);
+    font-weight: 400;
+    line-height: calc(31/18);
+    letter-spacing: 0.08em;
+    @include mq(md) {
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,51 @@
+@use 'global' as *;
+
+.p-recruitData {
+    background-color: #EDF5F5;
+    padding-block: rem(50);
+
+    @include mq(md) {
+        padding-block: rem(120);
+    }
+}
+
+.p-recruitData__inner {
+
+}
+
+.p-recruitData__title {
+
+}
+
+.p-recruitData__cards {
+    margin-top: rem(30);
+}
+
+.p-recruitData__card {
+    display: grid;
+    gap: rem(20);
+}
+
+.p-recruitData__card + .p-recruitData__card  {
+    margin-top: rem(20);
+}
+
+.p-recruitData__card.--1 {
+    @include mq(md) {
+        grid-template-columns: 45% 1fr;
+    }
+}
+
+.p-recruitData__card.--2 {
+    @include mq(md) {
+        grid-template-columns: repeat(3,1fr);
+        gap: rem(20);
+    }
+}
+
+.p-recruitData__card.--3 {
+    @include mq(md) {
+        grid-template-columns: repeat(2,1fr);
+        gap: rem(20);
+    }
+}

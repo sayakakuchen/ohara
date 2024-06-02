@@ -1,0 +1,51 @@
+@use 'global' as *;
+
+.p-recruitCv {
+    background: url(../images/recruit/bg_recruit.jpg) center center / cover no-repeat;
+    padding-block: rem(120);
+
+    @include mq(md) {
+        padding-block: rem(80);
+    }
+}
+
+.p-recruitCv__inner {
+
+}
+
+.p-recruitCv__links {
+    display: grid;
+    gap: rem(40);
+
+    @include mq(md) {
+        grid-template-columns: repeat(2,1fr);
+        gap: rem(80);
+    }
+}
+
+.p-recruitCv__link {
+
+}
+
+.p-recruitCv__link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: rem(20);
+    background-color: $green;
+    padding-block: rem(40);
+
+    @include mq(md) {
+        gap: rem(40);
+        padding-block: rem(50);
+    }
+}
+
+.p-recruitCv__text {
+
+}
+
+.p-recruitCv__arrow {
+
+}

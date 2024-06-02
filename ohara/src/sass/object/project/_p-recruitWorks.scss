@@ -1,0 +1,116 @@
+@use 'global' as *;
+
+.p-recruitWorks {
+    padding-top: rem(60);
+
+    @include mq(md) {
+        padding-top: rem(120);
+    }
+}
+
+.p-recruitWorks__inner {
+    @include mq(md) {
+        position: relative;
+        padding-bottom: rem(80);
+    }
+}
+
+.p-recruitWorks__inner::before {
+    @include mq(md) {
+        position: absolute;
+        content: "";
+        right: 0;
+        margin-right: calc(50% - 50vw);
+        width: calc((32.8%) + (50vw - 50%));
+        background-color: #EDF5F5;
+        top: 0;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.p-recruitWorks__title {
+
+}
+
+.p-recruitWorks__cards {
+    margin-top: rem(30);
+
+    @include mq(md) {
+        max-width: rem(710);
+        margin-left: auto;
+        margin-top: rem(-40);
+    }
+
+}
+
+.p-recruitWorks__card {
+    background-color: $white;
+    height: rem(80);
+    box-shadow: 0 0 rem(10) rgba($color: #000000, $alpha: 0.16);
+
+    @include mq(md) {
+        height: rem(140);
+    }
+}
+
+.p-recruitWorks__card a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding-left: rem(2);
+    padding-block: rem(5);
+
+    @include mq(md) {
+        padding-left: rem(50);
+    }
+}
+
+.p-recruitWorks__card + .p-recruitWorks__card  {
+    margin-top: rem(15);
+
+    @include mq(md) {
+        margin-top: rem(20);
+    }
+}
+
+.p-recruitWorks__icon {
+    width: rem(70);
+    margin-right: rem(5);
+
+    @include mq(md) {
+        margin-right: rem(20);
+    }
+}
+
+.p-recruitWorks__text {
+    position: relative;
+    z-index: 1;
+    font-size: rem(18);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+
+    @include mq(md) {
+        font-size: rem(24);
+    }
+}
+
+.p-recruitWorks__img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: rem(142);
+
+    @include mq(md) {
+        width: rem(248);
+    }
+}
+
+.p-recruitWorks__img img {
+    height: 100%;
+    object-fit: cover;
+}

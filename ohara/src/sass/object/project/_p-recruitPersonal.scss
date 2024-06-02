@@ -1,0 +1,59 @@
+@use 'global' as *;
+
+.p-recruitPersonal {
+    background-color: #EDF5F5;
+    padding-block: rem(50);
+
+    @include mq(md) {
+        padding-block: rem(120);
+    }
+}
+
+.p-recruitPersonal__inner {
+
+}
+
+.p-recruitPersonal__title {
+
+}
+
+.p-recruitPersonal__box {
+    background-color: $white;
+    padding: rem(20) rem(30);
+    margin-top: rem(40);
+
+    @include mq(md) {
+        padding: rem(50) rem(60) rem(65);
+        margin-top: rem(60);
+    }
+}
+
+.p-recruitPersonal__subtitle {
+    position: relative;
+    text-align: center;
+    font-size: rem(28);
+    font-weight: bold;
+    color: $green;
+    letter-spacing: 0.08em;
+    line-height: calc(38/28);
+    padding-bottom: rem(20);
+
+    @include mq(md) {
+        padding-bottom: rem(10);
+    }
+}
+
+.p-recruitPersonal__subtitle::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: rem(40);
+    height: rem(2);
+    background-color: $green;
+}
+
+.p-recruitPersonal__text {
+    margin-top: rem(30);
+}

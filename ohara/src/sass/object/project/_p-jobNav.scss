@@ -1,0 +1,68 @@
+@use 'global' as *;
+
+.p-jobNav {
+
+    padding-top: rem(80);
+
+    @include mq(md) {
+        padding-top: rem(140);
+    }
+}
+
+.p-jobNav__inner {
+
+}
+
+.p-jobNav__links {
+
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: flex-end;
+        gap: rem(1);
+    }
+
+}
+
+.p-jobNav__link {
+    max-width: rem(270);
+    width: 100%;
+    margin-inline: auto;
+}
+
+.p-jobNav__link + .p-jobNav__link {
+    margin-top: rem(10);
+}
+
+.p-jobNav__link a {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: rem(18);
+    padding: rem(20) rem(30);
+    background-color: #E1E5E5;
+    transition: all 0.3s;
+}
+
+.p-jobNav__link span {
+    font-size: rem(28);
+    font-family: $en-font2;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    margin-right: rem(10);
+    display: inline-block;
+}
+
+.p-jobNav__link small {
+    font-size: rem(12);
+}
+
+.p-jobNav__link.is-active a {
+    color: $white;
+    background-color: $green;
+
+    @include mq(md) {
+        padding-block: rem(30);
+    }
+}

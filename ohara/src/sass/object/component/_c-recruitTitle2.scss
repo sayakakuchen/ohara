@@ -1,0 +1,42 @@
+@use 'global' as *;
+
+.c-recruitTitle2 {
+
+}
+
+.c-recruitTitle2__sub {
+    position: relative;
+    font-size: rem(16);
+    color: $green;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    line-height: calc(24/16);
+    padding-left: rem(15);
+}
+
+.c-recruitTitle2__sub::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: rem(5);
+    height: rem(5);
+    background-color: $green;
+    border-radius: 50%;
+}
+
+.c-recruitTitle2__main {
+    font-size: rem(36);
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    line-height: calc(42/36);
+    color: $green;
+    text-transform: uppercase;
+    margin-top: rem(10);
+
+    @include mq(md) {
+        font-size: rem(72);
+        line-height: calc(86/72);
+    }
+}

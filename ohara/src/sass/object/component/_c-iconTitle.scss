@@ -1,0 +1,21 @@
+@use 'global' as *;
+
+.c-iconTitle {
+    display: flex;
+    align-items: center;
+    font-size: rem(24);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+}
+
+.c-iconTitle.--center {
+    justify-content: center;
+    @include mq(md) {
+        
+    }
+}
+
+.c-iconTitle img {
+    width: rem(60);
+    margin-right: rem(25);
+}
