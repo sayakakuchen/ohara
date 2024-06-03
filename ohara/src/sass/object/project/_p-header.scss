@@ -1,0 +1,82 @@
+@use 'global' as *;
+
+.p-header {
+    position: fixed;
+    width: 100%;
+    height: rem(44);
+    top: 0;
+    left: 0;
+    background-color: $white;
+    z-index: 9;
+
+    @include mq(md) {
+        height: rem(108);
+    }
+}
+
+.p-header__inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: $padding-sp;
+
+    @include mq(md) {
+        padding-inline: rem(40);
+    }
+}
+
+.p-header__logo {
+    max-width: rem(232);
+
+    @include mq(md) {
+        max-width: rem(340);
+    }
+
+}
+
+.p-header__logo a {
+    display: block;
+}
+
+.p-header__contact {
+    height: 100%;
+    width: rem(44);
+    margin-left: auto;
+
+    a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00A1A3;
+    }
+
+    img {
+        width: rem(24);
+    }
+
+    @include mq(md) {
+        display: none;
+    }
+
+}
+
+.p-header__hamburger {
+    height: 100%;
+    width: rem(44);
+
+    @include mq(md) {
+        display: none;
+    }
+
+}
+
+
+.p-header__globalNav {
+    display: none;
+
+    @include mq(md) {
+        display: block;
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,80 @@
+@use 'global' as *;
+
+.p-drawer {
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - rem(44));
+    top: rem(44);
+    left: 0;
+    overflow-y: scroll;
+    background-color: $white;
+    padding-bottom: rem(90);
+    display: none;
+}
+
+.p-drawer__inner {
+
+}
+
+.p-drawer__nav {
+    border-top: 1px solid #CCCCCC;
+}
+
+.p-drawer__links {
+
+}
+
+.p-drawer__link {
+    position: relative;
+}
+
+.p-drawer__link a {
+    display: flex;
+    align-items: center;
+    height: rem(50);
+    font-size: rem(16);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    padding-inline: rem(20);
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.p-drawer__button {
+    position: absolute;
+    height: rem(50);
+    width: rem(60);
+    right: 0;
+    display: inline-block;
+    top: 0;
+}
+
+.p-drawer__button::before {
+    position: absolute;
+    content: "";
+    top: rem(23);
+    width: rem(10);
+    right: rem(27);
+    height: rem(7);
+    background-color: $green;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    transition: all 0.3s;
+}
+
+.p-drawer__button.is-active::before {
+    transform: rotate(180deg);
+}
+
+.p-drawer__subLinks {
+    display: none;
+}
+
+.p-drawer__subLink {
+
+}
+
+.p-drawer__subLink a {
+    font-size: rem(14);
+    font-weight: 500;
+    color: #9D9B9B;
+}

@@ -116,3 +116,8 @@ $mediaquerys: (
     display: none;
   }
 }
+
+
+html.is-fixed {
+  overflow: hidden;
+}

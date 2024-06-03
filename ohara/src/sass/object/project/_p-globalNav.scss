@@ -1,0 +1,120 @@
+@use 'global' as *;
+
+.p-globalNav {
+
+}
+
+.p-globalNav__top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.p-globalNav__translate {
+    display: flex;
+}
+
+.p-globalNav__translate li {
+
+}
+
+.p-globalNav__translate li:first-child {
+    border-right: 1px solid $black;
+}
+
+.p-globalNav__translate li:first-child a {
+    color: $green;
+}
+
+.p-globalNav__translate li a {
+    display: inline-block;
+    font-size: rem(12);
+    font-family: $en-font;
+    letter-spacing: 0.04em;
+    padding-inline: rem(10);
+}
+
+.p-globalNav__contact {
+    margin-left: rem(20);
+}
+
+.p-globalNav__contact a {
+    color: $white;
+    background-color: $green;
+    font-size: rem(12);
+    font-weight: bold;
+    padding: rem(6) rem(20);
+}
+
+.p-globalNav__links {
+    display: flex;
+    align-items: center;
+    gap: rem(40);
+    margin-top: rem(16);
+}
+
+.p-globalNav__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.p-globalNav__link a {
+    font-size: rem(14);
+    font-weight: bold;
+    letter-spacing: 0.04em;
+}
+
+.p-globalNav__button {
+    position: relative;
+    display: inline-block;
+    width: rem(20);
+    height: rem(20);
+    cursor: pointer;
+}
+
+.p-globalNav__button::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: rem(10);
+    height: rem(7);
+    background-color: $green;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    transition: all 0.3s;
+    transform: translate(-50%,-50%);
+}
+
+.p-globalNav__subLinks {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+    top: rem(32);
+    left: rem(-20);
+    background-color: $white;
+    padding-inline: rem(20);
+    padding-bottom: rem(20);
+    transition: all 0.3s;
+}
+
+
+.p-globalNav__link:has(.p-globalNav__subLinks):hover .p-globalNav__subLinks {
+    opacity: 1;
+    visibility: visible;
+}
+
+.p-globalNav__subLink {
+
+}
+
+.p-globalNav__subLink a {
+    font-size: rem(14);
+    font-weight: 500;
+    color: #9D9B9B;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    line-height: calc(20/14);
+}

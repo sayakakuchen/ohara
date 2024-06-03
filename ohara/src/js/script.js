@@ -83,11 +83,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   $('.js-mv-modal').click(function(){
     let index = $(this).index();
     $('.p-mvModal').fadeIn();
+    $('html').addClass('is-fixed');
     $('.p-mvModal__content').eq(index - 1).fadeIn();
   });
 
   $('.js-mv-modal-close').click(function(){
     $('.p-mvModal').fadeOut();
+    $('html').removeClass('is-fixed');
     $('.p-mvModal__content').fadeOut();
   });
 
@@ -124,6 +126,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     autoplay:true,
     speed: 10000,
   });
+
+  $('.js-drawer-button').click(function(){
+    $(this).toggleClass('is-active');
+    $(this).next().slideToggle();
+  });
+
+  $('.js-hamburger').click(function(){
+    var isExpanded = $(this).attr('aria-expanded') === 'true';
+    $(this).attr('aria-expanded', !isExpanded);
+    $('.p-drawer').attr('aria-hidden', isExpanded);
+    $(this).toggleClass('is-active');
+    $('.p-drawer').fadeToggle();
+    $('html').toggleClass('is-fixed');
+  });
+
+  
 
 
 });
