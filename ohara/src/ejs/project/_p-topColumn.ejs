@@ -20,7 +20,12 @@
                 </div>
             </div>
             <div class="p-topColumn__slider js-column-slider">
-                <% for ( var i = 0; i < 3; i++ ){ %>
+                <div class="p-topColumn__card">
+                    <%- include('../component/_c-card',{
+                        tag:'true'
+                    }) %>
+                </div>
+                <% for ( var i = 0; i < 2; i++ ){ %>
                 <div class="p-topColumn__card">
                     <%- include('../component/_c-card') %>
                 </div>
