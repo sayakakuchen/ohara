@@ -93,3 +93,17 @@
         margin-top: rem(80);
     }
 }
+
+.p-single__content ul {
+    list-style: disc;
+    margin-left: 1em;
+}
+
+.p-single__content h2 {
+    padding-left: rem(20);
+    border-left: rem(2) solid $green;
+
+    @include mq(md) {
+        padding-left: rem(30);
+    }
+}

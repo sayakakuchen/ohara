@@ -91,6 +91,7 @@
     position: absolute;
     top: 0;
     left: rem(14);
+    height: rem(80);
 
     @include mq(md) {
         top: rem(25);
@@ -127,6 +128,7 @@
     height: rem(80);
     width: fit-content;
     margin-left: auto;
+    text-align: right;
     margin-top: rem(18);
     margin-right: rem(20);
 
@@ -140,8 +142,10 @@
 
 .p-mvModal__img img {
     height: 100%;
-    width: 100%;
+    // width: 100%;
+    width: auto;
     object-fit: contain;
+    display: inline;
 }
 
 .p-mvModal__blocks {

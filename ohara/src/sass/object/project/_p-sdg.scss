@@ -150,7 +150,7 @@
     }
 }
 
-.p-sdg__goals.--initial {
+.p-sdg__unit:not(:first-child) .p-sdg__goals.--initial {
     @include mq(md) {
         top: rem(16);
     }

@@ -86,7 +86,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                 </div>
                 <div class="p-footer__bottom">
                     <p class="p-footer__copy">Copyright &copy; OHARA PARAGIUM CHEMICAL CO. LTD. <br class="u-mobile">All rights reserved.</p>
-                    <p class="p-footer__sitemap u-desktop">サイトマップ</p>
+                    <p class="p-footer__sitemap u-desktop"><a href="<?php echo $sitemap; ?>">サイトマップ</a></p>
                 </div>
             </div>
         </div>

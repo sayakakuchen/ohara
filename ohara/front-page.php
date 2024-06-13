@@ -1,3 +1,32 @@
+<?php 
+
+$home = esc_html(home_url());
+$news = esc_html(home_url('/news/'));
+$company = esc_html(home_url('/company/'));
+$message = esc_html(home_url('/company/message/'));
+$mission = esc_html(home_url('/company/mission/'));
+$about = esc_html(home_url('/company/about/'));
+$history = esc_html(home_url('/company/history/'));
+$office = esc_html(home_url('/company/office/'));
+$service = esc_html(home_url('/service/'));
+$textile = esc_html(home_url('/service/textile-processing/'));
+$pcp = esc_html(home_url('/service/pcp-mof/'));
+$sustainability = esc_html(home_url('/sustainability/'));
+$study = esc_html(home_url('/study/'));
+$recruit = esc_html(home_url('/recruit/'));
+$manufact = esc_html(home_url('/recruit/manufacturing/'));
+$technology = esc_html(home_url('/recruit/technology-development/'));
+$sales = esc_html(home_url('/recruit/sales/'));
+$office_work = esc_html(home_url('/recruit/office-work/'));
+$voice = esc_html(home_url('/recruit/voice/'));
+$application = esc_html(home_url('/recruit/application/'));
+$entry = esc_html(home_url('/recruit/entry/'));
+$column = esc_html(home_url('/column/'));
+$contact = esc_html(home_url('/contact/'));
+$sitemap = esc_html(home_url('/sitemap/'));
+
+?>
+
 <?php get_header(); ?>
     <main>
         <section class="l-mv">
@@ -852,61 +881,46 @@
                             <h2 class="c-title__main --black --small">最新情報</h2>
                         </hgroup>
                     </div>
+                    <?php
+                        $args = array(
+                            'post_type' => 'news', 
+                            'posts_per_page' => 3 
+                        );
+                        $the_query = new WP_Query($args); if($the_query->have_posts()):
+                    ?>
                     <div class="p-topNews__cards">
+                        <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+                        <?php $terms = get_the_terms($post->ID, 'news_category'); ?>
                         <div class="p-topNews__card">
-                            <a href="#" class="c-rowCard">
+                            <a href="<?php the_permalink(); ?>" class="c-rowCard">
                                 <picture class="c-rowCard__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/thumbnail2.jpg" alt="アイキャッチ画像">
+                                    <?php if (has_post_thumbnail()): ?>
+                                       <?php the_post_thumbnail('large'); ?>
+                                    <?php else: ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/noimage.png" alt="アイキャッチ画像">
+                                    <?php endif; ?>
                                 </picture>
                                 <div class="c-rowCard__content">
                                     <div class="c-rowCard__info">
-                                        <time class="c-rowCard__time">2020.02.14</time>
+                                        <time class="c-rowCard__time" datetime="<?php echo get_the_date('Y.m.d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
+                                        <?php if($terms): ?>
                                         <ul class="c-rowCard__tags">
-                                            <li class="c-rowCard__tag c-tag">カテゴリが入ります</li>
+                                            <?php foreach( $terms as $term ): ?>
+                                            <li class="c-rowCard__tag c-tag"><?php echo $term->name; ?></li>
+                                            <?php endforeach; ?>
                                         </ul>
+                                        <?php endif; ?>
                                     </div>
-                                    <p class="c-rowCard__title">タイトルが入ります。ダミーテキストダミーテキスト</p>
-                                    <p class="c-rowCard__text c-text"> 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入説明テキストが入ります… </p>
+                                    <p class="c-rowCard__title"><?php the_title(); ?></p>
+                                    <div class="c-rowCard__text c-text"><?php the_excerpt(); ?></div>
                                 </div>
                             </a>
                         </div>
-                        <div class="p-topNews__card">
-                            <a href="#" class="c-rowCard">
-                                <picture class="c-rowCard__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/thumbnail2.jpg" alt="アイキャッチ画像">
-                                </picture>
-                                <div class="c-rowCard__content">
-                                    <div class="c-rowCard__info">
-                                        <time class="c-rowCard__time">2020.02.14</time>
-                                        <ul class="c-rowCard__tags">
-                                            <li class="c-rowCard__tag c-tag">カテゴリが入ります</li>
-                                        </ul>
-                                    </div>
-                                    <p class="c-rowCard__title">タイトルが入ります。ダミーテキストダミーテキスト</p>
-                                    <p class="c-rowCard__text c-text"> 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入説明テキストが入ります… </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="p-topNews__card">
-                            <a href="#" class="c-rowCard">
-                                <picture class="c-rowCard__img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/thumbnail2.jpg" alt="アイキャッチ画像">
-                                </picture>
-                                <div class="c-rowCard__content">
-                                    <div class="c-rowCard__info">
-                                        <time class="c-rowCard__time">2020.02.14</time>
-                                        <ul class="c-rowCard__tags">
-                                            <li class="c-rowCard__tag c-tag">カテゴリが入ります</li>
-                                        </ul>
-                                    </div>
-                                    <p class="c-rowCard__title">タイトルが入ります。ダミーテキストダミーテキスト</p>
-                                    <p class="c-rowCard__text c-text"> 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入説明テキストが入ります… </p>
-                                </div>
-                            </a>
-                        </div>
+                        <?php endwhile; ?>
                     </div>
+                    <?php endif; ?>
                     <div class="p-topNews__btn">
-                        <a href="#" class="c-btn "> 最新情報 <div class="c-btn__link">
+                        <a href="<?php echo $news; ?>" class="c-btn "> 最新情報 <div class="c-btn__link">
                                 <div class="c-link "><span></span></div>
                             </div>
                         </a>
@@ -927,7 +941,7 @@
                             </div>
                             <p class="p-topColumn__text c-text"> テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 </p>
                             <div class="p-topColumn__more">
-                                <a href="#" class="c-more"> もっとみる <div class="c-more__link">
+                                <a href="<?php echo $column; ?>" class="c-more"> もっとみる <div class="c-more__link">
                                         <div class="c-link "><span></span></div>
                                     </div>
                                 </a>
@@ -994,7 +1008,7 @@
                             </div>
                             <p class="p-topCompany__text c-text"> 大原パラヂウム化学は1926年に京都の地で創業して以来、新たなる『快適環境』を提案すべく日本発信、京都発信型の独自の技術確立を行い、激化する他国との競争に勝てる魅力を創出し続けています。 今後も自然に優しく調和しながらニーズを新たに創出し、ファインケミカルの分野でオンリーワンを目指していきます。 また独創的な創造型チャレンジ企業として、中国・青島大原化学有限公司との連携を生かしたグローバルな展開を軸とし、更なる大きな躍進を続けています。 </p>
                             <div class="p-topCompany__btn">
-                                <a href="#" class="c-btn "> 企業情報トップ <div class="c-btn__link">
+                                <a href="<?php echo $company; ?>" class="c-btn "> 企業情報トップ <div class="c-btn__link">
                                         <div class="c-link "><span></span></div>
                                     </div>
                                 </a>
@@ -1021,7 +1035,7 @@
                         <p class="p-topService__text c-text"> テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 </p>
                     </div>
                     <div class="p-topService__btn">
-                        <a href="#" class="c-btn "> 事業紹介トップ <div class="c-btn__link">
+                        <a href="<?php echo $service; ?>" class="c-btn "> 事業紹介トップ <div class="c-btn__link">
                                 <div class="c-link "><span></span></div>
                             </div>
                         </a>
@@ -1029,14 +1043,14 @@
                     <div class="p-topService__wrap">
                         <ul class="p-topService__links">
                             <li class="p-topService__link">
-                                <a href="#">
+                                <a href="<?php echo $textile; ?>">
                                     <span>Service 01</span>繊維加工剤 <div class="p-topService__circle">
                                         <div class="c-link "><span></span></div>
                                     </div>
                                 </a>
                             </li>
                             <li class="p-topService__link">
-                                <a href="#">
+                                <a href="<?php echo $pcp; ?>">
                                     <span>Service 02</span>PCP/MOF <div class="p-topService__circle">
                                         <div class="c-link "><span></span></div>
                                     </div>
@@ -1065,7 +1079,7 @@
                                 </div>
                                 <p class="p-block__text c-text"> テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 </p>
                                 <div class="p-block__btn">
-                                    <a href="#" class="c-btn "> サステナビリティ <div class="c-btn__link">
+                                    <a href="<?php echo $sustainability; ?>" class="c-btn "> サステナビリティ <div class="c-btn__link">
                                             <div class="c-link "><span></span></div>
                                         </div>
                                     </a>
@@ -1094,7 +1108,7 @@
                                 </div>
                                 <p class="p-block__text c-text"> テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 </p>
                                 <div class="p-block__btn">
-                                    <a href="#" class="c-btn "> 研究 <div class="c-btn__link">
+                                    <a href="<?php echo $study; ?>" class="c-btn "> 研究 <div class="c-btn__link">
                                             <div class="c-link "><span></span></div>
                                         </div>
                                     </a>
@@ -1123,7 +1137,7 @@
                                 </div>
                                 <p class="p-block__text c-text"> 私たちは、身の回りから世界情勢にまで目を向けて様々な「不快」にアンテナをはります。<br> その不快を1つでも「快適」に変えていくのが私たちのミッションです。<br> 発想や想いに文系・理系は関係ありません。あくまでも化学はツールです。<br> あなたの「快適創造力」を当社で発揮しましょう。<br> 「これからのワクワクする100年」を共に創り、成長していける仲間を募集します。 </p>
                                 <div class="p-block__btn">
-                                    <a href="#" class="c-btn "> 採用情報トップ <div class="c-btn__link">
+                                    <a href="<?php echo $recruit; ?>" class="c-btn "> 採用情報トップ <div class="c-btn__link">
                                             <div class="c-link "><span></span></div>
                                         </div>
                                     </a>

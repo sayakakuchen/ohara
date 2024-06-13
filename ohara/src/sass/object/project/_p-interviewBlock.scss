@@ -36,7 +36,7 @@
     margin-left: calc(50% - 50vw);
 
     @include mq(md) {
-        max-width: rem(940);
+        max-width: vw(1440,940);
         margin-top: rem(-36);
     }
 }

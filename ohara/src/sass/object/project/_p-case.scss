@@ -19,10 +19,12 @@
 }
 
 .p-case__items {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: rem(33) rem(40);
-    margin-top: rem(60);
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: rem(33) rem(40);
+        margin-top: rem(60);
+    }
 }
 
 .p-case__item {

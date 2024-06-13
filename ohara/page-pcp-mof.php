@@ -50,13 +50,13 @@ $sitemap = esc_html(home_url('/sitemap/'));
                 <div class="p-breadcrumb__inner l-inner">
                     <ol itemscope itemtype="https://schema.org/BreadcrumbList">
                         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <a itemprop="item" href="#">
+                            <a itemprop="item" href="<?php echo $home; ?>">
                                 <span itemprop="name">トップ</span>
                             </a>
                             <meta itemprop="position" content="1" />
                         </li>
                         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <a itemprop="item" href="#">
+                            <a itemprop="item" href="<?php echo $service; ?>">
                                 <span itemprop="name">事業紹介</span>
                             </a>
                             <meta itemprop="position" content="2" />

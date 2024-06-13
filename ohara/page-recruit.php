@@ -1,54 +1,50 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
-    <!-- meta情報 -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!-- ogp -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:card" content="summary" />
-    <!-- ファビコン -->
-    <link rel="icon" href="#" />
-    <!-- css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.css" integrity="sha512-jGFXuWMxJUKzdfBmoyqCXz9k2AU3Z/ZNoayoUPEBAtJZjHbTbw50AxTR1ICVPQJbSamH9ny1JwOur0x4WOdcWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.js" integrity="sha512-h9EJXfmlmVdpFZ29kqabqCKeTizzs6ZPILjcJnGptrcYy6WUgMovQRca2KQE93Yp3MDRZoHr2L8GzKkOjQ57eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="./js/script.js"></script>
-</head>
-<body>
-    <header class="l-header">
-    </header>
+<?php 
+
+$home = esc_html(home_url());
+$news = esc_html(home_url('/news/'));
+$company = esc_html(home_url('/company/'));
+$message = esc_html(home_url('/company/message/'));
+$mission = esc_html(home_url('/company/mission/'));
+$about = esc_html(home_url('/company/about/'));
+$history = esc_html(home_url('/company/history/'));
+$office = esc_html(home_url('/company/office/'));
+$service = esc_html(home_url('/service/'));
+$textile = esc_html(home_url('/service/textile-processing/'));
+$pcp = esc_html(home_url('/service/pcp-mof/'));
+$sustainability = esc_html(home_url('/sustainability/'));
+$study = esc_html(home_url('/study/'));
+$recruit = esc_html(home_url('/recruit/'));
+$manufact = esc_html(home_url('/recruit/manufacturing/'));
+$technology = esc_html(home_url('/recruit/technology-development/'));
+$sales = esc_html(home_url('/recruit/sales/'));
+$office_work = esc_html(home_url('/recruit/office-work/'));
+$voice = esc_html(home_url('/recruit/voice/'));
+$application = esc_html(home_url('/recruit/application/'));
+$entry = esc_html(home_url('/recruit/entry/'));
+$column = esc_html(home_url('/column/'));
+$contact = esc_html(home_url('/contact/'));
+$sitemap = esc_html(home_url('/sitemap/'));
+
+?>
+
+<?php get_header(); ?>
     <main>
         <section class="l-recruitMv">
             <div class="p-recruitMv">
                 <div class="p-recruitMv__inner l-inner">
                     <picture class="p-recruitMv__img">
-                        <source srcset="./images/recruit/mv_pc.webp" media="(min-width:768px)" type="image/webp" />
-                        <source srcset="./images/recruit/mv_pc.jpg" media="(min-width:768px)" />
-                        <source srcset="./images/recruit/mv_sp.webp" type="image/webp" />
-                        <img src="./images/recruit/mv_sp.jpg" alt="ファーストビュー">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/mv_pc.webp" media="(min-width:768px)" type="image/webp" />
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/mv_pc.jpg" media="(min-width:768px)" />
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/mv_sp.webp" type="image/webp" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/mv_sp.jpg" alt="ファーストビュー">
                     </picture>
                     <hgourp class="p-recruitMv__title">
                         <p class="p-recruitMv__sub">Create comfort and make your life fun</p>
                         <h1 class="p-recruitMv__main"> 快適を創造し、<br>豊かな人生を </h1>
                     </hgourp>
                     <div class="p-recruitMv__btn">
-                        <a href="#" class="c-btn">
-                            <img src="./images/common/entry.svg" alt="アイコン"> ENTRY <div class="c-btn__link">
+                        <a href="<?php echo $entry; ?>" class="c-btn">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/entry.svg" alt="アイコン"> ENTRY <div class="c-btn__link">
                                 <div class="c-link "><span></span></div>
                             </div>
                         </a>
@@ -74,8 +70,8 @@
                     </div>
                     <div class="p-greeting__wrap">
                         <picture class="p-greeting__img">
-                            <source srcset="./images/recruit/message.webp" type="image/webp" />
-                            <img src="./images/recruit/message.jpg" alt="ごあいさつ">
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/message.webp" type="image/webp" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/message.jpg" alt="ごあいさつ">
                         </picture>
                         <div class="p-greeting__content">
                             <div class="p-greeting__text c-text">
@@ -102,46 +98,46 @@
                     </div>
                     <div class="p-recruitWorks__cards">
                         <div class="p-recruitWorks__card">
-                            <a href="#">
+                            <a href="<?php echo $manufact; ?>">
                                 <picture class="p-recruitWorks__icon">
-                                    <img src="./images/recruit/icon_01.png" alt="アイコン">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/icon_01.png" alt="アイコン">
                                 </picture>
                                 <p class="p-recruitWorks__text">製造職</p>
                                 <picture class="p-recruitWorks__img">
-                                    <img src="./images/recruit/works_01.jpg" alt="製造職">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/works_01.jpg" alt="製造職">
                                 </picture>
                             </a>
                         </div>
                         <div class="p-recruitWorks__card">
-                            <a href="#">
+                            <a href="<?php echo $technology; ?>">
                                 <picture class="p-recruitWorks__icon">
-                                    <img src="./images/recruit/icon_02.png" alt="アイコン">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/icon_02.png" alt="アイコン">
                                 </picture>
                                 <p class="p-recruitWorks__text">技術開発職</p>
                                 <picture class="p-recruitWorks__img">
-                                    <img src="./images/recruit/works_02.jpg" alt="技術開発職">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/works_02.jpg" alt="技術開発職">
                                 </picture>
                             </a>
                         </div>
                         <div class="p-recruitWorks__card">
-                            <a href="#">
+                            <a href="<?php echo $sales; ?>">
                                 <picture class="p-recruitWorks__icon">
-                                    <img src="./images/recruit/icon_03.png" alt="アイコン">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/icon_03.png" alt="アイコン">
                                 </picture>
                                 <p class="p-recruitWorks__text">営業職</p>
                                 <picture class="p-recruitWorks__img">
-                                    <img src="./images/recruit/works_03.jpg" alt="営業職">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/works_03.jpg" alt="営業職">
                                 </picture>
                             </a>
                         </div>
                         <div class="p-recruitWorks__card">
-                            <a href="#">
+                            <a href="<?php echo $office_work; ?>">
                                 <picture class="p-recruitWorks__icon">
-                                    <img src="./images/recruit/icon_04.png" alt="アイコン">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/icon_04.png" alt="アイコン">
                                 </picture>
                                 <p class="p-recruitWorks__text">事務職(本社・工場)</p>
                                 <picture class="p-recruitWorks__img">
-                                    <img src="./images/recruit/works_04.jpg" alt="事務職(本社・工場)">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/works_04.jpg" alt="事務職(本社・工場)">
                                 </picture>
                             </a>
                         </div>
@@ -160,10 +156,10 @@
                     </div>
                     <div class="p-recruitInterview__cards">
                         <div class="p-recruitInterview__card">
-                            <a href="#" class="c-interviewCard">
+                            <a href="<?php echo $voice; ?>#itani" class="c-interviewCard">
                                 <picture class="c-interviewCard__img">
-                                    <source srcset="./images/recruit/itani.webp" type="image/webp" />
-                                    <img src="./images/recruit/itani.jpg" alt="井谷 研">
+                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/itani.webp" type="image/webp" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/itani.jpg" alt="井谷 研">
                                 </picture>
                                 <div class="c-interviewCard__content">
                                     <p class="c-interviewCard__name">井谷 研（イタニ　ケン）</p>
@@ -179,10 +175,10 @@
                             </a>
                         </div>
                         <div class="p-recruitInterview__card">
-                            <a href="#" class="c-interviewCard">
+                            <a href="<?php echo $voice ?>#yamada" class="c-interviewCard">
                                 <picture class="c-interviewCard__img">
-                                    <source srcset="./images/recruit/yamada.webp" type="image/webp" />
-                                    <img src="./images/recruit/yamada.jpg" alt="山田 瑞穂">
+                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/yamada.webp" type="image/webp" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/yamada.jpg" alt="山田 瑞穂">
                                 </picture>
                                 <div class="c-interviewCard__content">
                                     <p class="c-interviewCard__name">山田 瑞穂（ヤマダ　ミズホ）</p>
@@ -198,10 +194,10 @@
                             </a>
                         </div>
                         <div class="p-recruitInterview__card">
-                            <a href="#" class="c-interviewCard">
+                            <a href="<?php echo $voice ?>#takeuchi" class="c-interviewCard">
                                 <picture class="c-interviewCard__img">
-                                    <source srcset="./images/recruit/takeuchi.webp" type="image/webp" />
-                                    <img src="./images/recruit/takeuchi.jpg" alt="竹内 勇人">
+                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/takeuchi.webp" type="image/webp" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/takeuchi.jpg" alt="竹内 勇人">
                                 </picture>
                                 <div class="c-interviewCard__content">
                                     <p class="c-interviewCard__name">竹内 勇人（タケウチ　ハヤト）</p>
@@ -218,7 +214,7 @@
                         </div>
                     </div>
                     <div class="p-recruitInterview__btn">
-                        <a href="#" class="c-btn "> 詳しくみる <div class="c-btn__link">
+                        <a href="<?php echo $voice; ?>" class="c-btn "> 詳しくみる <div class="c-btn__link">
                                 <div class="c-link "><span></span></div>
                             </div>
                         </a>
@@ -238,43 +234,43 @@
                     <div class="p-recruitData__cards">
                         <div class="p-recruitData__card --1">
                             <picture>
-                                <source srcset="./images/recruit/number_01.png" media="(min-width:768px)" />
-                                <source srcset="./images/recruit/number_01.png" type="image/webp" />
-                                <img src="./images/recruit/number_01_sp.png" alt="男女比率">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_01.png" media="(min-width:768px)" />
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_01.png" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_01_sp.png" alt="男女比率">
                             </picture>
                             <picture>
-                                <source srcset="./images/recruit/number_02.png" media="(min-width:768px)" />
-                                <source srcset="./images/recruit/number_02.png" type="image/webp" />
-                                <img src="./images/recruit/number_02_sp.png" alt="年代別割合">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_02.png" media="(min-width:768px)" />
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_02.png" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_02_sp.png" alt="年代別割合">
                             </picture>
                         </div>
                         <div class="p-recruitData__card --2">
                             <picture>
-                                <source srcset="./images/recruit/number_03.png" media="(min-width:768px)" />
-                                <source srcset="./images/recruit/number_03.png" type="image/webp" />
-                                <img src="./images/recruit/number_03_sp.png" alt="転職・新卒比">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_03.png" media="(min-width:768px)" />
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_03.png" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_03_sp.png" alt="転職・新卒比">
                             </picture>
                             <picture>
-                                <source srcset="./images/recruit/number_04.png" media="(min-width:768px)" />
-                                <source srcset="./images/recruit/number_04.png" type="image/webp" />
-                                <img src="./images/recruit/number_04_sp.png" alt="創業">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_04.png" media="(min-width:768px)" />
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_04.png" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_04_sp.png" alt="創業">
                             </picture>
                             <picture>
-                                <source srcset="./images/recruit/number_05.png" media="(min-width:768px)" />
-                                <source srcset="./images/recruit/number_05.png" type="image/webp" />
-                                <img src="./images/recruit/number_05_sp.png" alt="残業時間">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_05.png" media="(min-width:768px)" />
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_05.png" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_05_sp.png" alt="残業時間">
                             </picture>
                         </div>
                         <div class="p-recruitData__card --3">
                             <picture>
-                                <source srcset="./images/recruit/number_06.png" media="(min-width:768px)" />
-                                <source srcset="./images/recruit/number_06.png" type="image/webp" />
-                                <img src="./images/recruit/number_06_sp.png" alt="職種別割合">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_06.png" media="(min-width:768px)" />
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_06.png" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_06_sp.png" alt="職種別割合">
                             </picture>
                             <picture>
-                                <source srcset="./images/recruit/number_07.png" media="(min-width:768px)" />
-                                <source srcset="./images/recruit/number_04.png" type="image/webp" />
-                                <img src="./images/recruit/number_07_sp.png" alt="社員の住んでる場所">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_07.png" media="(min-width:768px)" />
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_04.png" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/number_07_sp.png" alt="社員の住んでる場所">
                             </picture>
                         </div>
                     </div>
@@ -297,103 +293,6 @@
                 </div>
             </div>
         </secrion>
-        <div class="l-recruitCv">
-            <div class="p-recruitCv">
-                <div class="p-recruitCv__inner l-inner">
-                    <ul class="p-recruitCv__links">
-                        <li class="p-recruitCv__link">
-                            <a href="#">
-                                <div class="p-recruitCv__text">
-                                    <hgroup class="c-singleTitle">
-                                        <p class="c-singleTitle__sub --white"> 応募要項</p>
-                                        <h2 class="c-singleTitle__main --white"> REQUIREMENTS</h2>
-                                    </hgroup>
-                                </div>
-                                <div class="p-recruitCv__arrow">
-                                    <div class="c-link "><span></span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="p-recruitCv__link">
-                            <a href="#">
-                                <div class="p-recruitCv__text">
-                                    <hgroup class="c-singleTitle">
-                                        <p class="c-singleTitle__sub --white"> エントリー</p>
-                                        <h2 class="c-singleTitle__main --white">ENTRY</h2>
-                                    </hgroup>
-                                </div>
-                                <div class="p-recruitCv__arrow">
-                                    <div class="c-link "><span></span></div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <?php get_template_part('./template-part/cv'); ?>
     </main>
-    <footer class="l-footer">
-        <div class="p-footer">
-            <div class="p-footer__inner l-inner">
-                <div class="p-footer__blocks">
-                    <div class="p-footer__block">
-                        <div class="p-footer__logo">
-                            <img src="./images/common/logo.svg" alt="大原バラヂウム化学株式会社">
-                        </div>
-                        <div class="p-footer__info c-text"> 【本部】<br> 〒602-8155<br> 京都市上京区竹屋町通千本東入上ル主税町1092<br> TEL：（075）841-8521<br> FAX：（075）811-5715 </div>
-                    </div>
-                    <div class="p-footer__block">
-                        <div class="p-footer__navs">
-                            <div class="p-footer__nav">
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">事業紹介</a></li>
-                                    <li class="p-footer__link"><a href="#">繊維加工材</a></li>
-                                    <li class="p-footer__link"><a href="#">PCP/MOF</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">企業情報</a></li>
-                                    <li class="p-footer__link"><a href="#">メッセージ</a></li>
-                                    <li class="p-footer__link"><a href="#">企業理念</a></li>
-                                    <li class="p-footer__link"><a href="#">会社概要</a></li>
-                                    <li class="p-footer__link"><a href="#">歴史</a></li>
-                                    <li class="p-footer__link"><a href="#">主な事業所・ネットワーク</a></li>
-                                </ul>
-                            </div>
-                            <div class="p-footer__nav">
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">サステナビリティ</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">研究</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">コラム</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">最新情報</a></li>
-                                </ul>
-                            </div>
-                            <div class="p-footer__nav">
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">採用情報</a></li>
-                                    <li class="p-footer__link"><a href="#">私たちの働き方</a></li>
-                                    <li class="p-footer__link"><a href="#">先輩の声</a></li>
-                                    <li class="p-footer__link"><a href="#">募集要項</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">お問い合わせ</a></li>
-                                    <li class="p-footer__link u-mobile"><a href="#">サイトマップ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-footer__bottom">
-                    <p class="p-footer__copy">Copyright &copy; OHARA PARAGIUM CHEMICAL CO. LTD. <br class="u-mobile">All rights reserved.</p>
-                    <p class="p-footer__sitemap u-desktop">サイトマップ</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+<?php get_footer(); ?>

@@ -83,7 +83,7 @@
     }
 }
 
-.p-form__radioLists {
+.wpcf7-radio {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -95,13 +95,13 @@
 
 }
 
-.p-form__radioList span {
+.wpcf7-list-item span {
     display: inline-block;
     position: relative;
     padding-left: rem(35);
 }
 
-.p-form__radioList span::before {
+.wpcf7-list-item span::before {
     position: absolute;
     content: "";
     width: rem(25);
@@ -114,7 +114,7 @@
 }
 
 
-.p-form__radioList span::after {
+.wpcf7-list-item span::after {
     position: absolute;
     content: "";
     width: rem(13);
@@ -127,7 +127,7 @@
     display: none;
 }
 
-.p-form__radioList input:checked + span:after {
+.wpcf7-list-item input:checked + span:after {
     display: block;
 }
 
@@ -241,4 +241,9 @@
 
 .p-form__document + .p-form__document {
     margin-top: rem(20);
+}
+
+.wpcf7-not-valid-tip {
+    display: block;
+    margin-top: rem(5);
 }

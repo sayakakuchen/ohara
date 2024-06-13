@@ -40,6 +40,11 @@
     top: rem(66);
     left: 0;
     z-index: -1;
+    display: none;
+
+    @include mq(md) {
+        display: block;
+    }
 }
 
 .p-recruitInterview__card {

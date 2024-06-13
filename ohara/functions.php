@@ -35,6 +35,7 @@ add_action( 'wp_head', 'add_google_fonts_preconnect', 0 );
 
 // css読み込み
 function my_css() {
+	wp_enqueue_style('noto-sans', 'https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 	wp_enqueue_style('custom-font', '//fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro', array(), null);
 	wp_enqueue_style( 'slick-css', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.0.0', 'all');
 	wp_enqueue_style( 'slick-theme-css', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array(), '1.0.0', 'all');
@@ -73,3 +74,9 @@ function set_custom_post_type_slug($post_id, $post, $update) {
     }
 }
 add_action('wp_insert_post', 'set_custom_post_type_slug', 10, 3);
+
+// Contact form 7 タグ削除
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false() {
+  return false;
+}

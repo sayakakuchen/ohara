@@ -1,37 +1,33 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
-    <!-- meta情報 -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!-- ogp -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:card" content="summary" />
-    <!-- ファビコン -->
-    <link rel="icon" href="#" />
-    <!-- css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.css" integrity="sha512-jGFXuWMxJUKzdfBmoyqCXz9k2AU3Z/ZNoayoUPEBAtJZjHbTbw50AxTR1ICVPQJbSamH9ny1JwOur0x4WOdcWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.js" integrity="sha512-h9EJXfmlmVdpFZ29kqabqCKeTizzs6ZPILjcJnGptrcYy6WUgMovQRca2KQE93Yp3MDRZoHr2L8GzKkOjQ57eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="./js/script.js"></script>
-</head>
-<body>
-    <header class="l-header">
-    </header>
+<?php 
+
+$home = esc_html(home_url());
+$news = esc_html(home_url('/news/'));
+$company = esc_html(home_url('/company/'));
+$message = esc_html(home_url('/company/message/'));
+$mission = esc_html(home_url('/company/mission/'));
+$about = esc_html(home_url('/company/about/'));
+$history = esc_html(home_url('/company/history/'));
+$office = esc_html(home_url('/company/office/'));
+$service = esc_html(home_url('/service/'));
+$textile = esc_html(home_url('/service/textile-processing/'));
+$pcp = esc_html(home_url('/service/pcp-mof/'));
+$sustainability = esc_html(home_url('/sustainability/'));
+$study = esc_html(home_url('/study/'));
+$recruit = esc_html(home_url('/recruit/'));
+$manufact = esc_html(home_url('/recruit/manufacturing/'));
+$technology = esc_html(home_url('/recruit/technology-development/'));
+$sales = esc_html(home_url('/recruit/sales/'));
+$office_work = esc_html(home_url('/recruit/office-work/'));
+$recruit = esc_html(home_url('/recruit/voice/'));
+$application = esc_html(home_url('/recruit/application/'));
+$entry = esc_html(home_url('/recruit/entry/'));
+$column = esc_html(home_url('/column/'));
+$contact = esc_html(home_url('/contact/'));
+$sitemap = esc_html(home_url('/sitemap/'));
+
+?>
+
+<?php get_header(); ?>
     <main>
         <section class="l-subMv">
             <div class="p-subMv ">
@@ -42,8 +38,8 @@
                             <h1 class="p-subMv__ja">サステナビリティ</h1>
                         </hgroup>
                         <picture class="p-subMv__img">
-                            <source srcset="./images/common/subMv_sustainability.webp" type="image/webp" />
-                            <img src="./images/common/subMv_sustainability.png" alt="ファーストビュー">
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/common/subMv_sustainability.webp" type="image/webp" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/subMv_sustainability.png" alt="ファーストビュー">
                         </picture>
                     </div>
                 </div>
@@ -54,7 +50,7 @@
                 <div class="p-breadcrumb__inner l-inner">
                     <ol itemscope itemtype="https://schema.org/BreadcrumbList">
                         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <a itemprop="item" href="#">
+                            <a itemprop="item" href="<?php echo $home; ?>">
                                 <span itemprop="name">トップ</span>
                             </a>
                             <meta itemprop="position" content="1" />
@@ -71,14 +67,14 @@
             <div class="p-eco">
                 <div class="p-eco__inner l-inner">
                     <h2 class="p-eco__title">
-                        <img src="./images/sustainability/eco_title.svg" alt="sustainbale echo finish">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/eco_title.svg" alt="sustainbale echo finish">
                     </h2>
                     <p class="p-eco__lead c-text"> Sustainable ECO Finish とは、弊社が取り組んでいる地球環境に配慮した加工剤、加工処方の総称です。<br> 現在のペースで資源を消費し続ける社会では、人類が地球上で生きていくことが困難な時代が来ると予測されている今、<br> サスティナブル（持続可能）というテーマに多くの人や企業が取り組んでいます。<br> 私たちは早くから、環境的に持続可能なモノ・コトでなければ、社会的にも持続可能にはなりえないという理念の下、<br> 「Sustainable Development （持続可能な開発）」を心掛け、これからの未来に向けた感動製品の開発に取り組んでいます。 </p>
                     <ul class="p-eco__lists">
                         <li class="p-eco__list">
                             <picture class="p-eco__logo --1">
-                                <source srcset="./images/sustainability/x-bio.webp" type="image/webp" />
-                                <img src="./images/sustainability/x-bio.png" alt="X-Bio">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/x-bio.webp" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/x-bio.png" alt="X-Bio">
                             </picture>
                             <p class="p-eco__text c-text"> バイオ化度50%という厳しい基準をクリアした繊維加工剤 </p>
                             <div class="p-eco__btn">
@@ -90,8 +86,8 @@
                         </li>
                         <li class="p-eco__list">
                             <picture class="p-eco__logo --2">
-                                <source srcset="./images/sustainability/sanchishiru.webp" type="image/webp" />
-                                <img src="./images/sustainability/sanchishiru.png" alt="サンチシル">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sanchishiru.webp" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sanchishiru.png" alt="サンチシル">
                             </picture>
                             <p class="p-eco__text c-text"> 各地に潜んだ魅力ある材料を繊維製品としてアップサイクル。地方創生も担う。 </p>
                             <div class="p-eco__btn">
@@ -103,8 +99,8 @@
                         </li>
                         <li class="p-eco__list">
                             <picture class="p-eco__logo --3">
-                                <source srcset="./images/sustainability/sef.webp" type="image/webp" />
-                                <img src="./images/sustainability/sef.png" alt="SEFシリーズ">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sef.webp" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sef.png" alt="SEFシリーズ">
                             </picture>
                             <p class="p-eco__text c-text"> 人にも地球にもやさしく、原料が枯渇しにくいフッ素フリーの撥水加工剤 </p>
                             <div class="p-eco__btn">
@@ -116,8 +112,8 @@
                         </li>
                         <li class="p-eco__list">
                             <picture class="p-eco__logo --4">
-                                <source srcset="./images/sustainability/surtic.webp" type="image/webp" />
-                                <img src="./images/sustainability/surtic.png" alt="surtic">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/surtic.webp" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/surtic.png" alt="surtic">
                             </picture>
                             <p class="p-eco__text c-text"> 本来廃棄される天然シトラス原料を用いた衛生加工剤 </p>
                             <div class="p-eco__btn">
@@ -129,8 +125,8 @@
                         </li>
                         <li class="p-eco__list">
                             <picture class="p-eco__logo --5">
-                                <source srcset="./images/sustainability/a.webp" type="image/webp" />
-                                <img src="./images/sustainability/a.png" alt="aシリーズ">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/a.webp" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/a.png" alt="aシリーズ">
                             </picture>
                             <p class="p-eco__text c-text"> 液流染色機で使用可能なアミノシリコン柔軟剤 </p>
                             <div class="p-eco__btn">
@@ -142,8 +138,8 @@
                         </li>
                         <li class="p-eco__list">
                             <picture class="p-eco__logo --6">
-                                <source srcset="./images/sustainability/andmore.webp" type="image/webp" />
-                                <img src="./images/sustainability/andmore.png" alt="andmore">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/andmore.webp" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/andmore.png" alt="andmore">
                             </picture>
                             <p class="p-eco__text c-text u-desktop"></p>
                             <div class="p-eco__btn">
@@ -166,61 +162,53 @@
                             <h2 class="c-title__main --black --small">サステナビリティ情報</h2>
                         </hgroup>
                     </div>
+                    <?php
+                        $args = array(
+                            'post_type' => 'news', 
+                            'posts_per_page' => 3 ,
+                            'tax_query' => array(
+                                array(
+                                  'taxonomy' => 'news_category',
+                                  'field' => 'slug',
+                                  'terms' => 'sustainability',
+                                )
+                              )
+                        );
+                        $the_query = new WP_Query($args); if($the_query->have_posts()):
+                    ?>
                     <div class="p-topNews__cards">
+                        <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+                        <?php $terms = get_the_terms($post->ID, 'news_category'); ?>
                         <div class="p-topNews__card">
-                            <a href="#" class="c-rowCard">
+                            <a href="<?php the_permalink(); ?>" class="c-rowCard">
                                 <picture class="c-rowCard__img">
-                                    <img src="./images/top/thumbnail2.jpg" alt="アイキャッチ画像">
+                                    <?php if (has_post_thumbnail()): ?>
+                                       <?php the_post_thumbnail('large'); ?>
+                                    <?php else: ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/noimage.png" alt="アイキャッチ画像">
+                                    <?php endif; ?>
                                 </picture>
                                 <div class="c-rowCard__content">
                                     <div class="c-rowCard__info">
-                                        <time class="c-rowCard__time">2020.02.14</time>
+                                        <time class="c-rowCard__time" datetime="<?php echo get_the_date('Y.m.d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
+                                        <?php if($terms): ?>
                                         <ul class="c-rowCard__tags">
-                                            <li class="c-rowCard__tag c-tag">カテゴリが入ります</li>
+                                            <?php foreach( $terms as $term ): ?>
+                                            <li class="c-rowCard__tag c-tag"><?php echo $term->name; ?></li>
+                                            <?php endforeach; ?>
                                         </ul>
+                                        <?php endif; ?>
                                     </div>
-                                    <p class="c-rowCard__title">タイトルが入ります。ダミーテキストダミーテキスト</p>
-                                    <p class="c-rowCard__text c-text"> 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入説明テキストが入ります… </p>
+                                    <p class="c-rowCard__title"><?php the_title(); ?></p>
+                                    <div class="c-rowCard__text c-text"><?php the_excerpt(); ?></div>
                                 </div>
                             </a>
                         </div>
-                        <div class="p-topNews__card">
-                            <a href="#" class="c-rowCard">
-                                <picture class="c-rowCard__img">
-                                    <img src="./images/top/thumbnail2.jpg" alt="アイキャッチ画像">
-                                </picture>
-                                <div class="c-rowCard__content">
-                                    <div class="c-rowCard__info">
-                                        <time class="c-rowCard__time">2020.02.14</time>
-                                        <ul class="c-rowCard__tags">
-                                            <li class="c-rowCard__tag c-tag">カテゴリが入ります</li>
-                                        </ul>
-                                    </div>
-                                    <p class="c-rowCard__title">タイトルが入ります。ダミーテキストダミーテキスト</p>
-                                    <p class="c-rowCard__text c-text"> 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入説明テキストが入ります… </p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="p-topNews__card">
-                            <a href="#" class="c-rowCard">
-                                <picture class="c-rowCard__img">
-                                    <img src="./images/top/thumbnail2.jpg" alt="アイキャッチ画像">
-                                </picture>
-                                <div class="c-rowCard__content">
-                                    <div class="c-rowCard__info">
-                                        <time class="c-rowCard__time">2020.02.14</time>
-                                        <ul class="c-rowCard__tags">
-                                            <li class="c-rowCard__tag c-tag">カテゴリが入ります</li>
-                                        </ul>
-                                    </div>
-                                    <p class="c-rowCard__title">タイトルが入ります。ダミーテキストダミーテキスト</p>
-                                    <p class="c-rowCard__text c-text"> 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入説明テキストが入ります… </p>
-                                </div>
-                            </a>
-                        </div>
+                        <?php endwhile; ?>
                     </div>
+                    <?php endif; ?>
                     <div class="p-topNews__btn">
-                        <a href="#" class="c-btn "> 最新情報 <div class="c-btn__link">
+                        <a href="<?php echo $news; ?>" class="c-btn "> 最新情報 <div class="c-btn__link">
                                 <div class="c-link "><span></span></div>
                             </div>
                         </a>
@@ -245,16 +233,16 @@
                                     <p class="p-sdg__text">・繊維to繊維を後加工剤で後押し</p>
                                     <ul class="p-sdg__goals">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg9.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg11.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg11.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg12.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg13.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -262,13 +250,13 @@
                                     <p class="p-sdg__text">・エジプトで砂漠緑化に取り組むシモンド社との協業</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg1.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg1.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg13.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg15.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg15.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -276,13 +264,13 @@
                                     <p class="p-sdg__text">・衛生対策シリーズの拡充（抗菌、抗ウイルス、消臭、防虫など）</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg3.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg3.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg11.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg11.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg16.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg16.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -290,13 +278,13 @@
                                     <p class="p-sdg__text">・冷感加工、熱遮蔽加工によるエアコンの使用量減</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg3.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg3.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg7.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg7.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg13.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -304,10 +292,10 @@
                                     <p class="p-sdg__text">・吸湿発熱加工など温感加工剤の拡充</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg7.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg7.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg13.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -315,13 +303,13 @@
                                     <p class="p-sdg__text">・サンチシル®企画の推進</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg8.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg8.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg9.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg12.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -329,10 +317,10 @@
                                     <p class="p-sdg__text">・非フッ素撥水剤の開発と拡販</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg9.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg12.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -340,16 +328,16 @@
                                     <p class="p-sdg__text">・水系/可食系コーティング剤の開発と拡販</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg9.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg12.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg14.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg14.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg15.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg15.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -357,10 +345,10 @@
                                     <p class="p-sdg__text">・可食系コーティング剤の開発と拡販</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg14.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg14.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg15.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg15.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -368,13 +356,13 @@
                                     <p class="p-sdg__text">・溶剤加工からの水系移行をバックアップ</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg9.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg12.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg14.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg14.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -382,13 +370,13 @@
                                     <p class="p-sdg__text">・植物由来原料や魚毒性の低い乳化剤の使用</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg12.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg13.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg14.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg14.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -401,16 +389,16 @@
                                     <p class="p-sdg__text --normal"> ・有害ガスの吸着<br> ・脱臭効果による<br> ・燃焼対応からの脱却をバックアップ<br> ・CO2、温室効果ガスの吸着 </p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg3.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg3.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg11.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg11.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg12.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg13.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -423,10 +411,10 @@
                                     <p class="p-sdg__text --normal"> ・ネイル用、まつ毛用製品の拡充による女性のエンパワーメントへの関与<br> ・破損物の再利用化によるゴミ、廃棄物の軽減 </p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg5.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg5.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg13.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -438,13 +426,13 @@
                                 <li class="p-sdg__list --initial">
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg3.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg3.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg12.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg13.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -456,13 +444,13 @@
                                 <li class="p-sdg__list --initial">
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg3.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg3.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg5.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg5.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg9.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -475,16 +463,16 @@
                                     <p class="p-sdg__text --normal"> ・ペーパーレス化<br> ・近場の客先への通い容器の使用<br> ・製品用容器のリサイクル<br> ・受注生産や計画生産によるロス削減<br> ・100％プラスチック製のクリアファイルを使用しない </p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg7.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg7.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg12.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg13.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="./images/sustainability/sdg15.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg15.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -494,87 +482,6 @@
                 </div>
             </div>
         </section>
-        <section class="l-bottomContact">
-            <div class="p-bottomContact">
-                <a href="#">
-                    <div class="p-bottomContact__inner l-inner">
-                        <div class="p-bottomContact__title">
-                            <hgroup class="c-title">
-                                <p class="c-title__sub --white --border-none">CONTACT</p>
-                                <h2 class="c-title__main --white --center --big">お問い合わせ</h2>
-                            </hgroup>
-                        </div>
-                        <p class="p-bottomContact__text c-text"> ご相談・ご質問は<br> お問い合わせフォームからお気軽にお問い合わせください </p>
-                        <div class="p-bottomContact__link">
-                            <div class="c-link --big"><span></span></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
+        <?php get_template_part('./template-part/contact'); ?>
     </main>
-    <footer class="l-footer">
-        <div class="p-footer">
-            <div class="p-footer__inner l-inner">
-                <div class="p-footer__blocks">
-                    <div class="p-footer__block">
-                        <div class="p-footer__logo">
-                            <img src="./images/common/logo.svg" alt="大原バラヂウム化学株式会社">
-                        </div>
-                        <div class="p-footer__info c-text"> 【本部】<br> 〒602-8155<br> 京都市上京区竹屋町通千本東入上ル主税町1092<br> TEL：（075）841-8521<br> FAX：（075）811-5715 </div>
-                    </div>
-                    <div class="p-footer__block">
-                        <div class="p-footer__navs">
-                            <div class="p-footer__nav">
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">事業紹介</a></li>
-                                    <li class="p-footer__link"><a href="#">繊維加工材</a></li>
-                                    <li class="p-footer__link"><a href="#">PCP/MOF</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">企業情報</a></li>
-                                    <li class="p-footer__link"><a href="#">メッセージ</a></li>
-                                    <li class="p-footer__link"><a href="#">企業理念</a></li>
-                                    <li class="p-footer__link"><a href="#">会社概要</a></li>
-                                    <li class="p-footer__link"><a href="#">歴史</a></li>
-                                    <li class="p-footer__link"><a href="#">主な事業所・ネットワーク</a></li>
-                                </ul>
-                            </div>
-                            <div class="p-footer__nav">
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">サステナビリティ</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">研究</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">コラム</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">最新情報</a></li>
-                                </ul>
-                            </div>
-                            <div class="p-footer__nav">
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">採用情報</a></li>
-                                    <li class="p-footer__link"><a href="#">私たちの働き方</a></li>
-                                    <li class="p-footer__link"><a href="#">先輩の声</a></li>
-                                    <li class="p-footer__link"><a href="#">募集要項</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">お問い合わせ</a></li>
-                                    <li class="p-footer__link u-mobile"><a href="#">サイトマップ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-footer__bottom">
-                    <p class="p-footer__copy">Copyright &copy; OHARA PARAGIUM CHEMICAL CO. LTD. <br class="u-mobile">All rights reserved.</p>
-                    <p class="p-footer__sitemap u-desktop">サイトマップ</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+<?php get_footer(); ?>

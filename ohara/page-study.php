@@ -1,37 +1,33 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
-    <!-- meta情報 -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!-- ogp -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:card" content="summary" />
-    <!-- ファビコン -->
-    <link rel="icon" href="#" />
-    <!-- css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.css" integrity="sha512-jGFXuWMxJUKzdfBmoyqCXz9k2AU3Z/ZNoayoUPEBAtJZjHbTbw50AxTR1ICVPQJbSamH9ny1JwOur0x4WOdcWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.min.js" integrity="sha512-h9EJXfmlmVdpFZ29kqabqCKeTizzs6ZPILjcJnGptrcYy6WUgMovQRca2KQE93Yp3MDRZoHr2L8GzKkOjQ57eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="./js/script.js"></script>
-</head>
-<body>
-    <header class="l-header">
-    </header>
+<?php 
+
+$home = esc_html(home_url());
+$news = esc_html(home_url('/news/'));
+$company = esc_html(home_url('/company/'));
+$message = esc_html(home_url('/company/message/'));
+$mission = esc_html(home_url('/company/mission/'));
+$about = esc_html(home_url('/company/about/'));
+$history = esc_html(home_url('/company/history/'));
+$office = esc_html(home_url('/company/office/'));
+$service = esc_html(home_url('/service/'));
+$textile = esc_html(home_url('/service/textile-processing/'));
+$pcp = esc_html(home_url('/service/pcp-mof/'));
+$sustainability = esc_html(home_url('/sustainability/'));
+$study = esc_html(home_url('/study/'));
+$recruit = esc_html(home_url('/recruit/'));
+$manufact = esc_html(home_url('/recruit/manufacturing/'));
+$technology = esc_html(home_url('/recruit/technology-development/'));
+$sales = esc_html(home_url('/recruit/sales/'));
+$office_work = esc_html(home_url('/recruit/office-work/'));
+$recruit = esc_html(home_url('/recruit/voice/'));
+$application = esc_html(home_url('/recruit/application/'));
+$entry = esc_html(home_url('/recruit/entry/'));
+$column = esc_html(home_url('/column/'));
+$contact = esc_html(home_url('/contact/'));
+$sitemap = esc_html(home_url('/sitemap/'));
+
+?>
+
+<?php get_header(); ?>
     <main>
         <section class="l-subMv">
             <div class="p-subMv --border">
@@ -50,7 +46,7 @@
                 <div class="p-breadcrumb__inner l-inner">
                     <ol itemscope itemtype="https://schema.org/BreadcrumbList">
                         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                            <a itemprop="item" href="#">
+                            <a itemprop="item" href="<?php echo $home; ?>">
                                 <span itemprop="name">トップ</span>
                             </a>
                             <meta itemprop="position" content="1" />
@@ -77,20 +73,20 @@
                     <div class="p-studySlide__slider js-studySlide-slider">
                         <div class="p-studySlide__picture">
                             <picture>
-                                <source srcset="./images/study/slide_01.webp" type="image/webp" />
-                                <img src="./images/study/slide_01.jpg" alt="画像">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/study/slide_01.webp" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/study/slide_01.jpg" alt="画像">
                             </picture>
                         </div>
                         <div class="p-studySlide__picture">
                             <picture>
-                                <source srcset="./images/study/slide_02.webp" type="image/webp" />
-                                <img src="./images/study/slide_02.jpg" alt="画像">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/study/slide_02.webp" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/study/slide_02.jpg" alt="画像">
                             </picture>
                         </div>
                         <div class="p-studySlide__picture">
                             <picture>
-                                <source srcset="./images/study/slide_03.webp" type="image/webp" />
-                                <img src="./images/study/slide_03.jpg" alt="画像">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/study/slide_03.webp" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/study/slide_03.jpg" alt="画像">
                             </picture>
                         </div>
                     </div>
@@ -98,7 +94,7 @@
             </div>
         </div>
         <section class="l-greeting">
-            <div class="p-greeting">
+            <div class="p-greeting --white">
                 <div class="p-greeting__inner l-inner">
                     <div class="p-greeting__title">
                         <hgroup class="c-title">
@@ -108,8 +104,8 @@
                     </div>
                     <div class="p-greeting__wrap">
                         <picture class="p-greeting__img">
-                            <source srcset="./images/study/greeting.webp" type="image/webp" />
-                            <img src="./images/study/greeting.jpg" alt="ごあいさつ">
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/study/greeting.webp" type="image/webp" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/study/greeting.jpg" alt="ごあいさつ">
                         </picture>
                         <div class="p-greeting__content">
                             <div class="p-greeting__text c-text">
@@ -136,8 +132,8 @@
                         </hgroup>
                     </div>
                     <picture class="p-innovation__img">
-                        <source srcset="./images/study/innovation.webp" type="image/webp" />
-                        <img src="./images/study/innovation.jpg" alt="新規開発の流れ ">
+                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/study/innovation.webp" type="image/webp" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/study/innovation.jpg" alt="新規開発の流れ ">
                     </picture>
                 </div>
             </div>
@@ -162,7 +158,7 @@
                                     </div>
                                 </div>
                                 <picture class="c-rowItem__img">
-                                    <img src="./images/study/initiatives_01.jpg" alt="共同開発">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/study/initiatives_01.jpg" alt="共同開発">
                                 </picture>
                             </div>
                         </div>
@@ -176,7 +172,7 @@
                                     </div>
                                 </div>
                                 <picture class="c-rowItem__img">
-                                    <img src="./images/study/initiatives_02.jpg" alt="支援事業への挑戦 ">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/study/initiatives_02.jpg" alt="支援事業への挑戦 ">
                                 </picture>
                             </div>
                         </div>
@@ -190,7 +186,7 @@
                                     </div>
                                 </div>
                                 <picture class="c-rowItem__img">
-                                    <img src="./images/study/initiatives_03.jpg" alt="依頼試験対応 ">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/study/initiatives_03.jpg" alt="依頼試験対応 ">
                                 </picture>
                             </div>
                         </div>
@@ -201,7 +197,7 @@
                                     <p class="c-rowItem__text c-text"> 調査依頼についてはOEKO-TEX、REACH、 ZDHC等の規制物質の含有調査等の報告資料の作成を行っています。規制物質の含有調査は、製品や原材料に対して、環境や健康に影響を与える可能性のある物質が含まれていないかを調査するものです。日々規制が厳しくなる中ですが、安心安全を提供するための重要な業務と位置付け、正確且つ迅速な対応を実施しています。 </p>
                                 </div>
                                 <picture class="c-rowItem__img">
-                                    <img src="./images/study/initiatives_04.jpg" alt="調査依頼対応 ">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/study/initiatives_04.jpg" alt="調査依頼対応 ">
                                 </picture>
                             </div>
                         </div>
@@ -212,7 +208,7 @@
                                     <p class="c-rowItem__text c-text"> 顧客から依頼される完成品、半完成品に応じて製造することが出来ます。また、原料に対しても完成品対応を行います。弊社は様々な製品に応用できる水分散技術を持っており、この技術を活用して顧客の要望にお応えします。 </p>
                                 </div>
                                 <picture class="c-rowItem__img">
-                                    <img src="./images/study/initiatives_05.jpg" alt="OEE（Original Equipment Manufacturing）対応 ">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/study/initiatives_05.jpg" alt="OEE（Original Equipment Manufacturing）対応 ">
                                 </picture>
                             </div>
                         </div>
@@ -220,87 +216,6 @@
                 </div>
             </div>
         </section>
-        <section class="l-bottomContact">
-            <div class="p-bottomContact">
-                <a href="#">
-                    <div class="p-bottomContact__inner l-inner">
-                        <div class="p-bottomContact__title">
-                            <hgroup class="c-title">
-                                <p class="c-title__sub --white --border-none">CONTACT</p>
-                                <h2 class="c-title__main --white --center --big">お問い合わせ</h2>
-                            </hgroup>
-                        </div>
-                        <p class="p-bottomContact__text c-text"> ご相談・ご質問は<br> お問い合わせフォームからお気軽にお問い合わせください </p>
-                        <div class="p-bottomContact__link">
-                            <div class="c-link --big"><span></span></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
+        <?php get_template_part('./template-part/contact'); ?>
     </main>
-    <footer class="l-footer">
-        <div class="p-footer">
-            <div class="p-footer__inner l-inner">
-                <div class="p-footer__blocks">
-                    <div class="p-footer__block">
-                        <div class="p-footer__logo">
-                            <img src="./images/common/logo.svg" alt="大原バラヂウム化学株式会社">
-                        </div>
-                        <div class="p-footer__info c-text"> 【本部】<br> 〒602-8155<br> 京都市上京区竹屋町通千本東入上ル主税町1092<br> TEL：（075）841-8521<br> FAX：（075）811-5715 </div>
-                    </div>
-                    <div class="p-footer__block">
-                        <div class="p-footer__navs">
-                            <div class="p-footer__nav">
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">事業紹介</a></li>
-                                    <li class="p-footer__link"><a href="#">繊維加工材</a></li>
-                                    <li class="p-footer__link"><a href="#">PCP/MOF</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">企業情報</a></li>
-                                    <li class="p-footer__link"><a href="#">メッセージ</a></li>
-                                    <li class="p-footer__link"><a href="#">企業理念</a></li>
-                                    <li class="p-footer__link"><a href="#">会社概要</a></li>
-                                    <li class="p-footer__link"><a href="#">歴史</a></li>
-                                    <li class="p-footer__link"><a href="#">主な事業所・ネットワーク</a></li>
-                                </ul>
-                            </div>
-                            <div class="p-footer__nav">
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">サステナビリティ</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">研究</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">コラム</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">最新情報</a></li>
-                                </ul>
-                            </div>
-                            <div class="p-footer__nav">
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">採用情報</a></li>
-                                    <li class="p-footer__link"><a href="#">私たちの働き方</a></li>
-                                    <li class="p-footer__link"><a href="#">先輩の声</a></li>
-                                    <li class="p-footer__link"><a href="#">募集要項</a></li>
-                                </ul>
-                                <ul class="p-footer__links">
-                                    <li class="p-footer__link"><a href="#">お問い合わせ</a></li>
-                                    <li class="p-footer__link u-mobile"><a href="#">サイトマップ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-footer__bottom">
-                    <p class="p-footer__copy">Copyright &copy; OHARA PARAGIUM CHEMICAL CO. LTD. <br class="u-mobile">All rights reserved.</p>
-                    <p class="p-footer__sitemap u-desktop">サイトマップ</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+<?php get_footer(); ?>

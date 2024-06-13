@@ -18,11 +18,6 @@ $padding-sp: 0.9375rem;
 ////////////////////
 
 @font-face {
-  font-family: 'noto sans';
-  src: url(../font/NotoSansJP-VariableFont_wght.ttf);
-}
-
-@font-face {
   font-family: 'barlow';
   src: url(../font/Barlow-Light.ttf);
 }
@@ -32,7 +27,7 @@ $padding-sp: 0.9375rem;
   src: url(../font/Barlow-Bold.ttf);
 }
 
-$main-font: 'noto sans',sans-serif;
+$main-font: "Noto Sans JP", sans-serif;
 $en-font: 'barlow',sans-serif;
 $en-font2:'barlow2',sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
