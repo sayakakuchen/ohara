@@ -34,11 +34,11 @@
     font-family: $en-font;
 }
 
-.c-card__tags {
+.c-card__cats {
 
 }
 
-.c-card__tag {
+.c-card__cat {
 
 }
 
@@ -47,4 +47,28 @@
     font-weight: bold;
     line-height: calc(30/18);
     margin-top: rem(20);
+}
+
+.c-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(30);
+    margin-top: rem(15);
+
+    @include mq(md) {
+        gap: rem(15);
+        margin-top: rem(10);
+    }
+}
+
+.c-card__tag {
+    font-size: rem(12);
+    font-weight: bold;
+    line-height: calc(17/12);
+    color: #9D9B9B;
+
+    @include mq(md) {
+        font-size: rem(14);
+        line-height: calc(20/14);
+    }
 }

@@ -955,8 +955,8 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     </picture>
                                     <div class="c-card__info">
                                         <time class="c-card__time">2020.02.14</time>
-                                        <ul class="c-card__tags">
-                                            <li class="c-card__tag c-tag">カテゴリが入ります</li>
+                                        <ul class="c-card__cats">
+                                            <li class="c-card__cat c-tag">カテゴリが入ります</li>
                                         </ul>
                                     </div>
                                     <p class="c-card__title">タイトルが入ります。ダミーテキストダミーテキスト</p>
@@ -969,8 +969,8 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     </picture>
                                     <div class="c-card__info">
                                         <time class="c-card__time">2020.02.14</time>
-                                        <ul class="c-card__tags">
-                                            <li class="c-card__tag c-tag">カテゴリが入ります</li>
+                                        <ul class="c-card__cats">
+                                            <li class="c-card__cat c-tag">カテゴリが入ります</li>
                                         </ul>
                                     </div>
                                     <p class="c-card__title">タイトルが入ります。ダミーテキストダミーテキスト</p>
@@ -983,8 +983,8 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     </picture>
                                     <div class="c-card__info">
                                         <time class="c-card__time">2020.02.14</time>
-                                        <ul class="c-card__tags">
-                                            <li class="c-card__tag c-tag">カテゴリが入ります</li>
+                                        <ul class="c-card__cats">
+                                            <li class="c-card__cat c-tag">カテゴリが入ります</li>
                                         </ul>
                                     </div>
                                     <p class="c-card__title">タイトルが入ります。ダミーテキストダミーテキスト</p>
