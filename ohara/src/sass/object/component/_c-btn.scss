@@ -27,3 +27,15 @@
     width: rem(25);
     margin-right: rem(30);
 }
+
+.c-btn.--white {
+    padding: rem(6);
+    max-width: rem(200);
+    justify-content: center;
+    background-color: $white;
+    border: 1px solid #707070;
+    color: $black;
+    font-family: $didot;
+    font-size: rem(24);
+    font-weight: $normal;
+}
