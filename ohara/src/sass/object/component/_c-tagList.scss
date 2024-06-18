@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.c-tagList {
+    padding: rem(7) rem(20);
+    text-align: center;
+    background-color: #ededed;
+    border-radius: 25px;
+}
+
+.c-tagList a {
+    display: inline-block;
+    font-size: rem(14);
+    font-family: $main-font;
+    color: #6f6f6f;
+    font-weight: 500;
+}

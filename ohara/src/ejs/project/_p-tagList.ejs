@@ -1,0 +1,16 @@
+<div class="p-tagList">
+    <div class="p-tagList__inner l-inner">
+        <div class="p-tagList__head">
+            <h2 class="p-tagList__title">タグ一覧</h2>
+        </div>
+        <div class="p-tagList__tags">
+            <% for ( var i = 0; i < 15; i++ ){ %>
+            <div class="p-tagList__tag">
+                <%- include('../component/_c-tagList',{
+                    tag:'true'
+                }) %>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</div>

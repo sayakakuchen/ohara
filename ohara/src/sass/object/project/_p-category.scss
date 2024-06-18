@@ -13,7 +13,7 @@
 .p-category__sustainable {
   margin-top: rem(61);
   @include mq(md) {
-    margin-top: rem(66);
+    margin-top: rem(80);
   }
 }
 
@@ -30,7 +30,7 @@
     text-align: center;
     font-size: rem(24);
     font-family: $didot;
-    font-weight: $normal;
+    font-weight: $regular;
     text-transform: uppercase;
     @include mq(md) {
         padding: rem(15.5) 0;
@@ -39,17 +39,24 @@
 }
 
 .p-category__columnCards {
-    display: grid;
-    @include mq(md) {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  margin-top: rem(28);
+  display: grid;
+  gap: rem(30);
+  @include mq(md) {
+    margin-top: rem(59);
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(30) rem(60);
+  }
 }
 
 .p-category__columnCard {
-    padding: rem(28) rem(13) 0;
+  padding: 0 rem(13);
+  @include mq(md) {
+    padding: 0;
+  }
 }
 
 .p-category__btn {
-    margin-top: rem(30);
-    text-align: center;
+  margin-top: rem(30);
+  text-align: center;
 }
