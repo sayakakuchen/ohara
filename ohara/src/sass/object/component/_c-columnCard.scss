@@ -39,12 +39,28 @@
 
 .c-columnCard__title {
     margin-top: rem(9);
+    padding-bottom: rem(9);
     font-size: rem(18);
     font-family: $main-font;
     font-weight: bold;
     line-height: 1.7;
+    position: relative;
     @include mq(md) {
         margin-top: rem(22);
+    }
+}
+
+.c-columnCard__title::after {
+    content: "";
+    background: #E2E5E5;
+    position: absolute;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    height: rem(1);
+    bottom: 0;
+    left: 0;
+    @include mq(md) {
+        position: static;
     }
 }
 
