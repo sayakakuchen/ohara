@@ -66,8 +66,7 @@
         width: 75%;
         gap: rem(20) rem(10);
         border-left: 1px solid #E2E5E5;
-        padding-top: rem(60);
-        padding-bottom: rem(60);
-        justify-content: flex-end;
+        padding: rem(60) 0 rem(60) rem(21);
+        justify-content: flex-start;
     }
 }
