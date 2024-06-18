@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.p-category {
+    margin-top: rem(38);
+    @include mq(md) {
+        margin-top: rem(89);
+    }
+}
+
+.p-category__chemistry,
+.p-category__fashion,
+.p-category__developmentStory,
+.p-category__sustainable {
+  margin-top: rem(61);
+  @include mq(md) {
+    margin-top: rem(66);
+  }
+}
+
+.p-category__head {
+
+}
+
+.p-category__title {
+    padding: rem(10) 0;
+    line-height: 1.2em;
+    letter-spacing: 0.08em;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    text-align: center;
+    font-size: rem(24);
+    font-family: $didot;
+    font-weight: $normal;
+    text-transform: uppercase;
+    @include mq(md) {
+        padding: rem(15.5) 0;
+        font-size: rem(48);
+    }
+}
+
+.p-category__columnCards {
+    display: grid;
+    @include mq(md) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.p-category__columnCard {
+    padding: rem(28) rem(13) 0;
+}
+
+.p-category__btn {
+    margin-top: rem(30);
+    text-align: center;
+}
