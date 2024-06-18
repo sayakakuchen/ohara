@@ -44,10 +44,7 @@
     font-weight: bold;
     line-height: 1.7;
     @include mq(md) {
-        margin-top: rem(21);
-        font-weight: $normal;
-        font-size: rem(24);
-        line-height: 1.5;
+        margin-top: rem(22);
     }
 }
 
@@ -65,7 +62,7 @@
     flex-wrap: wrap;
     gap: rem(10) rem(22);
     @include mq(md) {
-        margin-top: rem(29);
+        margin-top: rem(22);
     }
 }
 
