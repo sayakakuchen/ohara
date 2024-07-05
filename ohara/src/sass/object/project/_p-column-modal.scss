@@ -1,0 +1,73 @@
+@use 'global' as *;
+
+.p-column-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.p-column-modal__content {
+    position: absolute;
+    background-color: $white;
+    width: calc(100% - rem(50));
+    max-height: calc(100% - rem(50));
+    height: fit-content;
+    z-index: 1;
+    inset: 0;
+    margin: auto;
+    padding: rem(70) rem(20) rem(60);
+
+    @include mq(md) {
+        max-width: rem(800);
+        padding: rem(120) rem(100);
+    }
+}
+
+.p-column-modal__close {
+    position: absolute;
+    width: rem(46);
+    top: rem(20);
+    right: rem(20);
+    transition: all 0.3s;
+
+    @include mq(md) {
+        top: rem(40);
+        right: rem(40);
+    }
+}
+
+.p-column-modal__close:hover {
+    opacity: 0.8;
+}
+
+.p-column-modal__logo {
+    max-width: rem(230);
+    width: 100%;
+    margin-inline: auto;
+}
+
+.p-column-modal__text {
+    font-size: rem(14);
+    font-weight: 400;
+    line-height: calc(1.5);
+    letter-spacing: 0.08em;
+    margin-top: rem(30);
+
+    @include mq(md) {
+        text-align: center;
+        font-size: rem(16);
+        line-height: 2;
+    }
+}
+
+.p-column-modal__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #9D9B9B;
+    opacity: 0.4;
+}

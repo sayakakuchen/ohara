@@ -1,9 +1,13 @@
 <div class="p-pickup">
-    <div class="l-inner">
-        <div class="p-pickup__card">
-            <%- include('../component/_c-pickupCard',{
-              tag:'true'
-            }) %>
+    <div class="p-pickup__inner l-inner">
+        <div class="p-pickup__cards js-pickup-slider">
+            <% for ( var i = 0; i < 3; i++ ){ %>
+            <div class="p-pickup__card">
+                <%- include('../component/_c-pickupCard',{
+                  tag:'true'
+                }) %>
+            </div>
+            <% } %>
         </div>
     </div>
 </div>

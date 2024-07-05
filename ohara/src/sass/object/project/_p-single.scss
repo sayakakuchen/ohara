@@ -9,6 +9,14 @@
     }
 }
 
+.p-single.--column {
+    padding-bottom: 0;
+
+    @include mq(md) {
+        padding-bottom: 0;
+    }
+}
+
 .p-single__inner {
     @include mq(md) {
         max-width: calc(rem(900) + $padding-pc + $padding-pc);

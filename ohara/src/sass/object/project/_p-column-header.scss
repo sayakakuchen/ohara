@@ -1,0 +1,125 @@
+@use 'global' as *;
+
+.p-column-header {
+    padding-bottom: rem(20);
+    border-bottom: 1px solid #E2E5E5;
+
+    @include mq(md) {
+        overflow: hidden;
+        padding-bottom: 0;
+        border: none;
+    }
+}
+
+.p-column-header__inner {
+    padding-right: 0;
+}
+
+.p-column-header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: rem(44);
+
+    @include mq(md) {
+        height: rem(135);
+    }
+}
+
+.p-column-header__textLink a {
+    font-size: rem(14);
+    font-weight: 500;
+    line-height: calc(26/14);
+    text-decoration: underline;
+}
+
+.p-column-header__logo {
+    max-width: rem(225);
+    margin-inline: auto;
+    margin-top: rem(6);
+
+    @include mq(md) {
+        max-width: rem(323);
+        margin-top: 0;
+    }
+}
+
+.p-column-header__links {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+    height: 100%;
+
+    @include mq(md) {
+        gap: rem(20);
+    }
+}
+
+.p-column-header__link {
+    height: 100%;
+}
+
+.p-column-header__link a {
+    @include mq(md) {
+        font-size: rem(14);
+        font-weight: 500;
+        line-height: calc(26/14);
+    }
+}
+
+.p-column-header__link.u-sns {
+    width: rem(20);
+}
+
+.p-column-header__link.u-hamburger {
+    width: rem(44);
+    height: 100%;
+}
+
+.p-column-header__link a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-column-header__logo {
+
+}
+
+.p-column-header__nav {
+    @include mq(md) {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        background-color: #676767;
+        height: rem(44);
+    }
+}
+
+.p-column-header__navLinks {
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        gap: rem(30);
+    }
+}
+
+.p-column-header__navLink {
+    @include mq(md) {
+        height: 100%;
+    }
+}
+
+.p-column-header__navLink a {
+    color: $white;
+    font-size: rem(14);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: calc(17/14);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

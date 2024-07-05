@@ -1,6 +1,10 @@
 @use "global" as *;
 
 .c-pickupCard {
+  
+}
+
+.c-pickupCard a {
   display: grid;
   gap: rem(16);
   @include mq(md) {

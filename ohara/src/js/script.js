@@ -141,6 +141,33 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html').toggleClass('is-fixed');
   });
 
+  $('.js-pickup-slider').slick({
+    slidesToShow:1,
+    dots:true,
+    arrow:true,
+    autoplay:true,
+    dotsClass: 'slider-dots',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+        slidesToShow: 1, 
+        arrows:false,
+        }
+      }
+    ]
+  });
+
+  
+
+  if (document.cookie.indexOf('visited=yes') === -1) {
+    document.cookie = 'visited=yes path=/';
+    $('.js-column-modal-close').click(function(){
+      $('.l-column-modal').fadeOut();
+    });
+  } else { 
+    $('.l-column-modal').hide();
+  }
   
 
 

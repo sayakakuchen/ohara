@@ -120,51 +120,57 @@ $sitemap = esc_html(home_url('/sitemap/'));
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">風合い</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">うるわし繊維 - 美容成分配合柔軟剤</li>
-                                <li class="p-lineup__list">αシリーズ - 浴中加工対応の加工剤シリーズ</li>
+                                <li class="p-lineup__list">うるわし繊維</li>
+                                <li class="p-lineup__list">αシリーズ</li>
                             </ul>
                         </div>
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">撥水撥油・防汚</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">フッ素撥水撥油加工剤 - 高い撥水撥油性</li>
-                                <li class="p-lineup__list">非フッ素撥水 - 高い撥水撥油性</li>
-                                <li class="p-lineup__list">防汚加工剤 - 汚れが落ちやすい、付きにくい</li>
+                                <li class="p-lineup__list">フッ素撥水撥油加工剤</li>
+                                <li class="p-lineup__list">非フッ素撥水</li>
+                                <li class="p-lineup__list">防汚加工剤</li>
+                            </ul>
+                        </div>
+                        <div class="p-lineup__item js-lineup">
+                            <p class="p-lineup__text">暑さ対策</p>
+                            <ul class="p-lineup__lists">
+                                <li class="p-lineup__list">コンフォートクール</li>
+                                <li class="p-lineup__list">熱遮蔽、UVカット加工剤</li>
+                                <li class="p-lineup__list">調温加工剤</li>
+                            </ul>
+                        </div>
+                        <div class="p-lineup__item js-lineup">
+                            <p class="p-lineup__text">寒さ対策</p>
+                            <ul class="p-lineup__lists">
+                                <li class="p-lineup__list">吸湿発熱加工剤</li>
+                                <li class="p-lineup__list">ゲルマニウム加工剤</li>
+                                <li class="p-lineup__list">調温加工剤</li>
                             </ul>
                         </div>
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">衛生対策</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">うるわし繊維 - 美容成分配合柔軟剤</li>
-                                <li class="p-lineup__list">αシリーズ - 浴中加工対応の加工剤シリーズ</li>
+                                <li class="p-lineup__list">アレルフレッシュ</li>
+                                <li class="p-lineup__list">抗菌・抗ウイルス加工剤</li>
+                                <li class="p-lineup__list">消臭加工剤</li>
+                                <li class="p-lineup__list">防虫加工剤</li>
+                                <li class="p-lineup__list">花粉リリース加工剤</li>
                             </ul>
                         </div>
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">美容・健康</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">うるわし繊維 - 美容成分配合柔軟剤</li>
-                                <li class="p-lineup__list">αシリーズ - 浴中加工対応の加工剤シリーズ</li>
-                            </ul>
-                        </div>
-                        <div class="p-lineup__item js-lineup">
-                            <p class="p-lineup__text">非フッ素撥水</p>
-                            <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">うるわし繊維 - 美容成分配合柔軟剤</li>
-                                <li class="p-lineup__list">αシリーズ - 浴中加工対応の加工剤シリーズ</li>
-                            </ul>
-                        </div>
-                        <div class="p-lineup__item js-lineup">
-                            <p class="p-lineup__text">消臭加工剤</p>
-                            <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">うるわし繊維 - 美容成分配合柔軟剤</li>
-                                <li class="p-lineup__list">αシリーズ - 浴中加工対応の加工剤シリーズ</li>
+                                <li class="p-lineup__list">弱酸性加工剤</li>
+                                <li class="p-lineup__list">抗酸化加工剤</li>
+                                <li class="p-lineup__list">マイナスイオン加工剤</li>
                             </ul>
                         </div>
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">コーティング加工</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">うるわし繊維 - 美容成分配合柔軟剤</li>
-                                <li class="p-lineup__list">αシリーズ - 浴中加工対応の加工剤シリーズ</li>
+                                <li class="p-lineup__list">汗じみ防止</li>
+                                <li class="p-lineup__list">エコモーション</li>
                             </ul>
                         </div>
                         <div class="p-lineup__item">
