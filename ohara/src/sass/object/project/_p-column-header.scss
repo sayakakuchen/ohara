@@ -1,10 +1,17 @@
 @use 'global' as *;
 
 .p-column-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     padding-bottom: rem(20);
+    background-color: $white;
     border-bottom: 1px solid #E2E5E5;
+    z-index: 9;
 
     @include mq(md) {
+        position: relative;
         overflow: hidden;
         padding-bottom: 0;
         border: none;

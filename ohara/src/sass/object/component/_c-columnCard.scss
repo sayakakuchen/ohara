@@ -3,6 +3,7 @@
 .c-columnCard {
     display: grid;
     gap: rem(16);
+    
     @include mq(md) {
     }
 }

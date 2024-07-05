@@ -23,13 +23,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
     var time = 400;
-    var header = $('.p-header').innerHeight();
+    var headerHeight;
+    if ($('.p-header').length) {
+        headerHeight = $('.p-header').innerHeight();
+    } else if ($('.p-column-header').length) {
+        headerHeight = $('.p-column-header').innerHeight();
+    }
     var target = $(this.hash);
     if (!target.length) return;
-    var targetY = target.offset().top  - header;
+    var targetY = target.offset().top  - headerHeight;
     $('html,body').animate({
       scrollTop: targetY
     }, time, 'swing');
@@ -37,7 +41,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  var header = $('.p-header').outerHeight();
+
+  if ($('.p-header').length){
+    var header = $('.p-header').outerHeight();
+  }else if ($('.p-column-header').length) {
+    var header = $('.p-column-header').outerHeight();
+  }
   var urlHash = location.hash;
   if(urlHash) {
       $('body,html').stop().scrollTop(0);

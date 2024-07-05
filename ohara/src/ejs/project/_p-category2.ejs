@@ -1,0 +1,21 @@
+<div class="p-category">
+    <div class="l-inner">
+        <div class="p-category__unit">
+            <div class="p-category__head">
+                <h2 class="p-category__title">company</h2>
+            </div>
+            <div class="p-category__columnCards">
+                <% for ( var i = 0; i < 12; i++ ){ %>
+                <div class="p-category__columnCard">
+                    <%- include('../component/_c-columnCard',{
+                        tag:'true'
+                    }) %>
+                </div>
+                <% } %>
+            </div>
+            <div class="p-category__btn">
+                <a href="" class="c-btn --white">back</a>
+            </div>
+        </div>
+    </div>
+</div>
