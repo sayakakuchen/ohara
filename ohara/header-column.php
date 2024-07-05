@@ -111,7 +111,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                                 <a href="<?php echo $textile; ?>">繊維加工材</a>
                                             </li>
                                             <li class="p-drawer__subLink">
-                                                <a href="<?php echo $pcp; ?>">PCP/MOF</a>
+                                                <a href="<?php echo $pcp; ?>">気体制御技術</a>
                                             </li>
                                         </ul>
                                     </li>

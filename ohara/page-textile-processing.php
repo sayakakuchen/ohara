@@ -120,57 +120,57 @@ $sitemap = esc_html(home_url('/sitemap/'));
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">風合い</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">うるわし繊維</li>
-                                <li class="p-lineup__list">αシリーズ</li>
+                                <li class="p-lineup__list"><a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/uruwashi.pdf" target="_blank" rel="noopener">うるわし繊維</a></li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">αシリーズ</a></li>
                             </ul>
                         </div>
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">撥水撥油・防汚</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">フッ素撥水撥油加工剤</li>
-                                <li class="p-lineup__list">非フッ素撥水</li>
-                                <li class="p-lineup__list">防汚加工剤</li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">フッ素撥水撥油加工</a>剤</li>
+                                <li class="p-lineup__list"><a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/fluorine.pdf" target="_blank" rel="noopener">非フッ素撥水</a></li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">防汚加工剤</a></li>
                             </ul>
                         </div>
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">暑さ対策</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">コンフォートクール</li>
-                                <li class="p-lineup__list">熱遮蔽、UVカット加工剤</li>
-                                <li class="p-lineup__list">調温加工剤</li>
+                                <li class="p-lineup__list"><a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/confort.pdf" target="_blank" rel="noopener">コンフォートクール</a></li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">熱遮蔽、UVカット加工剤</a></li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">調温加工剤</a></li>
                             </ul>
                         </div>
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">寒さ対策</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">吸湿発熱加工剤</li>
-                                <li class="p-lineup__list">ゲルマニウム加工剤</li>
-                                <li class="p-lineup__list">調温加工剤</li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">吸湿発熱加工剤</a></li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">ゲルマニウム加工剤</a></li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">調温加工剤</a></li>
                             </ul>
                         </div>
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">衛生対策</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">アレルフレッシュ</li>
-                                <li class="p-lineup__list">抗菌・抗ウイルス加工剤</li>
-                                <li class="p-lineup__list">消臭加工剤</li>
-                                <li class="p-lineup__list">防虫加工剤</li>
-                                <li class="p-lineup__list">花粉リリース加工剤</li>
+                                <li class="p-lineup__list"><a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/aller.pdf" target="_blank" rel="noopener">アレルフレッシュ</a></li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">抗菌・抗ウイルス加工剤</a></li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">消臭加工剤</a></li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">防虫加工剤</a></li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">花粉リリース加工剤</a></li>
                             </ul>
                         </div>
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">美容・健康</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">弱酸性加工剤</li>
-                                <li class="p-lineup__list">抗酸化加工剤</li>
-                                <li class="p-lineup__list">マイナスイオン加工剤</li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">弱酸性加工剤</a></li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">抗酸化加工剤</a></li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">マイナスイオン加工剤</a></li>
                             </ul>
                         </div>
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">コーティング加工</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list">汗じみ防止</li>
-                                <li class="p-lineup__list">エコモーション</li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">汗じみ防止</a></li>
+                                <li class="p-lineup__list"><a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/ecomotion.pdf" target="_blank" rel="noopener">エコモーション</a></li>
                             </ul>
                         </div>
                         <div class="p-lineup__item">
@@ -183,7 +183,11 @@ $sitemap = esc_html(home_url('/sitemap/'));
                             <p class="p-lineup__text">透け防止加工剤<span>中に着用した衣類を透けにくく</span></p>
                         </div>
                         <div class="p-lineup__item">
-                            <p class="p-lineup__text">ストレッチパック加工剤<span>伸びやすく戻りやすい。<br>しわ防止にも</span></p>
+                            <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/str8.pdf" target="_blank" rel="noopener">
+                                <p class="p-lineup__text">
+                                ストレッチパック加工剤<span>伸びやすく戻りやすい。<br>しわ防止にも</span>
+                                </p>
+                            </a>
                         </div>
                         <div class="p-lineup__item">
                             <p class="p-lineup__text">and more …<span>起毛、艶消、スリップ防止、<Br>リップル加工など</span></p>

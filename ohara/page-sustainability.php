@@ -142,7 +142,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/andmore.png" alt="andmore">
                             </picture>
                             <p class="p-eco__text c-text u-desktop"></p>
-                            <div class="p-eco__btn">
+                            <div class="p-eco__btn u-hidden">
                                 <a href="#" class="c-btn --small"> PDF <div class="c-btn__link">
                                         <div class="c-link --small"><span></span></div>
                                     </div>

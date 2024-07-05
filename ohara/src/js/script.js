@@ -177,6 +177,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   } else { 
     $('.l-column-modal').hide();
   }
+
+  const items = document.querySelectorAll('.p-lineup__item');
+        
+  items.forEach((item, index) => {
+      item.style.zIndex = items.length - index;
+  });
   
 
 

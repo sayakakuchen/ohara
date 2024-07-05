@@ -46,12 +46,6 @@
     transition: all 0.3s;
 }
 
-@media (hover:hover) {
-    .p-lineup__item:hover {
-        opacity: 0.8;
-    }
-}
-
 .p-lineup__item:has(.p-lineup__lists)::before {
     position: absolute;
     content: "▼";
@@ -121,7 +115,7 @@
     top: rem(96);
     left: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 10;
     display: none;
 }
 
@@ -132,6 +126,11 @@
     letter-spacing: 0.08em;
     color: $white;
     background-color: $green;
+}
+
+.p-lineup__list a {
+    display: inline-block;
+    width: 100%;
     padding: rem(14) rem(21);
 
     @include mq(md) {

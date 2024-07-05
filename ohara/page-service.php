@@ -96,7 +96,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     <div class="p-block__title">
                                         <hgroup class="c-title">
                                             <p class="c-title__sub --green ">porous material</p>
-                                            <h2 class="c-title__main --black --small">PCP/MOF事業</h2>
+                                            <h2 class="c-title__main --black --small">気体制御技術</h2>
                                         </hgroup>
                                     </div>
                                     <p class="p-block__text c-text"> 2023 年 4 月に新たに立ち上げた事業で、ガス吸着ビジネスを展開します。<br> 京都大学発の PCP/MOF を用いた成形加工技術を確立しました。（特許取得）<br> b.cave™としての臭気ソリューション（脱臭）のほか 、PCP/MOF の特性を活かした様々なアプローチで社会に貢献します </p>
@@ -109,7 +109,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 </div>
                                 <picture class="p-block__img --sp-top">
                                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/service_02.webp" type="image/webp">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/service_02.jpg" alt="PCP/MOF事業">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/service_02.jpg" alt="気体制御技術">
                                 </picture>
                             </div>
                         </div>
@@ -158,7 +158,10 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     </div>
                                     <p class="p-block__text c-text"> 繊維加工剤で培った抗ウイルス・抗菌の技術を、スプレーという形で小売り販売に拡げました。直接吹きかけるだけで、ウイルスや菌の増殖を防ぎます。<br> 安全性の高い成分で作られており、人体や環境にも優しい製品です 。家庭・教育現場・公共施設など様々な場所でご使用頂いております。<br><br>KYOHPARAに関しては、協力会社にて販売しております。 </p>
                                     <div class="p-block__more">
-                                        <a href="#" class="c-textLink">詳しくはこちら</a>
+                                        <a href="https://www.miyako-sogokanri.com/kyohpara/" target="_blank" rel="noopener" class="c-textLink">詳しくはこちら</a>
+                                    </div>
+                                    <div class="p-block__more">
+                                        <a href="http://www.michisu-kyoto.com/about/" target="_blank" rel="noopener" class="c-textLink">詳しくはこちら</a>
                                     </div>
                                 </div>
                                 <picture class="p-block__img --left --sp-top">
