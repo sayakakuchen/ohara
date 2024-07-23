@@ -185,7 +185,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                         <div class="p-lineup__item">
                             <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/str8.pdf" target="_blank" rel="noopener">
                                 <p class="p-lineup__text">
-                                ストレッチパック加工剤<span>伸びやすく戻りやすい。<br>しわ防止にも</span>
+                                ストレッチバック加工剤<span>伸びやすく戻りやすい。<br>しわ防止にも</span>
                                 </p>
                             </a>
                         </div>

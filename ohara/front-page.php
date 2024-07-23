@@ -947,50 +947,38 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 </a>
                             </div>
                         </div>
+                        <?php
+                            $args = array(
+                                'post_type' => 'column', 
+                                'posts_per_page' => 5,
+                            );
+                            $the_query = new WP_Query($args); if($the_query->have_posts()):
+                        ?>
                         <div class="p-topColumn__slider js-column-slider">
+                            <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+                            <?php $terms = get_the_terms($post->ID, 'column_category'); ?>
                             <div class="p-topColumn__card">
-                                <a href="#" class="c-card">
+                                <a href="<?php the_permalink(); ?>" class="c-card">
                                     <picture class="c-card__img">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/thumbnail.jpg" alt="アイキャッチ画像">
                                     </picture>
                                     <div class="c-card__info">
-                                        <time class="c-card__time">2020.02.14</time>
+                                        <time class="c-card__time" datetime="<?php echo get_the_date('Y.m.d'); ?><"><?php echo get_the_date('Y.m.d'); ?></time>
+                                        <?php if($terms): ?>
                                         <ul class="c-card__cats">
-                                            <li class="c-card__cat c-tag">カテゴリが入ります</li>
+                                            <?php foreach($terms as $term): ?>
+                                            <li class="c-card__cat c-tag"><?php echo esc_html($term->name); ?></li>
+                                            <?php endforeach; ?>
                                         </ul>
+                                        <?php endif; ?>
                                     </div>
-                                    <p class="c-card__title">タイトルが入ります。ダミーテキストダミーテキスト</p>
+                                    <p class="c-card__title"><?php the_title(); ?></p>
                                 </a>
                             </div>
-                            <div class="p-topColumn__card">
-                                <a href="#" class="c-card">
-                                    <picture class="c-card__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/thumbnail.jpg" alt="アイキャッチ画像">
-                                    </picture>
-                                    <div class="c-card__info">
-                                        <time class="c-card__time">2020.02.14</time>
-                                        <ul class="c-card__cats">
-                                            <li class="c-card__cat c-tag">カテゴリが入ります</li>
-                                        </ul>
-                                    </div>
-                                    <p class="c-card__title">タイトルが入ります。ダミーテキストダミーテキスト</p>
-                                </a>
-                            </div>
-                            <div class="p-topColumn__card">
-                                <a href="#" class="c-card">
-                                    <picture class="c-card__img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/thumbnail.jpg" alt="アイキャッチ画像">
-                                    </picture>
-                                    <div class="c-card__info">
-                                        <time class="c-card__time">2020.02.14</time>
-                                        <ul class="c-card__cats">
-                                            <li class="c-card__cat c-tag">カテゴリが入ります</li>
-                                        </ul>
-                                    </div>
-                                    <p class="c-card__title">タイトルが入ります。ダミーテキストダミーテキスト</p>
-                                </a>
-                            </div>
+                            <?php endwhile; ?>
+                            <?php wp_reset_postdata(); ?>
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

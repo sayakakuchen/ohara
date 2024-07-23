@@ -152,7 +152,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                             <div class="c-rowItem">
                                 <div class="c-rowItem__content">
                                     <h3 class="c-rowItem__title">共同開発</h3>
-                                    <p class="c-rowItem__text c-text"> 学や企業などが持っている新しい物質や技術を弊社の技術と組み合わせることで、様々な分野で応用できる製品作りに取り組んでいます。このような共同開発に積極的に取り組むことで、自社の競争力を高めることができると考えており、常に新しいアイデアを情報収集しています。 </p>
+                                    <p class="c-rowItem__text c-text"> 大学や企業などが持っている新しい物質や技術を弊社の技術と組み合わせることで、様々な分野で応用できる製品作りに繋がります。このような共同開発に積極的に取り組むことで自社の競争力を高めることができると考えており、常に新しいアイデア・情報を収集しています。 </p>
                                     <div class="c-rowItem__list c-text">
                                         <span>取組み先例</span><br> 京都大学、京都工芸繊維大学、大阪公立大学、福井大学、京都産業技術研究所、他
                                     </div>
@@ -166,9 +166,9 @@ $sitemap = esc_html(home_url('/sitemap/'));
                             <div class="c-rowItem">
                                 <div class="c-rowItem__content">
                                     <h3 class="c-rowItem__title">支援事業への挑戦 </h3>
-                                    <p class="c-rowItem__text c-text"> 学や企業、測定機関などと協力して、製品や製造方法の開発に取り組んでいます。また、それらに関連する測定機器や製造機械の開発も、支援事業を通じて行っています。常に新しい技術やアイデアに挑戦し、世の中のニーズに応えることを目指しています。 </p>
+                                    <p class="c-rowItem__text c-text"> 大学や企業、測定機関などと協力して、製品や製造方法の開発に取り組んでいます。また、それらに関連する測定機器や製造機械の開発も、支援事業を通じて行っています。常に新しい技術やアイデアに挑戦し、世の中のニーズに応えることを目指しています。 </p>
                                     <div class="c-rowItem__list c-text">
-                                        <span>事例</span><br> サポイン事業、ものつくり中小企業支援事業、京都産業21支援事業、他
+                                        <span>事例</span><br> サポイン事業、ものづくり中小企業支援事業、京都産業21支援事業、他
                                     </div>
                                 </div>
                                 <picture class="c-rowItem__img">
@@ -180,7 +180,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                             <div class="c-rowItem">
                                 <div class="c-rowItem__content">
                                     <h3 class="c-rowItem__title">依頼試験対応 </h3>
-                                    <p class="c-rowItem__text c-text"> 多様なニーズに応えるために、顧客から提供される生地等に対して、最適使用濃度の試験を迅速に行っています。更に、加工場で加工された本生産生地の各種試験（機能性試験、堅牢度試験等）の評価も行っています。これらの試験は、生地の性能や耐久性を検証することで、得意先との信頼関係を大切にし、満足度の高いサービスを提供することを目指しています。 </p>
+                                    <p class="c-rowItem__text c-text"> 多様なニーズに応えるために、顧客から提供される生地等に対する最適使用濃度の試験を迅速に行っています。更に、加工場で加工された本生産生地の各種試験（機能性試験、堅牢度試験等）の評価も行っています。生地の性能や耐久性を細やかに検証することで顧客との信頼関係を築き、満足度の高いサービスを提供することを目指しています。 </p>
                                     <div class="c-rowItem__list c-text">
                                         <span>保有設備</span><br> 抗菌測定室、恒温恒湿室、FTIR測定器、UV測定器、マイクロスコープ、引張強度試験機、耐光試験機、マングル、ピンテンター連続乾燥機、高水圧測定器、標準ガス発生装置、真空乾燥機、恒温恒湿器、乾燥器、他
                                     </div>
@@ -204,8 +204,8 @@ $sitemap = esc_html(home_url('/sitemap/'));
                         <div class="p-initiatives__item">
                             <div class="c-rowItem">
                                 <div class="c-rowItem__content">
-                                    <h3 class="c-rowItem__title">OEE<small>（Original Equipment Manufacturing）</small>対応 </h3>
-                                    <p class="c-rowItem__text c-text"> 顧客から依頼される完成品、半完成品に応じて製造することが出来ます。また、原料に対しても完成品対応を行います。弊社は様々な製品に応用できる水分散技術を持っており、この技術を活用して顧客の要望にお応えします。 </p>
+                                    <h3 class="c-rowItem__title">OEM<small>（Original Equipment Manufacturing）</small>対応 </h3>
+                                    <p class="c-rowItem__text c-text"> 顧客から指定された原料を用いた製品開発など、様々なOEM製造に対応します。弊社は様々な製品に応用できる水分散技術を持っており、この技術を活用して顧客の要望にお応えしています。顧客にとっての独自性・競争力のある製品作りに協力します。 </p>
                                 </div>
                                 <picture class="c-rowItem__img">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/study/initiatives_05.jpg" alt="OEE（Original Equipment Manufacturing）対応 ">

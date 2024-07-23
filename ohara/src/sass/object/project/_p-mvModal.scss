@@ -6,7 +6,7 @@
     height: 100%;
     margin: auto;
     inset: 0;
-    z-index: 10;
+    z-index: 100;
     display: none;
 }
 
@@ -168,6 +168,7 @@
 
     @include mq(md) {
         gap: rem(20);
+        grid-template-columns: rem(120) 1fr;
     }
 }
 

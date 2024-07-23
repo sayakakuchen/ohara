@@ -63,10 +63,16 @@
     margin-top: rem(29);
 
     @include mq(md) {
+        text-align: left;
         font-size: rem(48);
         line-height: calc(68/48);
         margin-top: rem(10);
     }
+}
+
+.p-subMv__text {
+    margin-top: rem(10);
+    line-height: 1.5;
 }
 
 .p-subMv__img {

@@ -43,7 +43,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                             <div class="p-footer__nav">
                                 <ul class="p-footer__links">
                                     <li class="p-footer__link"><a href="<?php echo $service; ?>">事業紹介</a></li>
-                                    <li class="p-footer__link"><a href="<?php echo $textile; ?>">繊維加工材</a></li>
+                                    <li class="p-footer__link"><a href="<?php echo $textile; ?>">繊維加工剤</a></li>
                                     <li class="p-footer__link"><a href="<?php echo $pcp; ?>">気体制御技術</a></li>
                                 </ul>
                                 <ul class="p-footer__links">

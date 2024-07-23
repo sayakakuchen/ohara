@@ -35,7 +35,10 @@ $sitemap = esc_html(home_url('/sitemap/'));
                     <div class="p-subMv__wrap">
                         <hgroup class="p-subMv__title">
                             <p class="p-subMv__en">porous material</p>
-                            <h1 class="p-subMv__ja">PCP/MOF</h1>
+                            <h1 class="p-subMv__ja">気体制御技術</h1>
+                            <p class="p-subMv__text c-text">
+                                PCP/MOFを使用した製品群『b.cave&reg;&reg;』を主に、様々な気体制御技術を展開します。
+                            </p>
                         </hgroup>
                         <picture class="p-subMv__img">
                             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/common/subMv_service.webp" type="image/webp" />
@@ -99,17 +102,17 @@ $sitemap = esc_html(home_url('/sitemap/'));
                 <div class="p-bcave__inner l-inner">
                     <div class="p-bcave__title">
                         <hgroup class="c-singleTitle">
-                            <p class="c-singleTitle__sub "> b.cave</p>
-                            <h2 class="c-singleTitle__main "> b.cave</h2>
+                            <p class="c-singleTitle__sub "> b.cave&reg;</p>
+                            <h2 class="c-singleTitle__main "> b.cave&reg;</h2>
                         </hgroup>
                     </div>
-                    <p class="p-bcave__text c-text"> PCP/MOFを使用した応用製品シリーズがb.caveです。<br> PCP/MOF は、高い吸着性や触媒性を持つ新しいナノポーラス材料ですが、<br> そのままでは超微細な粉末状であり、実用化には困難が伴います。<br> そこで当社では、PCP/MOF の性能を損なわずにペレット状・シート状・塗料等の様々な形態に加工できる技術を確立しました。<br> これによりPCP/MOF 製品の応用範囲が広がり、より多くの分野での活用が期待できます。<br> 驚異的な瞬間吸着能力を持つb.caveは、臭気・有害ガス等の様々な課題を解決する製品として社会に貢献していきます。 </p>
+                    <p class="p-bcave__text c-text"> PCP/MOFを使用した応用製品シリーズがb.cave&reg;です。<br> PCP/MOF は、高い吸着性や触媒性を持つ新しいナノポーラス材料ですが、<br> そのままでは超微細な粉末状であり、実用化には困難が伴います。<br> そこで当社では、PCP/MOF の性能を損なわずにペレット状・シート状・塗料等の様々な形態に加工できる技術を確立しました。<br> これによりPCP/MOF 製品の応用範囲が広がり、より多くの分野での活用が期待できます。<br> 驚異的な瞬間吸着能力を持つb.cave&reg;は、臭気・有害ガス等の様々な課題を解決する製品として社会に貢献していきます。 </p>
                     <div class="p-bcave__btn">
                         <a href="#" class="c-documentBtn">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/pdf.svg" alt="pdf"> 資料で詳しく見る </a>
                     </div>
                     <h3 class="p-bcave__subtitle">
-                        <h3 class="c-subTitle">b.cave materials</h3>
+                        <h3 class="c-subTitle">b.cave&reg; materials</h3>
                     </h3>
                     <div class="p-bcave__items">
                         <div class="p-bcave__item">
@@ -164,7 +167,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <p class="p-bcave__lead">打錠成形品</p>
                                 <p class="p-bcave__itemTitle">DJシリーズ</p>
                                 <picture class="p-bcave__img">
-                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/zr.webp" type="image/webp" />
+                                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/dj.webp" type="image/webp" />
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/dj.jpg" alt="DJシリーズ">
                                 </picture>
                             </div>
@@ -263,7 +266,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     <p class="p-target__text">有毒ガス吸着</p>
                                 </li>
                             </ul>
-                            <p class="p-target__bottom c-text">その他働きやすさや街づくり改革など様々な社会課題をb.caveで解決していきます。​</p>
+                            <p class="p-target__bottom c-text">その他働きやすさや街づくり改革など様々な社会課題をb.cave&reg;で解決していきます。​</p>
                         </div>
                     </div>
                     <div class="p-business__material">
@@ -273,15 +276,15 @@ $sitemap = esc_html(home_url('/sitemap/'));
                             </div>
                             <ul class="p-material__items">
                                 <li class="p-material__item">
-                                    <p class="p-material__itemTitle">b.cave materials</p>
+                                    <p class="p-material__itemTitle">b.cave&reg; materials</p>
                                     <p class="p-material__text c-text"> 粉体・粒状・シート状をそのままの状態で提供。お客様は、目的や用途に応じて、自由に加工・利用することが可能です。 </p>
                                 </li>
                                 <li class="p-material__item">
-                                    <p class="p-material__itemTitle">b.cave materials &</p>
+                                    <p class="p-material__itemTitle">b.cave&reg; materials &</p>
                                     <p class="p-material__text c-text"> materialsをフィルターなどの形にした上で提供。 </p>
                                 </li>
                                 <li class="p-material__item">
-                                    <p class="p-material__itemTitle">b.cave equipments</p>
+                                    <p class="p-material__itemTitle">b.cave&reg; equipments</p>
                                     <p class="p-material__text c-text"> materialsを搭載した機器（脱臭機など）として提供。materialsを搭載した機器は、家庭用や業務用など、さまざまな用途に応じた設計が可能です。 </p>
                                 </li>
                             </ul>
@@ -294,7 +297,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                             </div>
                             <div class="p-totalsolution__wrap">
                                 <div class="p-totalsolution__content">
-                                    <p class="p-totalsolution__text c-text"> PCP/MOFを成形させる技術は、多くの産業分野での重要な役割になると考えています。当社は、PCP/MOFの配合量調整や異素材との共存など、PCP/MOFの成形に対応できる技術を持っています。各種PCPの成形の相談にお気軽にご連絡ください。お客様のニーズに合わせた最適なPCPの成形ソリューションを提供します。 </p>
+                                    <p class="p-totalsolution__text c-text"> PCP/MOFを成形させる技術は、多くの産業分野で重要な役割を担うと考えています。当社は、PCP/MOFの配合量調整や異素材との共存など、PCP/MOFの成形に対応できる技術を持っています。各種PCPの成形に関して、お気軽にご相談ください。お客様のニーズに合わせた最適なPCP/MOFの成形ソリューションを提供します。 </p>
                                     <div class="p-totalsolution__example">
                                         <span>応用例</span><br class="u-mobile"> CO2 回収、CCS、CCUS、脱炭素、ガスタンクの小型化、 etc...
                                     </div>

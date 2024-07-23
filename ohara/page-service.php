@@ -76,7 +76,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                             <h2 class="c-title__main --black --small">繊維加工剤事業 </h2>
                                         </hgroup>
                                     </div>
-                                    <p class="p-block__text c-text">弊社は『快適住空間の創造』をミッションに掲げ、人の快適、地球の快適等それぞれの テーマに取り組み、考え続けています。創業時よりの特徴である「小回りの利く開発」 「自由なコミュニケーション環境」そして「産学を通じての社外との連携」を更に 進化させ、オンリーワン企業を日々目指しています。当社の祖業であり、現在においても蓄積してきた技術とノウハウにより「時代に合った機能性加工」を提案し続けています。基本的に全て、環境に優しい『水系』を基本としたラインナップです。 最終用途は衣料・寝具・産業資材など多岐に渡ります。 </p>
+                                    <p class="p-block__text c-text">当社の祖業であり、現在においても蓄積してきた技術とノウハウにより「時代に合った機能性加工」を提案し続けています。基本的に全て、環境に優しい『水系』を基本としたラインナップです。 最終用途は衣料・寝具・産業資材など多岐に渡ります。</p>
                                     <div class="p-block__btn --left">
                                         <a href="<?php echo $manufact; ?>" class="c-btn "> 詳しくみる <div class="c-btn__link">
                                                 <div class="c-link "><span></span></div>
@@ -99,7 +99,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                             <h2 class="c-title__main --black --small">気体制御技術</h2>
                                         </hgroup>
                                     </div>
-                                    <p class="p-block__text c-text"> 2023 年 4 月に新たに立ち上げた事業で、ガス吸着ビジネスを展開します。<br> 京都大学発の PCP/MOF を用いた成形加工技術を確立しました。（特許取得）<br> b.cave™としての臭気ソリューション（脱臭）のほか 、PCP/MOF の特性を活かした様々なアプローチで社会に貢献します </p>
+                                    <p class="p-block__text c-text"> 2023年4月に立ち上げた新規事業です。京都大学発の PCP/MOF を用いた成形加工技術を確立しました。（特許取得）<br>PCP/MOFを用いた製品群であるb.cave®を主とし、臭気ソリューション（脱臭）、有害ガス対策、ガスによる機器障害対策、衛生対策などをご提供します。<br>また、用途に応じて別のPCP/MOFもしくはPCP/MOF以外を用いた粉体成形も可能です。</p>
                                     <div class="p-block__btn --left">
                                         <a href="<?php echo $pcp; ?>" class="c-btn "> 詳しくみる <div class="c-btn__link">
                                                 <div class="c-link "><span></span></div>
@@ -122,7 +122,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                             <h2 class="c-title__main --black --small">瞬間接着剤事業</h2>
                                         </hgroup>
                                     </div>
-                                    <p class="p-block__text c-text"> シアノアクリレート系の瞬間接着剤を中心にラインナップしております。<br><br>シアノアクリレート系の瞬間接着剤は、高速で強力な接着力を発揮する特殊な接着剤です。当社では、この接着剤を様々な用途に合わせて開発・製造しております。<br>当社の製品は、充填メーカーに納品され、そこで容器に詰められたりラベルが貼られたりし、最終商品として市場に出回ります。 </p>
+                                    <p class="p-block__text c-text"> シアノアクリレート系の瞬間接着剤を中心にラインナップしております。<br><br>シアノアクリレート系の瞬間接着剤は、高速で強力な接着力を発揮する特殊な接着剤です。当社では、この接着剤を様々な用途に合わせて開発・製造しております。<br>当社の製品は充填メーカーに納品され、そこを経由し最終商品として市場に出回ります。 </p>
                                 </div>
                                 <picture class="p-block__img --left --sp-top">
                                     <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/service_03.webp" type="image/webp">

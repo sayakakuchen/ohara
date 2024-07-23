@@ -137,11 +137,6 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <h3 class="p-jobList__title c-iconTitle">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/icon_job.svg" alt="アイコン"> 主な業務内容
                                 </h3>
-                                <ul class="p-jobList__lists">
-                                    <li class="p-jobList__list">自社製品の製造を、原料管理から仕上げまで一貫で担う。</li>
-                                    <li class="p-jobList__list">製品を出荷するところまで関わる。時には自ら配送する事も。</li>
-                                    <li class="p-jobList__list">棚卸業務も含め、在庫管理という重要な業務も担う。</li>
-                                </ul>
                                 <?php if(have_rows('job')): ?>
                                 <ul class="p-jobList__lists">
                                     <?php while(have_rows('job')): the_row(); ?>

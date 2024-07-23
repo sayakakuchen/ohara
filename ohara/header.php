@@ -69,7 +69,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                         <span class="p-drawer__button js-drawer-button"></span>
                                         <ul class="p-drawer__subLinks">
                                             <li class="p-drawer__subLink">
-                                                <a href="<?php echo $textile; ?>">繊維加工材</a>
+                                                <a href="<?php echo $textile; ?>">繊維加工剤</a>
                                             </li>
                                             <li class="p-drawer__subLink">
                                                 <a href="<?php echo $pcp; ?>">気体制御技術</a>
@@ -155,7 +155,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <span class="p-globalNav__button js-globalNav-button"></span>
                                 <ul class="p-globalNav__subLinks">
                                     <li class="p-globalNav__subLink">
-                                        <a href="<?php echo $textile; ?>">繊維加工材</a>
+                                        <a href="<?php echo $textile; ?>">繊維加工剤</a>
                                     </li>
                                     <li class="p-globalNav__subLink">
                                         <a href="<?php echo $pcp; ?>">気体制御技術</a>
