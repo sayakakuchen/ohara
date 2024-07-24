@@ -2,6 +2,7 @@
 
 .p-mv {
     position: relative;
+    overflow: hidden;
 
     @include mq(md) {
         height: calc(100vh - rem(108));
@@ -24,9 +25,12 @@
     }
 }
 
+.p-mv__main {
+    animation: mvshow 3s ease-in-out forwards;
+}
+
 .p-mv__img {
     width: 100%;
-    animation: mvshow 3s ease-in-out forwards;
 }
 
 @keyframes mvshow {
@@ -113,17 +117,23 @@
 
 .p-mv__link {
     position: absolute;
-    width: rem(12);
+    width: vw(375,12);
     animation: fuwa .3s 3.1s linear both;
+    transition: all 0.3s !important;
+    z-index: 2;
 
     @include mq(md) {
         width: rem(35);
     }
 }
 
+.p-mv__link:hover {
+    transform: translateY(-5%) !important;
+}
+
 .p-mv__link.--1 {
     top: 0;
-    left: rem(90);
+    left: vw(375,90);
 
     @include mq(md) {
         top: rem(3);
@@ -132,8 +142,8 @@
 }
 
 .p-mv__link.--2 {
-    top: rem(3);
-    left: rem(190);
+    top: vw(375,3);
+    left: vw(375,190);
 
     @include mq(md) {
         top: rem(11);
@@ -142,8 +152,8 @@
 }
 
 .p-mv__link.--3 {
-    top: rem(6);
-    right: rem(112);
+    top: vw(375,6);
+    right: vw(375,112);
     animation-delay: 3.2s;
 
     @include mq(md) {
@@ -153,8 +163,8 @@
 }
 
 .p-mv__link.--4 {
-    top: rem(37);
-    left: rem(110);
+    top: vw(375,37);
+    left: vw(375,110);
     animation-delay: 3.3s;
 
     @include mq(md) {
@@ -164,8 +174,8 @@
 }
 
 .p-mv__link.--5 {
-    top: rem(36);
-    left: rem(195);
+    top: vw(375,36);
+    left: vw(375,195);
     animation-delay: 3.4s;
 
     @include mq(md) {
@@ -175,8 +185,8 @@
 }
 
 .p-mv__link.--6 {
-    top: rem(49);
-    right: rem(64);
+    top: vw(375,49);
+    right: vw(375,64);
     animation-delay: 3.5s;
 
     @include mq(md) {
@@ -186,8 +196,8 @@
 }
 
 .p-mv__link.--7 {
-    top: rem(55);
-    right: rem(32);
+    top: vw(375,55);
+    right: vw(375,32);
     animation-delay: 3.6s;
 
     @include mq(md) {
@@ -197,8 +207,8 @@
 }
 
 .p-mv__link.--8 {
-    top: rem(69);
-    left: rem(16);
+    top: vw(375,69);
+    left: vw(375,16);
     animation-delay: 3.7s;
 
     @include mq(md) {
@@ -208,8 +218,8 @@
 }
 
 .p-mv__link.--9 {
-    top: rem(87);
-    left: rem(112);
+    top: vw(375,87);
+    left: vw(375,112);
     animation-delay: 3.8s;
 
     @include mq(md) {
@@ -219,8 +229,8 @@
 }
 
 .p-mv__link.--10 {
-    top: rem(62);
-    left: rem(189);
+    top: vw(375,62);
+    left: vw(375,189);
     animation-delay: 3.9s;
 
     @include mq(md) {
@@ -230,8 +240,8 @@
 }
 
 .p-mv__link.--11 {
-    top: rem(109);
-    right: rem(82);
+    top: vw(375,109);
+    right: vw(375,82);
     animation-delay: 4s;
 
     @include mq(md) {
@@ -241,8 +251,8 @@
 }
 
 .p-mv__link.--12 {
-    top: rem(129);
-    left: rem(184);
+    top: vw(375,129);
+    left: vw(375,184);
     animation-delay: 4.1s;
 
     @include mq(md) {
@@ -252,8 +262,8 @@
 }
 
 .p-mv__link.--13 {
-    top: rem(139);
-    right: rem(87);
+    top: vw(375,139);
+    right: vw(375,87);
     animation-delay: 4.2s;
 
     @include mq(md) {
@@ -274,4 +284,134 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.p-mv__car {
+    position: absolute;
+    width: vw(375,28);
+    animation: car 8s linear infinite;
+
+    @include mq(md) {
+        width: rem(86);
+        animation: car2 8s linear infinite;
+    }
+}
+
+.p-mv__bus {
+    position: absolute;
+    width: vw(375,50);
+    animation: bus 8s linear 4s infinite;
+    opacity: 0;
+
+    @include mq(md) {
+        width: rem(153);
+        animation: bus2 8s linear 4s infinite;
+    }
+}
+
+.p-mv__rocket {
+    position: absolute;
+    width: vw(375,45);
+    top: 0;
+    right: vw(375,45);
+    animation: rocket 1s ease-in infinite alternate;
+
+    @include mq(md) {
+        width: rem(138);
+        right: rem(130);
+    }
+}
+
+@keyframes rocket {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(10%,-10%);
+    }
+}
+
+@keyframes car {
+    0% {
+        opacity: 0;
+        top: vw(375,-46);
+        right: vw(375,320);
+    }
+    5% {
+        opacity: 1;
+    }
+    95% {
+        top: vw(375,150);
+        right: vw(375,-30);
+    }
+    100% {
+        top: vw(375,150);
+        right: vw(375,-30);
+    }
+}
+
+@keyframes car2 {
+    0% {
+        opacity: 0;
+        top: rem(-40);
+        right: rem(770);
+    }
+    5% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        top: rem(495);
+        right: rem(-130);
+        opacity: 0;
+    }
+}
+
+@keyframes bus {
+    0% {
+        opacity: 0;
+        top: vw(375,-40);
+        right: vw(375,260);
+    }
+    5% {
+        opacity: 1;
+    }
+    95% {
+        top: vw(375,140);
+        right: vw(375,-50);
+    }
+    100% {
+        top: vw(375,140);
+        right: vw(375,-50);
+        opacity: 1;
+    }
+}
+
+@keyframes bus2 {
+    0% {
+        opacity: 0;
+        top: rem(-70);
+        right: rem(705);
+    }
+    5% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        top: rem(450);
+        right: rem(-180);
+        opacity: 1;
+        opacity: 0;
+    }
+}
+
+.p-mv__cover {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }

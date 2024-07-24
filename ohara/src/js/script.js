@@ -102,10 +102,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('.p-mvModal__content').fadeOut();
   });
 
-  $('.js-lineup').click(function(){
-    $(this).toggleClass('is-active');
-    $(this).find('.p-lineup__lists').slideToggle();
-  });
+  $('.js-lineup').hover(
+    function(){
+      $(this).addClass('is-active');
+      $(this).find('.p-lineup__lists').slideDown();
+    },
+    function(){
+      $(this).removeClass('is-active');
+      $(this).find('.p-lineup__lists').slideUp();
+    }
+  );
   
   $('.js-case-slider')
   .on("init", function (event, slick) {
@@ -125,7 +131,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   $('.js-studySlide-slider').slick({
     variableWidth: true,
+    autoplaySpeed: 0,
     slidesToShow:1,
+    infinite:true,
+    loop:true,
     cssEase: "linear",
     pauseOnFocus: false,
     pauseOnHover: false,

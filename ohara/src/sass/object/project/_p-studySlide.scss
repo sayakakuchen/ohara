@@ -20,19 +20,29 @@
     left: 0;
     bottom: rem(124);
     z-index: 1;
+
+    @include mq(md) {
+        left: initial;
+        right: rem(60);
+        bottom: rem(153);
+    }
 }
 
 .p-studySlide__title.u-mobile {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include mq(md) {
+        display: none;
+    }
 }
 
 .p-studySlide__title.u-desktop {
     display: none;
 
     @include mq(md) {
-
+        display: block;
     }
 }
 
@@ -41,6 +51,11 @@
     font-weight: bold;
     padding: rem(12) rem(18);
     background-color: #F8F8F8;
+
+    @include mq(md) {
+        font-size: rem(40);
+        padding: rem(10) rem(20);
+    }
 }
 
 .p-studySlide__slider {

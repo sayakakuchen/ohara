@@ -127,7 +127,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                         <div class="p-lineup__item js-lineup">
                             <p class="p-lineup__text">撥水撥油・防汚</p>
                             <ul class="p-lineup__lists">
-                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">フッ素撥水撥油加工</a>剤</li>
+                                <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">フッ素撥水撥油加工剤</a></li>
                                 <li class="p-lineup__list"><a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/fluorine.pdf" target="_blank" rel="noopener">非フッ素撥水</a></li>
                                 <li class="p-lineup__list"><a href="#" target="_blank" rel="noopener">防汚加工剤</a></li>
                             </ul>
@@ -232,11 +232,11 @@ $sitemap = esc_html(home_url('/sitemap/'));
                         <div class="p-case__item">
                             <div class="c-box">
                                 <div class="c-box__number">01</div>
-                                <h3 class="c-box__title">コンフォートクールⓇ<br class="u-mobile">シリーズ</h3>
+                                <h3 class="c-box__title">コンフォートクール&reg;<br class="u-mobile">シリーズ</h3>
                                 <div class="c-box__wrap">
                                     <picture class="c-box__img">
-                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_dummy.jpg" type="image/webp" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_dummy.jpg" alt="アイキャッチ画像">
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_01.webp" type="image/webp" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_01.jpg" alt="アイキャッチ画像">
                                     </picture>
                                     <p class="c-box__text c-text">マスクやデニムなど、夏に暑さを感じる原因になりやすいアイテムに対して多く採用頂いています。 </p>
                                 </div>
@@ -248,8 +248,8 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <h3 class="c-box__title">パラレヂンSTR-8</h3>
                                 <div class="c-box__wrap">
                                     <picture class="c-box__img">
-                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_dummy.jpg" type="image/webp" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_dummy.jpg" alt="アイキャッチ画像">
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_02.webp" type="image/webp" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_02.jpg" alt="アイキャッチ画像">
                                     </picture>
                                     <p class="c-box__text c-text">シワ加工として採用。伸張回復率を向上させる反発性を活かし、シワが付きにくい加工として見た目のキレイさを保ちます。 </p>
                                 </div>
@@ -261,8 +261,8 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <h3 class="c-box__title">パラレヂンNCシリーズ<br>（防汚加工）</h3>
                                 <div class="c-box__wrap">
                                     <picture class="c-box__img">
-                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_dummy.jpg" type="image/webp" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_dummy.jpg" alt="アイキャッチ画像">
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_03.webp" type="image/webp" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_03.jpg" alt="アイキャッチ画像">
                                     </picture>
                                     <p class="c-box__text c-text">食品防汚目的として子供服にて採用。衣服のキレイな状態を保つことに加え、洗濯が楽になることで家事の時短にも繋がります。 </p>
                                 </div>
@@ -274,8 +274,8 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <h3 class="c-box__title">パラゾールGH-908</h3>
                                 <div class="c-box__wrap">
                                     <picture class="c-box__img">
-                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_dummy.jpg" type="image/webp" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_dummy.jpg" alt="アイキャッチ画像">
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_04.webp" type="image/webp" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_04.jpg" alt="アイキャッチ画像">
                                     </picture>
                                     <p class="c-box__text c-text">本来はアクリルバインダーとして使用される事が多いですが、摩耗強度を向上させる目的での採用事例もあります。これにより、衣服の寿命を延ばすことも可能です。</p>
                                 </div>
@@ -284,11 +284,11 @@ $sitemap = esc_html(home_url('/sitemap/'));
                         <div class="p-case__item">
                             <div class="c-box">
                                 <div class="c-box__number">05</div>
-                                <h3 class="c-box__title">アレルフレッシュⓇシリーズ<br>（抗アレルゲン加工）</h3>
+                                <h3 class="c-box__title">アレルフレッシュ&reg;シリーズ<br>（抗アレルゲン加工）</h3>
                                 <div class="c-box__wrap">
                                     <picture class="c-box__img">
-                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_dummy.jpg" type="image/webp" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_dummy.jpg" alt="アイキャッチ画像">
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_05.webp" type="image/webp" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_05.jpg" alt="アイキャッチ画像">
                                     </picture>
                                     <p class="c-box__text c-text">大手自動車メーカーのオプションフロアマットとして採用されました。当社の商標もカタログ上でご使用頂きました。</p>
                                 </div>
@@ -300,8 +300,8 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <h3 class="c-box__title">パラファインPHC-50<br>（弱酸性加工）</h3>
                                 <div class="c-box__wrap">
                                     <picture class="c-box__img">
-                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_dummy.jpg" type="image/webp" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_dummy.jpg" alt="アイキャッチ画像">
+                                        <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_06.webp" type="image/webp" />
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/case_06.jpg" alt="アイキャッチ画像">
                                     </picture>
                                     <p class="c-box__text c-text">寝具（敷パッド、タオルケット、枕カバー）用として採用されました。汗をかいても生地上を弱酸性に保つことで肌にやさしく、また柔らかい風合いもご評価頂きました。 </p>
                                 </div>

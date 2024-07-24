@@ -120,3 +120,15 @@ button {
   padding: 0;
   background: none;
 }
+
+  /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+html{
+  -ms-overflow-style: none;
+  /*Firefoxへの対応*/
+  scrollbar-width: none;
+}
+
+ /*Google Chrome、Safariへの対応*/
+.html::-webkit-scrollbar{
+  display: none;
+}

@@ -230,7 +230,21 @@ $sitemap = esc_html(home_url('/sitemap/'));
                             <h3 class="p-sdg__subtitle">繊維加工剤</h3>
                             <ul class="p-sdg__lists">
                                 <li class="p-sdg__list">
-                                    <p class="p-sdg__text">・繊維to繊維を後加工剤で後押し</p>
+                                    <p class="p-sdg__text">・客先における溶剤加工からの水系移行を推進</p>
+                                    <ul class="p-sdg__goals">
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
+                                        </li>
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
+                                        </li>
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg14.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="p-sdg__list">
+                                    <p class="p-sdg__text">・「繊維to繊維リサイクル」の取り組みを後加工剤で後押し</p>
                                     <ul class="p-sdg__goals">
                                         <li class="p-sdg__goal">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
@@ -261,6 +275,20 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     </ul>
                                 </li>
                                 <li class="p-sdg__list">
+                                    <p class="p-sdg__text">・サンチシル&reg;企画の推進</p>
+                                    <ul class="p-sdg__goals --initial">
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg8.jpg" alt="">
+                                        </li>
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
+                                        </li>
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="p-sdg__list">
                                     <p class="p-sdg__text">・衛生対策シリーズの拡充（抗菌、抗ウイルス、消臭、防虫など）</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
@@ -275,91 +303,16 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     </ul>
                                 </li>
                                 <li class="p-sdg__list">
-                                    <p class="p-sdg__text">・冷感加工、熱遮蔽加工によるエアコンの使用量減</p>
+                                    <p class="p-sdg__text">・非フッ素撥水剤の開発と拡販</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg3.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg7.jpg" alt="">
-                                        </li>
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="p-sdg__list">
-                                    <p class="p-sdg__text">・吸湿発熱加工など温感加工剤の拡充</p>
-                                    <ul class="p-sdg__goals --initial">
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg7.jpg" alt="">
-                                        </li>
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="p-sdg__list">
-                                    <p class="p-sdg__text">・サンチシル®企画の推進</p>
-                                    <ul class="p-sdg__goals --initial">
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg8.jpg" alt="">
-                                        </li>
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
-                                        </li>
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="p-sdg__list">
-                                    <p class="p-sdg__text">・非フッ素撥水剤の開発と拡販</p>
-                                    <ul class="p-sdg__goals --initial">
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
-                                        </li>
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="p-sdg__list">
-                                    <p class="p-sdg__text">・水系/可食系コーティング剤の開発と拡販</p>
-                                    <ul class="p-sdg__goals --initial">
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
-                                        </li>
-                                        <li class="p-sdg__goal">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg14.jpg" alt="">
-                                        </li>
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg15.jpg" alt="">
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="p-sdg__list">
-                                    <p class="p-sdg__text">・可食系コーティング剤の開発と拡販</p>
-                                    <ul class="p-sdg__goals --initial">
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg14.jpg" alt="">
-                                        </li>
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg15.jpg" alt="">
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="p-sdg__list">
-                                    <p class="p-sdg__text">・溶剤加工からの水系移行をバックアップ</p>
-                                    <ul class="p-sdg__goals --initial">
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
-                                        </li>
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg14.jpg" alt="">
@@ -380,17 +333,53 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="p-sdg__list">
+                                    <p class="p-sdg__text">・水系/可食系コーティング剤の開発と拡販</p>
+                                    <ul class="p-sdg__goals --initial">
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
+                                        </li>
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg14.jpg" alt="">
+                                        </li>
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg15.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                         <div class="p-sdg__unit">
-                            <h3 class="p-sdg__subtitle --border">b.cave®</h3>
+                            <h3 class="p-sdg__subtitle">b.cave&reg;</h3>
                             <ul class="p-sdg__lists">
-                                <li class="p-sdg__list --initial">
-                                    <p class="p-sdg__text --normal"> ・有害ガスの吸着<br> ・脱臭効果による<br> ・燃焼対応からの脱却をバックアップ<br> ・CO2、温室効果ガスの吸着 </p>
+                                <li class="p-sdg__list">
+                                    <p class="p-sdg__text">・人体に対して有害なガスを吸着</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg3.jpg" alt="">
                                         </li>
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="p-sdg__list">
+                                    <p class="p-sdg__text">・脱臭効果による働く環境、暮らす環境の改善</p>
+                                    <ul class="p-sdg__goals --initial">
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg3.jpg" alt="">
+                                        </li>
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg11.jpg" alt="">
+                                        </li>
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="p-sdg__list">
+                                    <p class="p-sdg__text">・優れた吸着力を活かして燃焼式脱臭からの脱却を支援</p>
+                                    <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg11.jpg" alt="">
                                         </li>
@@ -402,31 +391,11 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                         </li>
                                     </ul>
                                 </li>
-                            </ul>
-                        </div>
-                        <div class="p-sdg__unit">
-                            <h3 class="p-sdg__subtitle --border">瞬間接着剤</h3>
-                            <ul class="p-sdg__lists">
-                                <li class="p-sdg__list --initial">
-                                    <p class="p-sdg__text --normal"> ・ネイル用、まつ毛用製品の拡充による女性のエンパワーメントへの関与<br> ・破損物の再利用化によるゴミ、廃棄物の軽減 </p>
+                                <li class="p-sdg__list">
+                                    <p class="p-sdg__text">・CO2等の吸脱着システムへの対応（DAC、CCS、CCUS）</p>
                                     <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg5.jpg" alt="">
-                                        </li>
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="p-sdg__unit">
-                            <h3 class="p-sdg__subtitle --border">展着剤</h3>
-                            <ul class="p-sdg__lists">
-                                <li class="p-sdg__list --initial">
-                                    <ul class="p-sdg__goals --initial">
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg3.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg11.jpg" alt="">
                                         </li>
                                         <li class="p-sdg__goal">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg12.jpg" alt="">
@@ -434,23 +403,32 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                         <li class="p-sdg__goal">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
                                         </li>
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg15.jpg" alt="">
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                         <div class="p-sdg__unit">
-                            <h3 class="p-sdg__subtitle --border">エマベース</h3>
+                            <h3 class="p-sdg__subtitle">瞬間接着剤</h3>
                             <ul class="p-sdg__lists">
-                                <li class="p-sdg__list --initial">
+                                <li class="p-sdg__list">
+                                    <p class="p-sdg__text">・ネイル用、まつ毛用製品の拡充による女性のエンパワーメントへの関与</p>
                                     <ul class="p-sdg__goals --initial">
-                                        <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg3.jpg" alt="">
-                                        </li>
                                         <li class="p-sdg__goal">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg5.jpg" alt="">
                                         </li>
+                                    </ul>
+                                </li>
+                                <li class="p-sdg__list">
+                                    <p class="p-sdg__text">・破損物の再利用化によるゴミ、廃棄物の軽減</p>
+                                    <ul class="p-sdg__goals --initial">
                                         <li class="p-sdg__goal">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg9.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg13.jpg" alt="">
+                                        </li>
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg14.jpg" alt="">
                                         </li>
                                     </ul>
                                 </li>
@@ -460,8 +438,21 @@ $sitemap = esc_html(home_url('/sitemap/'));
                             <h3 class="p-sdg__subtitle --border">その他</h3>
                             <ul class="p-sdg__lists">
                                 <li class="p-sdg__list --initial">
-                                    <p class="p-sdg__text --normal"> ・ペーパーレス化<br> ・近場の客先への通い容器の使用<br> ・製品用容器のリサイクル<br> ・受注生産や計画生産によるロス削減<br> ・100％プラスチック製のクリアファイルを使用しない </p>
+                                    <p class="p-sdg__text --normal">
+                                    ・農業関連事業（展着剤、他）<br>
+                                    ・emabaseシリーズの開発、拡販（水系ウレタン接着剤）<br>
+                                    ・全社的なペーパーレス化の推進<br>
+                                    ・客先への納品において通い容器を使用<br>
+                                    ・製品用容器のリサイクル<br>
+                                    ・受注生産や計画生産によるロス、廃棄物の削減
+                                    </p>
                                     <ul class="p-sdg__goals --initial">
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg3.jpg" alt="">
+                                        </li>
+                                        <li class="p-sdg__goal">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg5.jpg" alt="">
+                                        </li>
                                         <li class="p-sdg__goal">
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sustainability/sdg7.jpg" alt="">
                                         </li>

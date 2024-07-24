@@ -78,7 +78,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     </div>
                                     <p class="p-block__text c-text">当社の祖業であり、現在においても蓄積してきた技術とノウハウにより「時代に合った機能性加工」を提案し続けています。基本的に全て、環境に優しい『水系』を基本としたラインナップです。 最終用途は衣料・寝具・産業資材など多岐に渡ります。</p>
                                     <div class="p-block__btn --left">
-                                        <a href="<?php echo $manufact; ?>" class="c-btn "> 詳しくみる <div class="c-btn__link">
+                                        <a href="<?php echo $textile; ?>" class="c-btn "> 詳しくみる <div class="c-btn__link">
                                                 <div class="c-link "><span></span></div>
                                             </div>
                                         </a>
@@ -158,10 +158,10 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     </div>
                                     <p class="p-block__text c-text"> 繊維加工剤で培った抗ウイルス・抗菌の技術を、スプレーという形で小売り販売に拡げました。直接吹きかけるだけで、ウイルスや菌の増殖を防ぎます。<br> 安全性の高い成分で作られており、人体や環境にも優しい製品です 。家庭・教育現場・公共施設など様々な場所でご使用頂いております。<br><br>KYOHPARAに関しては、協力会社にて販売しております。 </p>
                                     <div class="p-block__more">
-                                        <a href="https://www.miyako-sogokanri.com/kyohpara/" target="_blank" rel="noopener" class="c-textLink">詳しくはこちら</a>
+                                        <a href="https://www.miyako-sogokanri.com/kyohpara/" target="_blank" rel="noopener" class="c-textLink">都総合管理株式会社</a>
                                     </div>
                                     <div class="p-block__more">
-                                        <a href="http://www.michisu-kyoto.com/about/" target="_blank" rel="noopener" class="c-textLink">詳しくはこちら</a>
+                                        <a href="http://www.michisu-kyoto.com/about/" target="_blank" rel="noopener" class="c-textLink">株式会社実知数</a>
                                     </div>
                                 </div>
                                 <picture class="p-block__img --left --sp-top">

@@ -245,9 +245,9 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     <p class="p-target__number">03</p>
                                     <picture class="p-target__img">
                                         <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/service/business_03.webp" type="image/webp" />
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/business_03.png" alt="畜産・酪農業の臭気対策">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/service/business_03.png" alt="ガスによる機器障害対策">
                                     </picture>
-                                    <p class="p-target__text">畜産・酪農業の臭気対策</p>
+                                    <p class="p-target__text">ガスによる機器障害対策</p>
                                 </li>
                                 <li class="p-target__list">
                                     <p class="p-target__number">04</p>

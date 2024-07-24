@@ -69,6 +69,9 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                         <span class="p-drawer__button js-drawer-button"></span>
                                         <ul class="p-drawer__subLinks">
                                             <li class="p-drawer__subLink">
+                                                <a href="<?php echo $service; ?>">事業紹介TOP</a>
+                                            </li>
+                                            <li class="p-drawer__subLink">
                                                 <a href="<?php echo $textile; ?>">繊維加工剤</a>
                                             </li>
                                             <li class="p-drawer__subLink">
@@ -80,6 +83,9 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                         <a href="<?php echo $company; ?>">企業情報</a>
                                         <span class="p-drawer__button js-drawer-button"></span>
                                         <ul class="p-drawer__subLinks">
+                                            <li class="p-drawer__subLink">
+                                                <a href="<?php echo $company; ?>">企業情報TOP</a>
+                                            </li>
                                             <li class="p-drawer__subLink">
                                                 <a href="<?php echo $message; ?>">メッセージ</a>
                                             </li>
@@ -113,6 +119,9 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                         <a href="<?php echo $recruit; ?>">採用情報</a>
                                         <span class="p-drawer__button js-drawer-button"></span>
                                         <ul class="p-drawer__subLinks">
+                                            <li class="p-drawer__subLink">
+                                                <a href="<?php echo $recruit; ?>">採用情報TOP</a>
+                                            </li>
                                             <li class="p-drawer__subLink">
                                                 <a href="<?php echo $manufact; ?>">私たちの働き方</a>
                                             </li>
@@ -154,6 +163,9 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <a href="<?php echo $service; ?>">事業紹介</a>
                                 <span class="p-globalNav__button js-globalNav-button"></span>
                                 <ul class="p-globalNav__subLinks">
+                                <li class="p-globalNav__subLink">
+                                        <a href="<?php echo $service; ?>">事業紹介TOP</a>
+                                    </li>
                                     <li class="p-globalNav__subLink">
                                         <a href="<?php echo $textile; ?>">繊維加工剤</a>
                                     </li>
@@ -166,6 +178,9 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <a href="<?php echo $company; ?>">企業情報</a>
                                 <span class="p-globalNav__button js-globalNav-button"></span>
                                 <ul class="p-globalNav__subLinks">
+                                    <li class="p-globalNav__subLink">
+                                        <a href="<?php echo $company; ?>">企業情報TOP</a>
+                                    </li>
                                     <li class="p-globalNav__subLink">
                                         <a href="<?php echo $message; ?>">メッセージ</a>
                                     </li>
@@ -199,6 +214,9 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <a href="<?php echo $recruit; ?>">採用情報</a>
                                 <span class="p-globalNav__button js-globalNav-button"></span>
                                 <ul class="p-globalNav__subLinks">
+                                    <li class="p-globalNav__subLink">
+                                        <a href="<?php echo $recruit; ?>">採用情報TOP</a>
+                                    </li>
                                     <li class="p-globalNav__subLink">
                                         <a href="<?php echo $manufact; ?>">私たちの働き方</a>
                                     </li>

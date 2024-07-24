@@ -36,7 +36,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                         <picture class="p-mv__img">
                             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/mv.webp" type="image/webp" />
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/mv.png" alt="ファーストビュー">
-                        </picture>
+                        </picture>          
                         <button class="p-mv__link --1 js-mv-modal">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/pin.png" alt="自動車のモーダルを開く">
                         </button>
@@ -65,7 +65,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/pin.png" alt="アパレルのモーダルを開く">
                         </button>
                         <button class="p-mv__link --10 js-mv-modal">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/pin.png" alt="のモーダルを開く">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/pin.png" alt="本社のモーダルを開く">
                         </button>
                         <button class="p-mv__link --11 js-mv-modal">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/pin.png" alt="学校のモーダルを開く">
@@ -76,6 +76,19 @@ $sitemap = esc_html(home_url('/sitemap/'));
                         <button class="p-mv__link --13 js-mv-modal">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/pin.png" alt="スポーツのモーダルを開く">
                         </button>
+                        <div class="p-mv__car">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/car.png" alt="車">
+                        </div>
+                        <div class="p-mv__bus">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/bus.png" alt="バス">
+                        </div>
+                        <div class="p-mv__rocket">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/rocket.png" alt="ロケット">
+                        </div>
+                        <div class="p-mv__cover">
+                            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/mv_cover.webp" type="image/webp" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/mv_cover.png" alt="ファーストビュー">
+                        </div>
                     </div>
                     <h1 class="p-mv__title"> 衣・住・美・健・環<br>
                         <span>化学の発想で彩ります</span>
@@ -571,52 +584,23 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 </div>
                                 <div class="p-mvModal__content">
                                     <div class="p-mvModal__wrap">
-                                        <h3 class="p-mvModal__title"><span>自動車</span></h3>
+                                        <h3 class="p-mvModal__title"><span>本社</span></h3>
                                         <picture class="p-mvModal__img">
                                             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/top/modal_10.webp" type="image/webp" />
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/modal_10.jpg" alt="自動車">
                                         </picture>
                                         <div class="p-mvModal__blocks">
-                                            <div class="p-mvModal__block">
-                                                <picture class="p-mvModal__img2">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/modal_10_1.jpg" alt="カーシート・カーマット">
-                                                </picture>
-                                                <div class="p-mvModal__group">
-                                                    <div class="p-mvModal__subTitle">カーシート・カーマット</div>
-                                                    <ul class="p-mvModal__lists">
-                                                        <li class="p-mvModal__list">撥水撥油加工</li>
-                                                        <li class="p-mvModal__list">抗菌抗ウイルス加工</li>
-                                                        <li class="p-mvModal__list">摩耗強度向上加工</li>
-                                                        <li class="p-mvModal__list">抗アレルゲン加工 </li>
-                                                        <li class="p-mvModal__list">防カビ加工</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="p-mvModal__block">
-                                                <picture class="p-mvModal__img2">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/modal_10_2.jpg" alt="空調">
-                                                </picture>
-                                                <div class="p-mvModal__group">
-                                                    <div class="p-mvModal__subTitle">空調</div>
-                                                    <ul class="p-mvModal__lists">
-                                                        <li class="p-mvModal__list">b.caveシリーズ</li>
-                                                        <li class="p-mvModal__list">マイナスイオン加工</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="p-mvModal__block">
-                                                <picture class="p-mvModal__img2">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/modal_10_3.jpg" alt="部材（天井材、インパネ等）">
-                                                </picture>
-                                                <div class="p-mvModal__group">
-                                                    <div class="p-mvModal__subTitle">部材<small>（天井材、インパネ等）</small></div>
-                                                    <ul class="p-mvModal__lists">
-                                                        <li class="p-mvModal__list">水系ウレタン接着剤</li>
-                                                        <li class="p-mvModal__list">柔軟加工</li>
-                                                        <li class="p-mvModal__list">防汚加工</li>
-                                                        <li class="p-mvModal__list">耐油加工</li>
-                                                    </ul>
-                                                </div>
+                                            <p class="p-mvModal__text c-text">
+                                            大正15年創業。<br>
+                                            「快適住空間の創造」をミッションに掲げる当社は、ファインケミカルの分野で存在感を放ち続けてきました。<br>
+                                            この先の100年も、世界的都市「京都」から先端技術を発信し続けます。
+                                            </p>
+                                            <div class="p-mvModal__btn">
+                                                <a href="<?php echo $company; ?>" class="c-btn">
+                                                企業情報
+                                                <div class="c-btn__link">
+                                                    <div class="c-link "><span></span></div>
+                                                </div></a>
                                             </div>
                                         </div>
                                     </div>
@@ -939,7 +923,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     <h2 class="c-title__main --white ">コラム</h2>
                                 </hgroup>
                             </div>
-                            <p class="p-topColumn__text c-text"> テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 </p>
+                            <p class="p-topColumn__text c-text"> OHARA PARADIUMが運営する「KAITEKIな生活」を送るための情報を発信するオウンドメディアです。 </p>
                             <div class="p-topColumn__more">
                                 <a href="<?php echo $column; ?>" class="c-more"> もっとみる <div class="c-more__link">
                                         <div class="c-link "><span></span></div>
@@ -1020,7 +1004,6 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <h2 class="c-title__main --black ">事業紹介</h2>
                             </hgroup>
                         </div>
-                        <p class="p-topService__text c-text"> テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 </p>
                     </div>
                     <div class="p-topService__btn">
                         <a href="<?php echo $service; ?>" class="c-btn "> 事業紹介トップ <div class="c-btn__link">
@@ -1065,7 +1048,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                         <h2 class="c-title__main --black ">サステナビリティ</h2>
                                     </hgroup>
                                 </div>
-                                <p class="p-block__text c-text"> テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 </p>
+                                <p class="p-block__text c-text"> 大原パラヂウム化学株式会社では、環境的に持続可能なモノ・コトでなければ、社会的にも持続可能にはなりえないという理念の下、「Sustainable Development （持続可能な開発）」を心掛け、これからの未来に向けた感動製品の開発に取り組んでいます。 </p>
                                 <div class="p-block__btn">
                                     <a href="<?php echo $sustainability; ?>" class="c-btn "> サステナビリティ <div class="c-btn__link">
                                             <div class="c-link "><span></span></div>
@@ -1094,7 +1077,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                         <h2 class="c-title__main --black ">研究</h2>
                                     </hgroup>
                                 </div>
-                                <p class="p-block__text c-text"> テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 </p>
+                                <p class="p-block__text c-text"> 当社は「快適住空間の創造」をミッションに掲げており、技術開発部では人と地球の快適さを最優先に考え、環境に優しい製品の開発に努め、常に新しい価値を創造し、社会に貢献することを目指しています。 </p>
                                 <div class="p-block__btn">
                                     <a href="<?php echo $study; ?>" class="c-btn "> 研究 <div class="c-btn__link">
                                             <div class="c-link "><span></span></div>

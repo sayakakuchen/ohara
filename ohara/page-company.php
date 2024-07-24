@@ -76,7 +76,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                             <h2 class="c-title__main --black --small">メッセージ</h2>
                                         </hgroup>
                                     </div>
-                                    <p class="p-block__text c-text">弊社は『快適住空間の創造』をミッションに掲げ、人の快適、地球の快適等それぞれの テーマに取り組み、考え続けています。創業時よりの特徴である「小回りの利く開発」 「自由なコミュニケーション環境」そして「産学を通じての社外との連携」を更に 進化させ、オンリーワン企業を日々目指しています。</p>
+                                    <p class="p-block__text c-text">『快適住空間の創造』をミッションに掲げる当社代表からのメッセージです。<br>創業家ならではの熱い想いをお届けします。</p>
                                     <div class="p-block__btn --left">
                                         <a href="<?php echo $message; ?>" class="c-btn "> 詳しくみる <div class="c-btn__link">
                                                 <div class="c-link "><span></span></div>
@@ -99,7 +99,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                             <h2 class="c-title__main --black --small">企業理念</h2>
                                         </hgroup>
                                     </div>
-                                    <p class="p-block__text c-text"> 大原パラヂウム化学は、<br> 「サスティナブルな製品開発」を<br> 将来に向けて進めます。 </p>
+                                    <p class="p-block__text c-text"> 『安心安全でサスティナブルな製品づくり』を目指す当社の理念をご紹介します。<br>時代の変化に順応しつつ、創業当初からの信念を貫きます。</p>
                                     <div class="p-block__btn --left">
                                         <a href="<?php echo $mission; ?>" class="c-btn "> 詳しくみる <div class="c-btn__link">
                                                 <div class="c-link "><span></span></div>
@@ -122,7 +122,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                             <h2 class="c-title__main --black --small">会社概要</h2>
                                         </hgroup>
                                     </div>
-                                    <p class="p-block__text c-text">大原パラヂウム化学の会社概要をご紹介致します。</p>
+                                    <p class="p-block__text c-text">世界的都市「京都」から先端技術を発信する当社の概要紹介です。<br>少数精鋭の組織体制で、尖った存在であり続けます。</p>
                                     <div class="p-block__btn --left">
                                         <a href="<?php echo $about; ?>" class="c-btn "> 詳しくみる <div class="c-btn__link">
                                                 <div class="c-link "><span></span></div>
@@ -145,7 +145,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                             <h2 class="c-title__main --black --small">歴史</h2>
                                         </hgroup>
                                     </div>
-                                    <p class="p-block__text c-text"> 大原パラヂウム化学の歴史をご紹介致します。 </p>
+                                    <p class="p-block__text c-text"> 大正15年に創業を開始した当社の、化学品メーカーとしての歩みを振り返ります。<br>ファインケミカルの分野で存在感を放ち続けます。 </p>
                                     <div class="p-block__btn --left">
                                         <a href="<?php echo $history; ?>" class="c-btn "> 詳しくみる <div class="c-btn__link">
                                                 <div class="c-link "><span></span></div>
@@ -168,7 +168,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                             <h2 class="c-title__main --black --small">主な事業所・<br class="u-mobile">ネットワーク</h2>
                                         </hgroup>
                                     </div>
-                                    <p class="p-block__text c-text">大原パラヂウム化学の事業所およびネットワークをご紹介致します。</p>
+                                    <p class="p-block__text c-text">京都から世界へ。Made in JAPANのモノ作りで、高品質な製品を世界中へ届けます。</p>
                                     <div class="p-block__btn --left">
                                         <a href="<?php echo $office; ?>" class="c-btn "> 詳しくみる <div class="c-btn__link">
                                                 <div class="c-link "><span></span></div>

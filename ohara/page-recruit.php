@@ -59,34 +59,6 @@ $sitemap = esc_html(home_url('/sitemap/'));
                 </div>
             </div>
         </div>
-        <section class="l-greeting">
-            <div class="p-greeting --bg-green">
-                <div class="p-greeting__inner l-inner">
-                    <div class="p-greeting__title">
-                        <hgroup class="c-recruitTitle2">
-                            <p class="c-recruitTitle2__sub">代表挨拶</p>
-                            <h2 class="c-recruitTitle2__main">MESSAGE</h2>
-                        </hgroup>
-                    </div>
-                    <div class="p-greeting__wrap">
-                        <picture class="p-greeting__img">
-                            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/message.webp" type="image/webp" />
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/recruit/message.jpg" alt="ごあいさつ">
-                        </picture>
-                        <div class="p-greeting__content">
-                            <div class="p-greeting__text c-text">
-                                <p> 弊社は『快適住空間の創造』をミッションに掲げ、人の快適、地球の快適等それぞれの テーマに取り組み、考え続けています。創業時よりの特徴である「小回りの利く開発」 「自由なコミュニケーション環境」そして「産学を通じての社外との連携」を更に 進化させ、オンリーワン企業を日々目指しています。 </p>
-                                <p> 現在は「Sustainable ECO Finish」を中核ブランドに据え、環境に配慮したサステナブルな 製品の拡充に注力しています。エジプトの砂漠緑化プロジェクトへの参加や、2023年より本格始動したPCP/MOFの実用化による瞬間消臭技術での環境快適化プロジェクトも進み、祖業である繊維加工剤や、ストレス軽減に一役を担う水系ポリウレタン接着剤等に加えこれまでの当社にはない新たなビジネスモデルを創出します。 </p>
-                                <p> 未来への大原パラヂウム化学の創造力にご期待下さい。 </p>
-                            </div>
-                            <div class="p-greeting__name">
-                                <span>代表取締役 </span>大原　一浩
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="l-recruiWorks">
             <div class="p-recruitWorks">
                 <div class="p-recruitWorks__inner l-inner">

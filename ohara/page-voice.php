@@ -80,7 +80,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     <div class="p-interviewBlock__prof">
                                         <p class="p-interviewBlock__name">井谷 研（イタニ　ケン）</p>
                                         <div class="p-interviewBlock__info">
-                                            <p><span>【入社年】</span>2008年入社16年目/転職</p>
+                                            <p><span>【入社年】</span>2008年入社16年目/キャリア採用</p>
                                             <p><span>【所属】</span>製造部</p>
                                             <p><span>【担当】</span>繊維加工剤の生産、在庫管理、発送</p>
                                         </div>
@@ -137,7 +137,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     <div class="p-interviewBlock__prof">
                                         <p class="p-interviewBlock__name">山田 瑞穂（ヤマダ　ミズホ）</p>
                                         <div class="p-interviewBlock__info">
-                                            <p><span>【入社年】</span>2017年 入社7年目/転職</p>
+                                            <p><span>【入社年】</span>2017年 入社7年目/キャリア採用</p>
                                             <p><span>【所属】</span>技術開発部</p>
                                             <p><span>【担当】</span>ウレタン樹脂開発補佐、品質管理、依頼試験​</p>
                                         </div>
@@ -194,7 +194,7 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                     <div class="p-interviewBlock__prof">
                                         <p class="p-interviewBlock__name">竹内 勇人（タケウチ　ハヤト）</p>
                                         <div class="p-interviewBlock__info">
-                                            <p><span>【入社年】</span>2021年 入社3年目/転職</p>
+                                            <p><span>【入社年】</span>2021年 入社3年目/キャリア採用</p>
                                             <p><span>【所属】</span>営業課</p>
                                             <p><span>【担当】</span>繊維加工剤の営業ならびに新規事業開拓</p>
                                         </div>

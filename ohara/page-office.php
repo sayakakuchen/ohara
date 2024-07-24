@@ -90,7 +90,8 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 </div>
                             </div>
                             <picture class="p-office__img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/dummy.jpg" alt="本社">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/company/office_01.webp" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/office_01.jpg" alt="本社">
                             </picture>
                         </div>
                         <div class="p-office__item">
@@ -104,7 +105,8 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 </div>
                             </div>
                             <picture class="p-office__img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/dummy.jpg" alt="吉祥院工場・化学研究所">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/company/office_02.webp" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/office_02.jpg" alt="吉祥院工場・化学研究所">
                             </picture>
                         </div>
                         <div class="p-office__item">
@@ -114,11 +116,12 @@ $sitemap = esc_html(home_url('/sitemap/'));
                                 <p class="p-office__tel c-text">TEL：075-691-0700　FAX：075-691-8950</p>
                                 <div class="p-office__btn">
                                     <a href="https://maps.app.goo.gl/SpP1RC1MhoCm6zhV6" class="c-googleBtn" target="_blank">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/pin_white.png" alt="ピン"> Google Map </a>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/pin_white.png" alt="ピン"> Google Map </a>
                                 </div>
                             </div>
                             <picture class="p-office__img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/dummy.jpg" alt="上鳥羽工場">
+                                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/images/company/office_03.webp" type="image/webp" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/office_03.jpg" alt="上鳥羽工場">
                             </picture>
                         </div>
                     </div>
